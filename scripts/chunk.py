@@ -89,8 +89,8 @@ for line in sys.stdin.readlines():
 for output_file in output_files.keys():
     with open(output_file, "w") as f:
         f.writelines(template_header)
-        for fleet in output_files[filename]:
+        for fleet in output_files[output_file]:
             f.writelines(summaries[fleet])
-        for fleet in output_files[filename]:
+        for fleet in output_files[output_file]:
             f.writelines(races[fleet])
         f.writelines(template_footer)
