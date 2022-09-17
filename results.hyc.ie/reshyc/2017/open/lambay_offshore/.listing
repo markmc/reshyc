@@ -1,0 +1,15 @@
+drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 .
+drwxrwxr-x   23 1004     1004         4096 Jul 27  2018 ..
+-rw-rw-r--    1 1004     1004         4591 Jul 27  2018 class1_echo.htm
+-rw-rw-r--    1 1004     1004         4248 Jul 27  2018 class1_irc.htm
+-rw-rw-r--    1 1004     1004         5961 Jul 27  2018 class2_echo.htm
+-rw-rw-r--    1 1004     1004         5295 Jul 27  2018 class2_irc.htm
+-rw-rw-r--    1 1004     1004         4250 Jul 27  2018 class31.7.htm
+-rw-rw-r--    1 1004     1004        10511 Jul 27  2018 class3_echo.htm
+-rw-rw-r--    1 1004     1004        10172 Jul 27  2018 class3_irc.htm
+drwxrwxr-x    3 1004     1004         4096 Jul 27  2018 competitor_lists
+drwxrwxr-x    2 1004     1004         4096 Jul 27  2018 images
+-rw-rw-r--    1 1004     1004         6242 Jul 27  2018 whitesail4_echo.htm
+-rw-rw-r--    1 1004     1004         4810 Jul 27  2018 whitesail4_irc.htm
+-rw-rw-r--    1 1004     1004         5832 Jul 27  2018 whitesail5_echo.htm
+-rw-rw-r--    1 1004     1004         4264 Jul 27  2018 whitesail5_irc.htm
