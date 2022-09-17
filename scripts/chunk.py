@@ -30,16 +30,27 @@ table_end = '</table>'
 footer_start = '<p class="hardleft">'
 
 # For each desired output file, we list the classes we want to include
-output_files = {
-    "2022_AL_class1.htm": ["class_1_irc", "class_1_hph"],
-    "2022_AL_class2.htm": ["class_2_irc", "class_2_hph"],
-    "2022_AL_class3.htm": ["class_3_irc", "class_3_hph"],
-    "2022_AL_class4.htm": ["class_4_irc_non_spinnaker", "class_4_hph_non_spinnaker"],
-    "2022_AL_class5.htm": ["class_5_irc_non_spinnaker", "class_5_hph_non_spinnaker"],
-    "2022_AL_h17.htm": ["howth_17_scratch", "howth_17_hph"],
-    "2022_AL_pup.htm": ["puppeteers_scratch", "puppeteers_hph"],
-    "2022_AL_squib.htm": ["squib_scratch", "squib_hph"]
-}
+#
+# {
+#     "2022_AL_class1.htm": [
+#         "class_1_irc",
+#         "class_1_hph"
+#     ],
+#     "2022_AL_class2.htm": [
+#         "class_2_irc",
+#         "class_2_hph"
+#     ]
+# }
+
+import sys
+import json
+
+if len(sys.argv) != 2:
+    sys.exit('usage: ' + sys.argv[0] + ' output_files.json < input_file.htm')
+
+output_files = None
+with open(sys.argv[1]) as f:
+    output_files = json.load(f)
 
 import sys
 from enum import Enum

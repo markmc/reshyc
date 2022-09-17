@@ -26,3 +26,12 @@ endif
 
 backup: require_password
 	wget -m ftp://$(FTP_USER):$(FTP_PASSWORD)@$(FTP_SERVER)/reshyc
+
+AL_FILES := 2022_AL_class1.htm 2022_AL_class2.htm 2022_AL_class3.htm 2022_AL_class4.htm 2022_AL_class5.htm 2022_AL_h17.htm 2022_AL_pup.htm 2022_AL_squib.htm
+
+$(AL_FILES): 2022-autumn-league.json 2022_AL.htm
+	python scripts/chunk.py 2022-autumn-league.json < 2022_AL.htm
+al-files: $(AL_FILES)
+
+al-clean:
+	rm -f $(AL_FILES)
