@@ -94,8 +94,9 @@ for line in sys.stdin.readlines():
             races[fleet] = []
         races[fleet].append(line)
 
-    if line.startswith(table_end):
-        state = State.NONE
+    if state in [State.SUMMARY, State.RACE]:
+        if line.startswith(table_end):
+            state = State.NONE
 
 for output_file in output_files.keys():
     with open(output_file, "w") as f:
