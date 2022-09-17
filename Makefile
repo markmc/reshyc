@@ -16,22 +16,28 @@ clean:
 wineclean:
 	rm -rf ~/.wine
 
-FTP_SERVER := results.hyc.ie
-FTP_USER := hyc.ie_results
-
 require_password:
+ifndef FTP_SERVER
+	$(error FTP_SERVER is not defined)
+endif
+ifndef FTP_USER
+	$(error FTP_USER is not defined)
+endif
 ifndef FTP_PASSWORD
 	$(error FTP_PASSWORD is not defined)
 endif
 
 backup: require_password
-	wget -m ftp://$(FTP_USER):$(FTP_PASSWORD)@$(FTP_SERVER)/reshyc
+	@wget -m ftp://$(FTP_USER):$(FTP_PASSWORD)@$(FTP_SERVER)/reshyc
 
 AL_FILES := 2022_AL_class1.htm 2022_AL_class2.htm 2022_AL_class3.htm 2022_AL_class4.htm 2022_AL_class5.htm 2022_AL_h17.htm 2022_AL_pup.htm 2022_AL_squib.htm
 
 $(AL_FILES): 2022-autumn-league.json 2022_AL.htm scripts/chunk.py
 	python scripts/chunk.py 2022-autumn-league.json < 2022_AL.htm
 al-files: $(AL_FILES)
+
+al-upload: $(AL_FILES)
+	./ftp-upload.sh $(AL_FILES)
 
 al-clean:
 	rm -f $(AL_FILES)
