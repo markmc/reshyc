@@ -5,8 +5,11 @@
 
 ftp -n "${FTP_SERVER}" <<EOF
 quote USER ${FTP_USER}
-quote PASS ${FTP_PASSWD}
+quote PASS ${FTP_PASSWORD}
 binary
+glob
+prompt
+cd reshyc/
 mput $@
 quit
 EOF
