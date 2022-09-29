@@ -28,7 +28,7 @@ ifndef FTP_PASSWORD
 endif
 
 backup: require_password
-	@wget -m ftp://$(FTP_USER):$(FTP_PASSWORD)@$(FTP_SERVER)/reshyc
+	@wget -m ftp://$(FTP_USER):$(FTP_PASSWORD)@$(FTP_SERVER)/$(FTP_DIR)
 
 AL_OFFSHORE_FILES := 2022_AL_class1.htm 2022_AL_class2.htm 2022_AL_class4.htm 2022_AL_class5.htm
 AL_INSHORE_FILES := 2022_AL_class3.htm 2022_AL_h17.htm 2022_AL_pup.htm 2022_AL_squib.htm
