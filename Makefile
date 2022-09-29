@@ -38,14 +38,14 @@ $(AL_OFFSHORE_FILES): 2022-autumn-league-offshore.json 2022_AL_offshore.htm scri
 al-offshore-files: $(AL_OFFSHORE_FILES)
 
 al-offshore-upload: $(AL_OFFSHORE_FILES)
-	./ftp-upload.sh $(AL_OFFSHORE_FILES)
+	./scripts/ftp-upload.sh $(AL_OFFSHORE_FILES)
 
 $(AL_INSHORE_FILES): 2022-autumn-league-inshore.json 2022_AL.htm scripts/chunk.py
 	python scripts/chunk.py 2022-autumn-league-inshore.json < 2022_AL_inshore.htm
 al-inshore-files: $(AL_INSHORE_FILES)
 
 al-inshore-upload: $(AL_INSHORE_FILES)
-	./ftp-upload.sh $(AL_INSHORE_FILES)
+	./scripts/ftp-upload.sh $(AL_INSHORE_FILES)
 
 al-clean:
 	rm -f $(AL_OFFSHORE_FILES) $(AL_INSHORE_FILES)
