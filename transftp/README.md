@@ -2,6 +2,7 @@
 
 ## Set up the AWS CLI
 
+```shell
 $ python3 -m venv aws-venv
 $ . ./aws-venv/bin/activate
 $ pip install -U pip
@@ -9,11 +10,13 @@ $ pip install awscli
 
 $ aws sts get-caller-identity
 Unable to locate credentials. You can configure credentials by running "aws configure".
+```
 
 Login at https://eu-west-1.console.aws.amazon.com/
 
 Generate an access key at https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials
 
+```shell
 $ aws configure
 AWS Access Key ID [None]: ...
 ...
@@ -25,6 +28,7 @@ $ aws sts get-caller-identity
     "Account": "...",
     "Arn": "arn:aws:iam::..."
 }
+```
 
 ## Create the S3 bucket
 
@@ -47,7 +51,7 @@ $ LAMBDA_LOGGING_ROLE=$(aws iam get-role --role-name transftpLambdaLoggingAccess
 
 ## Set up FTP server IAM role
 
-First create an IAM role to allow the FTP server to send log events:
+Create an IAM role to allow the FTP server to send log events:
 
 ```shell
 $ aws iam create-role --role-name transftpTransferAccess --assume-role-policy-document '{"Version": "2012-10-17","Statement": [{ "Effect": "Allow", "Principal": {"Service": "transfer.amazonaws.com"}, "Action": "sts:AssumeRole"}]}'
@@ -116,7 +120,7 @@ Configure the S3 bucket event notifications to trigger the workflow function whe
 aws s3api put-bucket-notification-configuration --bucket reshyc --notification-configuration '{"LambdaFunctionConfigurations": [{"Id": "transftpWorkflowFunctionS3Trigger", "LambdaFunctionArn": "'"${LAMBDA_WORKFLOW_FUNCTION}"'", "Events": ["s3:ObjectCreated:Put"], "Filter": {"Key": {"FilterRules": [{"Name": "suffix", "Value": ".htm"}]}}}]}'
 ```
 
-# Create the FTP server
+## Create the FTP server
 
 Create the AWS Transfer Server using SFTP, S3, a public endpoint, and a lambda based identity provider:
 
@@ -134,13 +138,14 @@ $ sftp ${FTP_USER}@${TRANSFER_SERVER_ID}.server.transfer.eu-west-1.amazonaws.com
 myuser@s-....server.transfer.eu-west-1.amazonaws.com's password: XXXX
 ```
 
-# Delete server when not in use
+## Delete server when not in use
 
 ```shell
 $ TRANSFER_SERVER_ID=$(aws transfer list-servers --query 'Servers[*].ServerId' --output text)
 $ aws transfer delete-server --server-id "${TRANSFER_SERVER_ID}"
+```
 
-# Recreate the server when needed
+## Recreate the server when needed
 
 ```shell
 $ LAMBDA_AUTH_FUNCTION=$(aws lambda get-function --function-name transftpAuthFunction --query 'Configuration.[FunctionArn]' --output text)
