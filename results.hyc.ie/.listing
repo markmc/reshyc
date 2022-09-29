@@ -1,5 +1,5 @@
-drwxr-xr-x   52 1004     0            4096 Sep 17 22:08 .
-drwxr-xr-x   52 1004     0            4096 Sep 17 22:08 ..
+drwxr-xr-x   52 1004     0            4096 Sep 26 08:49 .
+drwxr-xr-x   52 1004     0            4096 Sep 26 08:49 ..
 drwx------    2 1004     1004         4096 Jul 27  2018 .cache
 drwx------    3 1004     1004         4096 Jul 27  2018 .gnupg
 -rw-r--r--    1 1004     1004          298 Jul 27  2018 .htaccess
@@ -46,7 +46,7 @@ drwxr-xr-x   27 1004     1004         4096 Jul 27  2018 openevents13
 drwxr-xr-x   16 1004     1004         4096 Jul 27  2018 openevents14
 -rw-r--r--    1 1004     1004         8375 Jul 27  2018 privacy.html
 drwxr-xr-x    5 1004     1004         4096 Jul 27  2018 raceArea
-drwxr-xr-x   10 1004     0           69632 Sep 19 11:58 reshyc
+drwxr-xr-x   10 1004     0           69632 Sep 26 10:10 reshyc
 -rw-r--r--    1 1004     1004         6803 Sep 13  2020 reshyc_eoss_class1_hph.htm
 -rw-r--r--    1 1004     1004         6705 Sep 25  2020 reshyc_eoss_class1_irc.htm
 -rw-r--r--    1 1004     1004         6462 Sep 13  2020 reshyc_eoss_class2_hph.htm
@@ -73,6 +73,7 @@ drwxr-xr-x   12 1004     1004         4096 Jul 27  2018 social
 -rw-r--r--    1 1004     1004            2 Jul 28  2018 t.txt
 -rw-r--r--    1 0        0              67 Feb 06  2019 tellme.php
 -rw-r--r--    1 1004     1004        10629 Jul 27  2018 terms.html
+-rw-r--r--    1 1004     1004            4 Sep 26 08:43 test.htm
 -rw-r--r--    1 0        0               5 Jul 27  2018 test.txt
 drwxr-xr-x    3 1004     1004         4096 Jul 27  2018 tides
 drwxr-xr-x    3 1004     1004         4096 Jul 27  2018 trophywin

@@ -1,5 +1,5 @@
-drwxr-xr-x   10 1004     0           69632 Sep 19 11:58 .
-drwxr-xr-x   52 1004     0            4096 Sep 17 22:08 ..
+drwxr-xr-x   10 1004     0           69632 Sep 26 10:10 .
+drwxr-xr-x   52 1004     0            4096 Sep 26 08:49 ..
 -rw-rw-r--    1 1004     1004          237 Jul 27  2018 .htaccess_off
 drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 2011
 drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 2012
@@ -819,6 +819,7 @@ drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 2018
 -rw-r--r--    1 1004     1004         3670 Jun 03 12:13 2022-club-series2-class4hph.htm
 -rw-r--r--    1 1004     1004         3305 Jun 03 12:14 2022-club-series2-class4irc.htm
 -rw-r--r--    1 1004     1004        32872 Sep 24 20:20 2022_AL_class1.htm
+-rw-r--r--    1 1004     1004        16800 Sep 26 10:18 2022_AL_class1_test.htm
 -rw-r--r--    1 1004     1004        24911 Sep 24 20:20 2022_AL_class2.htm
 -rw-r--r--    1 1004     1004        29341 Sep 24 19:16 2022_AL_class3.htm
 -rw-r--r--    1 1004     1004        24426 Sep 24 20:20 2022_AL_class4.htm
