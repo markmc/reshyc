@@ -1,5 +1,18 @@
 # Setting up TransFTP
 
+These are instructions for an AWS Transfer server which:
+
+1. Offers SFTP
+2. Authenticates a single username/password
+3. Can write to a single S3 bucket
+4. Triggers a transform workflow to split up a large Sailwave HTML file
+5. Uploads the generated files to a different FTP server
+
+Why? Because if you have multiple classes in a Sailwave series and you
+want to publish each class to a different HTML file, it can be painful
+to publish each class individually. This allows you to publish once
+with all classes and have the individual files automatically generated.
+
 ## Set up the AWS CLI
 
 ```shell
