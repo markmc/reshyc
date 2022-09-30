@@ -75,7 +75,7 @@ $ TRANSFER_ROLE=$(aws iam get-role --role-name transftpTransferAccess --query 'R
 Add a policy which gives read/write access to this bucket, and attach it to the role:
 
 ```shell
-$ aws iam create-policy --policy-name transftpBucketReadWrite --policy-document '{"Version": "2012-10-17", "Statement": [{"Sid": "AllowListingOfUserFolder", "Effect": "Allow", "Action": ["s3:ListBucket", "s3:GetBucketLocation"], "Resource": "'"${BUCKET_ARN}"'"},{"Sid": "HomeDirObjectAccess", "Effect": "Allow", "Action": ["s3:PutObject", "s3:GetObject", "s3:DeleteObject", "s3:DeleteObjectVersion", "s3:GetObjectVersion", "s3:GetObjectACL", "s3:PutObjectACL"], "Resource": "'"${BUCKET_ARN}"'"}]}'
+$ aws iam create-policy --policy-name transftpBucketReadWrite --policy-document '{"Version": "2012-10-17", "Statement": [{"Sid": "AllowListing", "Effect": "Allow", "Action": ["s3:ListBucket", "s3:GetBucketLocation"], "Resource": "'"${BUCKET_ARN}"'"},{"Sid": "ObjectAccess", "Effect": "Allow", "Action": ["s3:PutObject", "s3:GetObject", "s3:DeleteObject", "s3:DeleteObjectVersion", "s3:GetObjectVersion", "s3:GetObjectACL", "s3:PutObjectACL"], "Resource": "'"${BUCKET_ARN}"'/*"}]}'
 $ BUCKET_READ_WRITE_POLICY_ARN=$(aws iam list-policies --scope Local --query 'Policies[*].Arn' --output text | grep transftpBucketReadWrite)
 $ aws iam attach-role-policy --role-name transftpTransferAccess --policy-arn "${BUCKET_READ_WRITE_POLICY_ARN}"
 ```
