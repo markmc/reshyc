@@ -40,7 +40,7 @@ al-offshore-files: $(AL_OFFSHORE_FILES)
 al-offshore-upload: $(AL_OFFSHORE_FILES)
 	./scripts/ftp-upload.sh $(AL_OFFSHORE_FILES)
 
-$(AL_INSHORE_FILES): 2022-autumn-league-inshore.json 2022_AL.htm scripts/chunk.py
+$(AL_INSHORE_FILES): 2022-autumn-league-inshore.json 2022_AL_inshore.htm scripts/chunk.py
 	python scripts/chunk.py 2022-autumn-league-inshore.json < 2022_AL_inshore.htm
 al-inshore-files: $(AL_INSHORE_FILES)
 
