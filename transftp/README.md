@@ -121,11 +121,12 @@ To create the function and allow it to be invoked by S3:
 
 ```shell
 $ . ../.ftp_credentials
-$ make -C auth-function/
+$ make -C workflow-function/
 $ aws lambda create-function --function-name transftpWorkflowFunction --zip-file fileb://workflow-function/function.zip --handler function.handler --runtime python3.9 --role "${LAMBDA_LOGGING_ROLE}"
 $ aws lambda add-permission --function-name transftpWorkflowFunction --action "lambda:InvokeFunction" --statement-id transftpAllowS3Invocation --principal "s3.amazonaws.com"
 $ LAMBDA_WORKFLOW_FUNCTION=$(aws lambda get-function --function-name transftpWorkflowFunction --query 'Configuration.[FunctionArn]' --output text)
 ```
+FIXME: the role for this lambda needs S3 GetObject access
 
 Configure the S3 bucket event notifications to trigger the workflow function when a .htm file is uploaded:
 

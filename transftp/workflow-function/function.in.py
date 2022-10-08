@@ -136,6 +136,7 @@ def transform_results(transforms, results):
         def writelines(lines):
             l = []
             for s in lines:
+                s += '\n'
                 l.append(s.encode('utf-8'))
             f.writelines(l)
         writelines(results.template_header)
