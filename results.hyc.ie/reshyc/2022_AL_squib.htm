@@ -195,17 +195,19 @@ $(function () {
 <style>
 div.applicant-break {page-break-after:always;}
 </style>
-<h3 class="seriestitle">Results are provisional as of  7:58 on October  8, 2022</h3>
+<h3 class="seriestitle">Results are provisional as of 10:30 on October  9, 2022</h3>
 <h3 class="summarytitle" id="summarysquib_scratch">Squib Scratch Fleet</h3>
-<div class="caption summarycaption">Sailed: 4, Discards: 1, To count: 3, Rating system: TCF, Entries: 7, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 6, Discards: 1, To count: 5, Rating system: TCF, Entries: 7, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="12">
+<colgroup span="14">
 <col class="rank" />
 <col class="boat" />
 <col class="sailno" />
 <col class="club" />
 <col class="helmname" />
 <col class="rating" />
+<col class="race" />
+<col class="race" />
 <col class="race" />
 <col class="race" />
 <col class="race" />
@@ -225,6 +227,8 @@ div.applicant-break {page-break-after:always;}
 <th><a class="racelink" href="#r2squib_scratch">Race2</a></th>
 <th><a class="racelink" href="#r3squib_scratch">Race3</a></th>
 <th><a class="racelink" href="#r4squib_scratch">Race4</a></th>
+<th><a class="racelink" href="#r5squib_scratch">Race5</a></th>
+<th><a class="racelink" href="#r6squib_scratch">Race6</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
@@ -237,29 +241,17 @@ div.applicant-break {page-break-after:always;}
 <td>Killyleagh YC</td>
 <td>Robert Marshall</td>
 <td>1.000</td>
-<td class="rank2">(2.0)</td>
+<td class="rank2">2.0</td>
 <td class="rank2">2.0</td>
 <td class="rank1">1.0</td>
 <td class="rank1">1.0</td>
-<td>6.0</td>
-<td>4.0</td>
+<td class="rank3">(3.0)</td>
+<td class="rank2">2.0</td>
+<td>11.0</td>
+<td>8.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>2nd</td>
-<td>Cool Beans</td>
-<td>770</td>
-<td>HYC</td>
-<td>Thomas O'Reilly</td>
-<td>1.000</td>
-<td>(5.0)</td>
-<td class="rank3">3.0</td>
-<td class="rank2">2.0</td>
-<td class="rank2">2.0</td>
-<td>12.0</td>
-<td>7.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>3rd</td>
 <td>Tiger Roll</td>
 <td>80</td>
 <td>HYC</td>
@@ -269,25 +261,29 @@ div.applicant-break {page-break-after:always;}
 <td class="rank1">1.0</td>
 <td>4.0</td>
 <td class="rank3">(8.0 DNC)</td>
-<td>16.0</td>
-<td>8.0</td>
+<td>4.0</td>
+<td class="rank1">1.0</td>
+<td>21.0</td>
+<td>13.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>Cool Beans</td>
+<td>770</td>
+<td>HYC</td>
+<td>Thomas O'Reilly</td>
+<td>1.000</td>
+<td>(5.0)</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
+<td>18.0</td>
+<td>13.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>4th</td>
-<td>Tears For Fears</td>
-<td>801</td>
-<td>HYC</td>
-<td>Niall Monks</td>
-<td>1.000</td>
-<td>4.0</td>
-<td>5.0</td>
-<td class="rank3">3.0</td>
-<td class="rank3">(8.0 DNC)</td>
-<td>20.0</td>
-<td>12.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>5th</td>
 <td>Chatterbox</td>
 <td>864</td>
 <td>HYC</td>
@@ -297,8 +293,26 @@ div.applicant-break {page-break-after:always;}
 <td>(8.0 DNC)</td>
 <td>8.0 DNC</td>
 <td class="rank3">8.0 DNC</td>
-<td>25.0</td>
-<td>17.0</td>
+<td class="rank1">1.0</td>
+<td class="rank3">3.0</td>
+<td>29.0</td>
+<td>21.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>Tears For Fears</td>
+<td>801</td>
+<td>HYC</td>
+<td>Niall Monks</td>
+<td>1.000</td>
+<td>4.0</td>
+<td>5.0</td>
+<td class="rank3">3.0</td>
+<td class="rank3">(8.0 DNC)</td>
+<td>5.0</td>
+<td>5.0</td>
+<td>30.0</td>
+<td>22.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>6th</td>
@@ -311,8 +325,10 @@ div.applicant-break {page-break-after:always;}
 <td>6.0</td>
 <td>5.0</td>
 <td class="rank3">(8.0 DNC)</td>
-<td>25.0</td>
-<td>17.0</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>37.0</td>
+<td>29.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>7th</td>
@@ -325,21 +341,25 @@ div.applicant-break {page-break-after:always;}
 <td>4.0</td>
 <td>6.0</td>
 <td class="rank3">8.0 DNC</td>
-<td>26.0</td>
-<td>18.0</td>
+<td>7.0</td>
+<td>7.0</td>
+<td>40.0</td>
+<td>32.0</td>
 </tr>
 </tbody>
 </table>
 <h3 class="summarytitle" id="summarysquib_hph">Squib HPH Fleet</h3>
-<div class="caption summarycaption">Sailed: 4, Discards: 1, To count: 3, Rating system: NHC1, Entries: 7, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 6, Discards: 1, To count: 5, Rating system: NHC1, Entries: 7, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="12">
+<colgroup span="14">
 <col class="rank" />
 <col class="boat" />
 <col class="sailno" />
 <col class="club" />
 <col class="helmname" />
 <col class="rating" />
+<col class="race" />
+<col class="race" />
 <col class="race" />
 <col class="race" />
 <col class="race" />
@@ -359,6 +379,8 @@ div.applicant-break {page-break-after:always;}
 <th><a class="racelink" href="#r2squib_hph">Race2</a></th>
 <th><a class="racelink" href="#r3squib_hph">Race3</a></th>
 <th><a class="racelink" href="#r4squib_hph">Race4</a></th>
+<th><a class="racelink" href="#r5squib_hph">Race5</a></th>
+<th><a class="racelink" href="#r6squib_hph">Race6</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
@@ -372,11 +394,13 @@ div.applicant-break {page-break-after:always;}
 <td>Robert Marshall</td>
 <td>0.975</td>
 <td class="rank1">1.0</td>
-<td class="rank2">(2.0)</td>
+<td class="rank2">2.0</td>
 <td class="rank1">1.0</td>
 <td class="rank2">2.0</td>
-<td>6.0</td>
-<td>4.0</td>
+<td class="rank2">2.0</td>
+<td class="rank3">(3.0)</td>
+<td>11.0</td>
+<td>8.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>2nd</td>
@@ -389,8 +413,10 @@ div.applicant-break {page-break-after:always;}
 <td class="rank3">3.0</td>
 <td class="rank2">2.0</td>
 <td class="rank1">1.0</td>
-<td>10.0</td>
-<td>6.0</td>
+<td class="rank1">1.0</td>
+<td>4.0</td>
+<td>15.0</td>
+<td>11.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>3rd</td>
@@ -403,25 +429,13 @@ div.applicant-break {page-break-after:always;}
 <td class="rank1">1.0</td>
 <td>5.0</td>
 <td class="rank3">(8.0 DNC)</td>
-<td>16.0</td>
-<td>8.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>4th</td>
-<td>Tears For Fears</td>
-<td>801</td>
-<td>HYC</td>
-<td>Niall Monks</td>
-<td>1.000</td>
-<td class="rank3">3.0</td>
-<td>6.0</td>
 <td>4.0</td>
-<td class="rank3">(8.0 DNC)</td>
+<td class="rank1">1.0</td>
 <td>21.0</td>
 <td>13.0</td>
 </tr>
-<tr class="odd summaryrow">
-<td>5th</td>
+<tr class="even summaryrow">
+<td>4th</td>
 <td>Absolutely Fabulous</td>
 <td>792</td>
 <td>HYC</td>
@@ -431,8 +445,26 @@ div.applicant-break {page-break-after:always;}
 <td>5.0</td>
 <td class="rank3">3.0</td>
 <td class="rank3">(8.0 DNC)</td>
-<td>21.0</td>
-<td>13.0</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td>26.0</td>
+<td>18.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>Tears For Fears</td>
+<td>801</td>
+<td>HYC</td>
+<td>Niall Monks</td>
+<td>1.000</td>
+<td class="rank3">3.0</td>
+<td>6.0</td>
+<td>4.0</td>
+<td class="rank3">(8.0 DNC)</td>
+<td>5.0</td>
+<td>6.0</td>
+<td>32.0</td>
+<td>24.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>6th</td>
@@ -445,8 +477,10 @@ div.applicant-break {page-break-after:always;}
 <td>4.0</td>
 <td>6.0</td>
 <td class="rank3">8.0 DNC</td>
-<td>26.0</td>
-<td>18.0</td>
+<td>7.0</td>
+<td>5.0</td>
+<td>38.0</td>
+<td>30.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>7th</td>
@@ -459,8 +493,10 @@ div.applicant-break {page-break-after:always;}
 <td>(8.0 DNC)</td>
 <td>8.0 DNC</td>
 <td class="rank3">8.0 DNC</td>
-<td>30.0</td>
-<td>22.0</td>
+<td>6.0</td>
+<td>7.0</td>
+<td>43.0</td>
+<td>35.0</td>
 </tr>
 </tbody>
 </table>
@@ -920,10 +956,10 @@ Start: Squib, Finishes: Finish time, Time: 141500
 </tr>
 <tr class="even racerow">
 <td>3</td>
-<td>Tears For Fears</td>
-<td>801</td>
+<td>Chatterbox</td>
+<td>864</td>
 <td>HYC</td>
-<td>Niall Monks</td>
+<td>Jeff Kay</td>
 <td>1.000</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -933,10 +969,10 @@ Start: Squib, Finishes: Finish time, Time: 141500
 </tr>
 <tr class="odd racerow">
 <td>3</td>
-<td>Chatterbox</td>
-<td>864</td>
+<td>Tears For Fears</td>
+<td>801</td>
 <td>HYC</td>
-<td>Jeff Kay</td>
+<td>Niall Monks</td>
 <td>1.000</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -969,6 +1005,260 @@ Start: Squib, Finishes: Finish time, Time: 141500
 <td>DNC</td>
 <td>&nbsp;</td>
 <td>8.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r5squib_scratch">Race5 - Squib Scratch Fleet&nbsp;-&nbsp;8th October</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 141500
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="11">
+<col class="rank" />
+<col class="boat" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Boat Name</th>
+<th>Sail No</th>
+<th>Club</th>
+<th>Owner Name</th>
+<th>Rating</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Chatterbox</td>
+<td>864</td>
+<td>HYC</td>
+<td>Jeff Kay</td>
+<td>1.000</td>
+<td>141500</td>
+<td>14:36:15</td>
+<td>0:21:15</td>
+<td>0:21:15</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Cool Beans</td>
+<td>770</td>
+<td>HYC</td>
+<td>Thomas O'Reilly</td>
+<td>1.000</td>
+<td>141500</td>
+<td>14:36:40</td>
+<td>0:21:40</td>
+<td>0:21:40</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Slipstream</td>
+<td>102</td>
+<td>Killyleagh YC</td>
+<td>Robert Marshall</td>
+<td>1.000</td>
+<td>141500</td>
+<td>14:37:08</td>
+<td>0:22:08</td>
+<td>0:22:08</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>Tiger Roll</td>
+<td>80</td>
+<td>HYC</td>
+<td>HYC</td>
+<td>1.000</td>
+<td>141500</td>
+<td>14:37:30</td>
+<td>0:22:30</td>
+<td>0:22:30</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Tears For Fears</td>
+<td>801</td>
+<td>HYC</td>
+<td>Niall Monks</td>
+<td>1.000</td>
+<td>141500</td>
+<td>14:38:19</td>
+<td>0:23:19</td>
+<td>0:23:19</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Absolutely Fabulous</td>
+<td>792</td>
+<td>HYC</td>
+<td>Linda Darby</td>
+<td>1.000</td>
+<td>141500</td>
+<td>14:38:22</td>
+<td>0:23:22</td>
+<td>0:23:22</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Aurora</td>
+<td>671</td>
+<td>HYC</td>
+<td>Phil Merry</td>
+<td>1.000</td>
+<td>141500</td>
+<td>14:39:36</td>
+<td>0:24:36</td>
+<td>0:24:36</td>
+<td>7.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6squib_scratch">Race6 - Squib Scratch Fleet&nbsp;-&nbsp;8th October</h3>
+<div class="caption racecaption">
+Start: Start 3, Finishes: Finish time, Time: 152000
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="11">
+<col class="rank" />
+<col class="boat" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Boat Name</th>
+<th>Sail No</th>
+<th>Club</th>
+<th>Owner Name</th>
+<th>Rating</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Tiger Roll</td>
+<td>80</td>
+<td>HYC</td>
+<td>HYC</td>
+<td>1.000</td>
+<td>152000</td>
+<td>15:57:57</td>
+<td>0:37:57</td>
+<td>0:37:57</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Slipstream</td>
+<td>102</td>
+<td>Killyleagh YC</td>
+<td>Robert Marshall</td>
+<td>1.000</td>
+<td>152000</td>
+<td>16:00:10</td>
+<td>0:40:10</td>
+<td>0:40:10</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Chatterbox</td>
+<td>864</td>
+<td>HYC</td>
+<td>Jeff Kay</td>
+<td>1.000</td>
+<td>152000</td>
+<td>16:00:18</td>
+<td>0:40:18</td>
+<td>0:40:18</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>Cool Beans</td>
+<td>770</td>
+<td>HYC</td>
+<td>Thomas O'Reilly</td>
+<td>1.000</td>
+<td>152000</td>
+<td>16:01:31</td>
+<td>0:41:31</td>
+<td>0:41:31</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Tears For Fears</td>
+<td>801</td>
+<td>HYC</td>
+<td>Niall Monks</td>
+<td>1.000</td>
+<td>152000</td>
+<td>16:01:52</td>
+<td>0:41:52</td>
+<td>0:41:52</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Absolutely Fabulous</td>
+<td>792</td>
+<td>HYC</td>
+<td>Linda Darby</td>
+<td>1.000</td>
+<td>152000</td>
+<td>16:02:09</td>
+<td>0:42:09</td>
+<td>0:42:09</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Aurora</td>
+<td>671</td>
+<td>HYC</td>
+<td>Phil Merry</td>
+<td>1.000</td>
+<td>152000</td>
+<td>16:02:38</td>
+<td>0:42:38</td>
+<td>0:42:38</td>
+<td>7.0</td>
 </tr>
 </tbody>
 </table>
@@ -1428,11 +1718,11 @@ Start: Squib, Finishes: Finish time, Time: 141500
 </tr>
 <tr class="even racerow">
 <td>3</td>
-<td>Tears For Fears</td>
-<td>801</td>
+<td>Absolutely Fabulous</td>
+<td>792</td>
 <td>HYC</td>
-<td>Niall Monks</td>
-<td>0.993</td>
+<td>Linda Darby</td>
+<td>0.942</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>DNC</td>
@@ -1441,11 +1731,11 @@ Start: Squib, Finishes: Finish time, Time: 141500
 </tr>
 <tr class="odd racerow">
 <td>3</td>
-<td>Absolutely Fabulous</td>
-<td>792</td>
+<td>Tears For Fears</td>
+<td>801</td>
 <td>HYC</td>
-<td>Linda Darby</td>
-<td>0.942</td>
+<td>Niall Monks</td>
+<td>0.993</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>DNC</td>
@@ -1480,6 +1770,261 @@ Start: Squib, Finishes: Finish time, Time: 141500
 </tr>
 </tbody>
 </table>
+<h3 class="racetitle" id="r5squib_hph">Race5 - Squib HPH Fleet&nbsp;-&nbsp;8th October</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 141500
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="11">
+<col class="rank" />
+<col class="boat" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Boat Name</th>
+<th>Sail No</th>
+<th>Club</th>
+<th>Owner Name</th>
+<th>Rating</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Cool Beans</td>
+<td>770</td>
+<td>HYC</td>
+<td>Thomas O'Reilly</td>
+<td>0.975</td>
+<td>141500</td>
+<td>14:36:40</td>
+<td>0:21:40</td>
+<td>0:21:08</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Slipstream</td>
+<td>102</td>
+<td>Killyleagh YC</td>
+<td>Robert Marshall</td>
+<td>0.991</td>
+<td>141500</td>
+<td>14:37:08</td>
+<td>0:22:08</td>
+<td>0:21:56</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Absolutely Fabulous</td>
+<td>792</td>
+<td>HYC</td>
+<td>Linda Darby</td>
+<td>0.942</td>
+<td>141500</td>
+<td>14:38:22</td>
+<td>0:23:22</td>
+<td>0:22:01</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>Tiger Roll</td>
+<td>80</td>
+<td>HYC</td>
+<td>HYC</td>
+<td>1.003</td>
+<td>141500</td>
+<td>14:37:30</td>
+<td>0:22:30</td>
+<td>0:22:34</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Tears For Fears</td>
+<td>801</td>
+<td>HYC</td>
+<td>Niall Monks</td>
+<td>0.993</td>
+<td>141500</td>
+<td>14:38:19</td>
+<td>0:23:19</td>
+<td>0:23:09</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Chatterbox</td>
+<td>864</td>
+<td>HYC</td>
+<td>Jeff Kay</td>
+<td>1.113</td>
+<td>141500</td>
+<td>14:36:15</td>
+<td>0:21:15</td>
+<td>0:23:39</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Aurora</td>
+<td>671</td>
+<td>HYC</td>
+<td>Phil Merry</td>
+<td>0.965</td>
+<td>141500</td>
+<td>14:39:36</td>
+<td>0:24:36</td>
+<td>0:23:44</td>
+<td>7.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6squib_hph">Race6 - Squib HPH Fleet&nbsp;-&nbsp;8th October</h3>
+<div class="caption racecaption">
+Start: Start 3, Finishes: Finish time, Time: 152000
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="11">
+<col class="rank" />
+<col class="boat" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Boat Name</th>
+<th>Sail No</th>
+<th>Club</th>
+<th>Owner Name</th>
+<th>Rating</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Tiger Roll</td>
+<td>80</td>
+<td>HYC</td>
+<td>HYC</td>
+<td>1.002</td>
+<td>152000</td>
+<td>15:57:57</td>
+<td>0:37:57</td>
+<td>0:38:02</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Absolutely Fabulous</td>
+<td>792</td>
+<td>HYC</td>
+<td>Linda Darby</td>
+<td>0.947</td>
+<td>152000</td>
+<td>16:02:09</td>
+<td>0:42:09</td>
+<td>0:39:55</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Slipstream</td>
+<td>102</td>
+<td>Killyleagh YC</td>
+<td>Robert Marshall</td>
+<td>0.997</td>
+<td>152000</td>
+<td>16:00:10</td>
+<td>0:40:10</td>
+<td>0:40:03</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>Cool Beans</td>
+<td>770</td>
+<td>HYC</td>
+<td>Thomas O'Reilly</td>
+<td>0.985</td>
+<td>152000</td>
+<td>16:01:31</td>
+<td>0:41:31</td>
+<td>0:40:54</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Aurora</td>
+<td>671</td>
+<td>HYC</td>
+<td>Phil Merry</td>
+<td>0.961</td>
+<td>152000</td>
+<td>16:02:38</td>
+<td>0:42:38</td>
+<td>0:40:58</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Tears For Fears</td>
+<td>801</td>
+<td>HYC</td>
+<td>Niall Monks</td>
+<td>0.988</td>
+<td>152000</td>
+<td>16:01:52</td>
+<td>0:41:52</td>
+<td>0:41:22</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Chatterbox</td>
+<td>864</td>
+<td>HYC</td>
+<td>Jeff Kay</td>
+<td>1.109</td>
+<td>152000</td>
+<td>16:00:18</td>
+<td>0:40:18</td>
+<td>0:44:42</td>
+<td>7.0</td>
+</tr>
+</tbody>
+</table>
+
 <p class="hardleft"><a href="http://https://hyc.ie">https://hyc.ie</a><br /><a href="mailto:"></a></p>
 <p class="hardright"><a href="http://"></a><br /><a href="mailto:"></a></p>
 <p>Sailwave Scoring Software 2.29.0<br /><a href="http://www.sailwave.com">www.sailwave.com</a></p>
