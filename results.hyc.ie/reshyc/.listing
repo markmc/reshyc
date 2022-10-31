@@ -1,4 +1,4 @@
-drwxr-xr-x   10 1004     0           69632 Oct 03 21:37 .
+drwxr-xr-x   10 1004     0           69632 Oct 30 14:32 .
 drwxr-xr-x   52 1004     0            4096 Sep 26 07:49 ..
 -rw-rw-r--    1 1004     1004          237 Jul 27  2018 .htaccess_off
 drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 2011
@@ -911,6 +911,7 @@ drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 2018
 -rw-r--r--    1 1004     1004        25069 Jul 30 16:08 2022_club_series3_tuesat17scr.htm22_club_series3_tuesat17hph.htm
 -rw-r--r--    1 1004     1004        23490 Aug 17 13:35 2022_club_series3_tuesquibhph.htm
 -rw-r--r--    1 1004     1004        23435 Aug 17 13:35 2022_club_series3_tuesquibscr.htm
+-rw-r--r--    1 1004     1004        27039 Oct 30 15:32 2022_dinghy_regatta_overall.htm
 -rw-r--r--    1 1004     1004        14736 Aug 03 16:33 2022_open_420leinsters.htm
 -rw-r--r--    1 1004     1004        16346 Mar 20  2022 2022_open_BrightMtrsSpringBrassMonkey_Class1HPH.htm
 -rw-r--r--    1 1004     1004         9455 Feb 21  2022 2022_open_Bright_Mtrs_Spring_Brass_Monkey Class1HPH.htm
@@ -964,6 +965,7 @@ drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 2018
 -rw-r--r--    1 1004     1004        15667 Mar 07  2022 2022_open_laserfrostspring_rsaero.htm
 -rw-r--r--    1 1004     1004        31871 Sep 11 12:25 2022_open_p22.htm
 -rw-r--r--    1 1004     1004        31752 Sep 11 12:24 2022_open_p22scr.htm
+-rw-r--r--    1 1004     1004        35216 Oct 30 16:01 2022_open_rsaero_overall.htm
 -rw-r--r--    1 1004     1004        43157 Aug 14 12:43 2022_open_squibeasterns.htm
 -rw-r--r--    1 1004     1004        31514 Aug 14 08:41 2022_open_squibeasterns.htmtuesquibhph.htm
 -rw-r--r--    1 1004     1004        44511 Jun 05 18:41 2022_open_wave_class0.htm
