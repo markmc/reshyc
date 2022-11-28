@@ -13,20 +13,16 @@
 <title>Sailwave results for Brass Monkeys Series Winter 2022 at Howth Yacht Club <br> 2022</title>
 
 <style type="text/css">
-body {font: 72% arial, helvetica, sans-serif; text-align: center;}
-.hardleft  {text-align: left; float: left;  margin: 15px 0 15px 25px;}
+body {font: 80% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0  15px 25px;}
 .hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
-table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #fff solid;}
-td, th {padding: 4px; border: 2px #fff solid; vertical-align: top;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #999 solid;}
+td, th {padding: 4px; border: 1px #999 solid; vertical-align: top;}
 .caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
-h1 {font-size: 1.6em;}
-h2 {font-size: 1.4em;}
-h3 {font-size: 1.2em;}
 p {text-align: center;}
-th {background-color: #aaf;}
 .contents {text-align: left; margin-left: 20%;}
-.even {background-color: #bbf;}
-.odd {background-color: #ddf;}
+.race {background-color: #eee;}
+.odd {background-color: #eef;}
 .natflag {border: 1px #999 solid;}
 .nattext {font-size: 0.8em;}
 .place1 {font-weight: bold; background-color: #ffffaa;}
@@ -55,6 +51,53 @@ function swGetURLArgs() {
   return result;
 }
 
+//
+//  name=HighlightWins3v3
+//  dependencies=jQuery
+//  description=Highlight winning scores in summary tables.
+//  author=Jon Eskdale based on an idea by Colin Jenkins
+//  date=2016-07-04
+//  version=3.0  For use with Sailwave from V2.22.x
+//  Requires the following lines in the Results.htm file (Results.htm is in the Templates directory)
+//  string.set("summary.col.race.rank1.td",   "rank1")
+//  string.set("summary.col.race.rank2.td",   "rank2")
+//  string.set("summary.col.race.rank3.td",   "rank3")
+
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var selectorRank1 = '.rank1';
+var selectorRank2 = '.rank2';
+var selectorRank3 = '.rank3';
+
+// Results with these codes will not get highlighted add or remove codes to your choice
+var ignoreText   = /^(?!.*\b(DNC|DNF|DNS|OCS|BFD|UFD|RET|DSQ|DGM|DNE)\b).*/i
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var winsColour   = '#ffd700';
+var twoColour    = '#6a91c5';
+var threeColour  = '#da6841';
+
+
+// Change the background color for cells with class of rank1-3 and don't have a code specified
+$(function () {
+
+  $(selectorRank1).filter(function() {
+    return ignoreText.test($(this).text());
+  }).css("background", winsColour);
+  $(selectorRank2).filter(function() {
+        return ignoreText.test($(this).text());
+  }).css("background", twoColour);
+  $(selectorRank3).filter(function() {
+        return ignoreText.test($(this).text());
+  }).css("background", threeColour);
+
+});
+});
 </script>
 
 </head>
@@ -69,7 +112,7 @@ function swGetURLArgs() {
 
 <tr>
 <td width="30%">
-<img style="display:block; height:100px;"  src="https://hyc.ie/reshyc/images/hyc.jpg" alt="venue burgee" />
+<img style="display:block; height:100px;"  src="https://hyc.ie/assets/logo-5a615b18e52275b60e166edcca88c6c4.png" alt="venue burgee" />
 </td>
 
 <td width="40%" align="center">
@@ -88,16 +131,17 @@ function swGetURLArgs() {
 <style>
 div.applicant-break {page-break-after:always;}
 </style>
-<h3 class="seriestitle">Provisional Results as of 11:10 on November 13, 2022</h3>
+<h3 class="seriestitle">Provisional Results as of 15:28 on November 20, 2022</h3>
 <h3 class="summarytitle" id="summaryclass_1_hph">Class 1 HPH Fleet</h3>
-<div class="caption summarycaption">Sailed: 1, Discards: 0, To count: 1, Rating system: NHC1, Entries: 10, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: NHC1, Entries: 10, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="8">
+<colgroup span="9">
 <col class="rank" />
 <col class="sailno" />
 <col class="boat" />
 <col class="helmname" />
 <col class="rating" />
+<col class="race" />
 <col class="race" />
 <col class="total" />
 <col class="nett" />
@@ -110,6 +154,7 @@ div.applicant-break {page-break-after:always;}
 <th>Owner Name</th>
 <th>TCF</th>
 <th><a class="racelink" href="#r1class_1_hph">R1</a></th>
+<th><a class="racelink" href="#r2class_1_hph">R2</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
@@ -122,8 +167,9 @@ div.applicant-break {page-break-after:always;}
 <td>Kevin O'Byrne</td>
 <td>0.930</td>
 <td class="rank1">1.0</td>
-<td>1.0</td>
-<td>1.0</td>
+<td class="rank3">3.5</td>
+<td>4.5</td>
+<td>4.5</td>
 </tr>
 <tr class="even summaryrow">
 <td>2nd</td>
@@ -132,8 +178,9 @@ div.applicant-break {page-break-after:always;}
 <td>Declan & Peter McCabe</td>
 <td>0.930</td>
 <td class="rank2">2.0</td>
-<td>2.0</td>
-<td>2.0</td>
+<td class="rank3">3.5</td>
+<td>5.5</td>
+<td>5.5</td>
 </tr>
 <tr class="odd summaryrow">
 <td>3rd</td>
@@ -142,90 +189,99 @@ div.applicant-break {page-break-after:always;}
 <td>Joe Carton</td>
 <td>0.940</td>
 <td class="rank3">3.0</td>
-<td>3.0</td>
-<td>3.0</td>
+<td>6.0</td>
+<td>9.0</td>
+<td>9.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>4th</td>
-<td>8151</td>
-<td>Jokers Wild</td>
-<td>Flood / Greene</td>
-<td>0.930</td>
-<td>4.0</td>
-<td>4.0</td>
-<td>4.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>5th</td>
-<td>633</td>
-<td>Pepsi</td>
-<td>Anderson / Tattersall</td>
-<td>0.930</td>
-<td>5.0</td>
-<td>5.0</td>
-<td>5.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>6th</td>
 <td>956</td>
 <td>C'est La Vie</td>
 <td>Flannelly / Spain / Staines</td>
 <td>0.930</td>
 <td>6.0</td>
-<td>6.0</td>
-<td>6.0</td>
+<td>5.0</td>
+<td>11.0</td>
+<td>11.0</td>
 </tr>
 <tr class="odd summaryrow">
-<td>7th</td>
+<td>5th</td>
 <td>4077</td>
 <td>Tiger</td>
 <td>Harris / Hughes</td>
 <td>1.030</td>
 <td>11.0 DNC</td>
-<td>11.0</td>
-<td>11.0</td>
+<td class="rank1">1.0</td>
+<td>12.0</td>
+<td>12.0</td>
 </tr>
 <tr class="even summaryrow">
-<td>7th</td>
-<td>17793</td>
-<td>Chinook</td>
-<td>Brian Skehan</td>
-<td>0.920</td>
-<td>11.0 DNC</td>
-<td>11.0</td>
-<td>11.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>7th</td>
+<td>6th</td>
 <td>2070</td>
 <td>Out & About</td>
 <td>Terry McCoy</td>
 <td>0.935</td>
 <td>11.0 DNC</td>
-<td>11.0</td>
-<td>11.0</td>
+<td class="rank2">2.0</td>
+<td>13.0</td>
+<td>13.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>8151</td>
+<td>Jokers Wild</td>
+<td>Flood / Greene</td>
+<td>0.930</td>
+<td>4.0</td>
+<td>11.0 DNC</td>
+<td>15.0</td>
+<td>15.0</td>
 </tr>
 <tr class="even summaryrow">
-<td>7th</td>
+<td>8th</td>
+<td>633</td>
+<td>Pepsi</td>
+<td>Anderson / Tattersall</td>
+<td>0.930</td>
+<td>5.0</td>
+<td>11.0 DNC</td>
+<td>16.0</td>
+<td>16.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>9th</td>
+<td>17793</td>
+<td>Chinook</td>
+<td>Brian Skehan</td>
+<td>0.920</td>
+<td>11.0 DNC</td>
+<td>7.0</td>
+<td>18.0</td>
+<td>18.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>10th</td>
 <td>1603</td>
 <td>Timballoo</td>
 <td>Lundy/Dunne</td>
 <td>0.900</td>
 <td>11.0 DNC</td>
-<td>11.0</td>
-<td>11.0</td>
+<td>11.0 DNC</td>
+<td>22.0</td>
+<td>22.0</td>
 </tr>
 </tbody>
 </table>
 <h3 class="summarytitle" id="summaryclass_2_hph">Class 2 HPH Fleet</h3>
-<div class="caption summarycaption">Sailed: 1, Discards: 0, To count: 1, Rating system: NHC1, Entries: 5, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: NHC1, Entries: 5, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="8">
+<colgroup span="9">
 <col class="rank" />
 <col class="sailno" />
 <col class="boat" />
 <col class="helmname" />
 <col class="rating" />
+<col class="race" />
 <col class="race" />
 <col class="total" />
 <col class="nett" />
@@ -238,6 +294,7 @@ div.applicant-break {page-break-after:always;}
 <th>Owner Name</th>
 <th>TCF</th>
 <th><a class="racelink" href="#r1class_2_hph">R1</a></th>
+<th><a class="racelink" href="#r2class_2_hph">R2</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
@@ -245,65 +302,71 @@ div.applicant-break {page-break-after:always;}
 <tbody>
 <tr class="odd summaryrow">
 <td>1st</td>
-<td>1543</td>
-<td>Indian</td>
-<td>Simon Knowles</td>
-<td>1.020</td>
-<td class="rank1">1.0</td>
-<td>1.0</td>
-<td>1.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>2nd</td>
 <td>7495</td>
 <td>Maximus</td>
 <td>Paddy Kyne</td>
-<td>0.913</td>
-<td class="rank2">2.0</td>
-<td>2.0</td>
-<td>2.0</td>
+<td>0.925</td>
+<td class="rank3">3.0</td>
+<td class="rank1">1.0</td>
+<td>4.0</td>
+<td>4.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>1543</td>
+<td>Indian</td>
+<td>Simon Knowles</td>
+<td>1.025</td>
+<td class="rank1">1.0</td>
+<td class="rank3">3.0</td>
+<td>4.0</td>
+<td>4.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>3rd</td>
-<td>1551</td>
-<td>Mojo</td>
-<td>Pat O'Neill</td>
-<td>0.955</td>
-<td class="rank3">3.0</td>
-<td>3.0</td>
-<td>3.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>4th</td>
 <td>971</td>
 <td>Leeuwin</td>
 <td>Murray / Burke</td>
-<td>0.905</td>
+<td>0.890</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
 <td>4.0</td>
 <td>4.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>1551</td>
+<td>Mojo</td>
+<td>Pat O'Neill</td>
+<td>0.950</td>
 <td>4.0</td>
+<td>6.0 DNC</td>
+<td>10.0</td>
+<td>10.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>5th</td>
 <td>1103</td>
 <td>Viking</td>
 <td>Kevin Darmody</td>
-<td>0.900</td>
+<td>0.910</td>
 <td>6.0 DNC</td>
-<td>6.0</td>
-<td>6.0</td>
+<td>5.0 DNF</td>
+<td>11.0</td>
+<td>11.0</td>
 </tr>
 </tbody>
 </table>
 <h3 class="summarytitle" id="summaryclass_3_hph">Class 3 HPH Fleet</h3>
-<div class="caption summarycaption">Sailed: 1, Discards: 0, To count: 1, Rating system: NHC1, Entries: 7, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: NHC1, Entries: 7, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="8">
+<colgroup span="9">
 <col class="rank" />
 <col class="sailno" />
 <col class="boat" />
 <col class="helmname" />
 <col class="rating" />
+<col class="race" />
 <col class="race" />
 <col class="total" />
 <col class="nett" />
@@ -316,6 +379,7 @@ div.applicant-break {page-break-after:always;}
 <th>Owner Name</th>
 <th>TCF</th>
 <th><a class="racelink" href="#r1class_3_hph">R1</a></th>
+<th><a class="racelink" href="#r2class_3_hph">R2</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
@@ -328,58 +392,64 @@ div.applicant-break {page-break-after:always;}
 <td>Douglas / Keane</td>
 <td>0.930</td>
 <td class="rank1">1.0</td>
-<td>1.0</td>
-<td>1.0</td>
+<td class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>2nd</td>
-<td>9541</td>
-<td>K-Nine</td>
-<td>Mulvihill / Murphy</td>
-<td>0.920</td>
-<td class="rank2">2.0</td>
-<td>2.0</td>
-<td>2.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>3rd</td>
-<td>1202</td>
-<td>Thar Saile</td>
-<td>Caoimhin O'Laoi</td>
-<td>0.905</td>
-<td class="rank3">3.0</td>
-<td>3.0</td>
-<td>3.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>4th</td>
-<td>11311</td>
-<td>Phixius</td>
-<td>Ray, Costello, Quigley, McShera</td>
-<td>0.900</td>
-<td>4.0</td>
-<td>4.0</td>
-<td>4.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>5th</td>
-<td>3337</td>
-<td>Helm's Deep</td>
-<td>Paul Harrison</td>
-<td>0.905</td>
-<td>5.0</td>
-<td>5.0</td>
-<td>5.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>6th</td>
 <td>355</td>
 <td>White Spirit</td>
 <td>Terry Kelly</td>
-<td>0.890</td>
+<td>0.825</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td>5.0</td>
+<td>5.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>9541</td>
+<td>K-Nine</td>
+<td>Mulvihill / Murphy</td>
+<td>0.905</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
 <td>6.0</td>
 <td>6.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>1202</td>
+<td>Thar Saile</td>
+<td>Caoimhin O'Laoi</td>
+<td>0.895</td>
+<td>4.0</td>
+<td class="rank3">3.0</td>
+<td>7.0</td>
+<td>7.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>11311</td>
+<td>Phixius</td>
+<td>Ray, Costello, Quigley, McShera</td>
+<td>0.870</td>
 <td>6.0</td>
+<td>5.0</td>
+<td>11.0</td>
+<td>11.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>3337</td>
+<td>Helm's Deep</td>
+<td>Paul Harrison</td>
+<td>0.860</td>
+<td>5.0</td>
+<td>8.0 DNC</td>
+<td>13.0</td>
+<td>13.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>7th</td>
@@ -388,8 +458,9 @@ div.applicant-break {page-break-after:always;}
 <td>Connell / Costello</td>
 <td>0.890</td>
 <td>8.0 DNC</td>
-<td>8.0</td>
-<td>8.0</td>
+<td>8.0 DNC</td>
+<td>16.0</td>
+<td>16.0</td>
 </tr>
 </tbody>
 </table>
@@ -511,18 +582,6 @@ Start: Start 2, Finishes: Finish time, Time: 10.35.00
 </tr>
 <tr class="even racerow">
 <td>7</td>
-<td>17793</td>
-<td>Chinook</td>
-<td>Brian Skehan</td>
-<td>0.920</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNC</td>
-<td>&nbsp;</td>
-<td>11.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
 <td>2070</td>
 <td>Out & About</td>
 <td>Terry McCoy</td>
@@ -533,8 +592,174 @@ Start: Start 2, Finishes: Finish time, Time: 10.35.00
 <td>&nbsp;</td>
 <td>11.0</td>
 </tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>17793</td>
+<td>Chinook</td>
+<td>Brian Skehan</td>
+<td>0.920</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>11.0</td>
+</tr>
 <tr class="even racerow">
 <td>7</td>
+<td>1603</td>
+<td>Timballoo</td>
+<td>Lundy/Dunne</td>
+<td>0.900</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>11.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r2class_1_hph">R2 - Class 1 HPH Fleet&nbsp;-&nbsp;20th November&nbsp;at&nbsp;10.30</h3>
+<div class="caption racecaption">
+Start: Class 1, Finishes: Finish time, Time: 103500
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat Name</th>
+<th>Owner Name</th>
+<th>TCF</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>4077</td>
+<td>Tiger</td>
+<td>Harris / Hughes</td>
+<td>1.030</td>
+<td>103500</td>
+<td>11:44:14</td>
+<td>1:09:14</td>
+<td>1:11:19</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>2070</td>
+<td>Out & About</td>
+<td>Terry McCoy</td>
+<td>0.935</td>
+<td>103500</td>
+<td>11:53:27</td>
+<td>1:18:27</td>
+<td>1:13:21</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>1430</td>
+<td>Mary Ellen</td>
+<td>Kevin O'Byrne</td>
+<td>0.932</td>
+<td>103500</td>
+<td>11:56:46</td>
+<td>1:21:46</td>
+<td>1:16:12</td>
+<td>3.5</td>
+</tr>
+<tr class="even racerow">
+<td>3</td>
+<td>1343</td>
+<td>Arcturus</td>
+<td>Declan & Peter McCabe</td>
+<td>0.931</td>
+<td>103500</td>
+<td>11:56:51</td>
+<td>1:21:51</td>
+<td>1:16:12</td>
+<td>3.5</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>956</td>
+<td>C'est La Vie</td>
+<td>Flannelly / Spain / Staines</td>
+<td>0.929</td>
+<td>103500</td>
+<td>11:57:30</td>
+<td>1:22:30</td>
+<td>1:16:39</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>657</td>
+<td>Voyager</td>
+<td>Joe Carton</td>
+<td>0.940</td>
+<td>103500</td>
+<td>11:59:26</td>
+<td>1:24:26</td>
+<td>1:19:22</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>17793</td>
+<td>Chinook</td>
+<td>Brian Skehan</td>
+<td>0.920</td>
+<td>103500</td>
+<td>12:03:04</td>
+<td>1:28:04</td>
+<td>1:21:01</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>8151</td>
+<td>Jokers Wild</td>
+<td>Flood / Greene</td>
+<td>0.929</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>11.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>633</td>
+<td>Pepsi</td>
+<td>Anderson / Tattersall</td>
+<td>0.929</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
 <td>1603</td>
 <td>Timballoo</td>
 <td>Lundy/Dunne</td>
@@ -584,47 +809,47 @@ Start: Start 3, Finishes: Finish time, Time: 10.40.00
 <td>1543</td>
 <td>Indian</td>
 <td>Simon Knowles</td>
-<td>1.020</td>
+<td>1.025</td>
 <td>10.40.00</td>
 <td>12:01:53</td>
 <td>1.21.53</td>
-<td>1.23.31</td>
+<td>1.23.56</td>
 <td>1.0</td>
 </tr>
 <tr class="even racerow">
 <td>2</td>
-<td>7495</td>
-<td>Maximus</td>
-<td>Paddy Kyne</td>
-<td>0.913</td>
+<td>971</td>
+<td>Leeuwin</td>
+<td>Murray / Burke</td>
+<td>0.890</td>
 <td>10.40.00</td>
-<td>12:12:08</td>
-<td>1.32.08</td>
-<td>1.24.07</td>
+<td>12:15:38</td>
+<td>1.35.38</td>
+<td>1.25.07</td>
 <td>2.0</td>
 </tr>
 <tr class="odd racerow">
 <td>3</td>
-<td>1551</td>
-<td>Mojo</td>
-<td>Pat O'Neill</td>
-<td>0.955</td>
+<td>7495</td>
+<td>Maximus</td>
+<td>Paddy Kyne</td>
+<td>0.925</td>
 <td>10.40.00</td>
-<td>12:10:22</td>
-<td>1.30.22</td>
-<td>1.26.18</td>
+<td>12:12:08</td>
+<td>1.32.08</td>
+<td>1.25.13</td>
 <td>3.0</td>
 </tr>
 <tr class="even racerow">
 <td>4</td>
-<td>971</td>
-<td>Leeuwin</td>
-<td>Murray / Burke</td>
-<td>0.905</td>
+<td>1551</td>
+<td>Mojo</td>
+<td>Pat O'Neill</td>
+<td>0.950</td>
 <td>10.40.00</td>
-<td>12:15:38</td>
-<td>1.35.38</td>
-<td>1.26.33</td>
+<td>12:10:22</td>
+<td>1.30.22</td>
+<td>1.25.51</td>
 <td>4.0</td>
 </tr>
 <tr class="odd racerow">
@@ -632,7 +857,101 @@ Start: Start 3, Finishes: Finish time, Time: 10.40.00
 <td>1103</td>
 <td>Viking</td>
 <td>Kevin Darmody</td>
-<td>0.900</td>
+<td>0.910</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>6.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r2class_2_hph">R2 - Class 2 HPH Fleet&nbsp;-&nbsp;20th November&nbsp;at&nbsp;10.30</h3>
+<div class="caption racecaption">
+Start: Class 2, Finishes: Finish time, Time: 104000
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat Name</th>
+<th>Owner Name</th>
+<th>TCF</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>7495</td>
+<td>Maximus</td>
+<td>Paddy Kyne</td>
+<td>0.925</td>
+<td>104000</td>
+<td>11:55:22</td>
+<td>1:15:22</td>
+<td>1:09:43</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>971</td>
+<td>Leeuwin</td>
+<td>Murray / Burke</td>
+<td>0.890</td>
+<td>104000</td>
+<td>11:58:42</td>
+<td>1:18:42</td>
+<td>1:10:03</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>1543</td>
+<td>Indian</td>
+<td>Simon Knowles</td>
+<td>1.027</td>
+<td>104000</td>
+<td>11:49:24</td>
+<td>1:09:24</td>
+<td>1:11:16</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>1103</td>
+<td>Viking</td>
+<td>Kevin Darmody</td>
+<td>0.910</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNF</td>
+<td>&nbsp;</td>
+<td>5.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>1551</td>
+<td>Mojo</td>
+<td>Pat O'Neill</td>
+<td>0.949</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>DNC</td>
@@ -690,35 +1009,35 @@ Start: Start 1, Finishes: Finish time, Time: 10.30
 <td>9541</td>
 <td>K-Nine</td>
 <td>Mulvihill / Murphy</td>
-<td>0.920</td>
+<td>0.905</td>
 <td>10.30</td>
 <td>11.48.14</td>
 <td>1.18.14</td>
-<td>1.11.58</td>
+<td>1.10.48</td>
 <td>2.0</td>
 </tr>
 <tr class="odd racerow">
 <td>3</td>
-<td>1202</td>
-<td>Thar Saile</td>
-<td>Caoimhin O'Laoi</td>
-<td>0.905</td>
+<td>355</td>
+<td>White Spirit</td>
+<td>Terry Kelly</td>
+<td>0.825</td>
 <td>10.30</td>
-<td>11.49.54</td>
-<td>1.19.54</td>
-<td>1.12.19</td>
+<td>11:56:22</td>
+<td>1.26.22</td>
+<td>1.11.15</td>
 <td>3.0</td>
 </tr>
 <tr class="even racerow">
 <td>4</td>
-<td>11311</td>
-<td>Phixius</td>
-<td>Ray, Costello, Quigley, McShera</td>
-<td>0.900</td>
+<td>1202</td>
+<td>Thar Saile</td>
+<td>Caoimhin O'Laoi</td>
+<td>0.895</td>
 <td>10.30</td>
-<td>11:53:25</td>
-<td>1.23.25</td>
-<td>1.15.05</td>
+<td>11.49.54</td>
+<td>1.19.54</td>
+<td>1.11.31</td>
 <td>4.0</td>
 </tr>
 <tr class="odd racerow">
@@ -726,27 +1045,145 @@ Start: Start 1, Finishes: Finish time, Time: 10.30
 <td>3337</td>
 <td>Helm's Deep</td>
 <td>Paul Harrison</td>
-<td>0.905</td>
+<td>0.860</td>
 <td>10.30</td>
 <td>11:54:10</td>
 <td>1.24.10</td>
-<td>1.16.10</td>
+<td>1.12.23</td>
 <td>5.0</td>
 </tr>
 <tr class="even racerow">
 <td>6</td>
-<td>355</td>
-<td>White Spirit</td>
-<td>Terry Kelly</td>
-<td>0.890</td>
+<td>11311</td>
+<td>Phixius</td>
+<td>Ray, Costello, Quigley, McShera</td>
+<td>0.870</td>
 <td>10.30</td>
-<td>11:56:22</td>
-<td>1.26.22</td>
-<td>1.16.52</td>
+<td>11:53:25</td>
+<td>1.23.25</td>
+<td>1.12.34</td>
 <td>6.0</td>
 </tr>
 <tr class="odd racerow">
 <td>7</td>
+<td>1520</td>
+<td>ETE</td>
+<td>Connell / Costello</td>
+<td>0.890</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r2class_3_hph">R2 - Class 3 HPH Fleet&nbsp;-&nbsp;20th November&nbsp;at&nbsp;10.30</h3>
+<div class="caption racecaption">
+Start: Class 3, Finishes: Finish time, Time: 103000
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>Boat Name</th>
+<th>Owner Name</th>
+<th>TCF</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>791</td>
+<td>Shenanigans</td>
+<td>Douglas / Keane</td>
+<td>0.933</td>
+<td>103000</td>
+<td>11:41:21</td>
+<td>1:11:21</td>
+<td>1:06:34</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>355</td>
+<td>White Spirit</td>
+<td>Terry Kelly</td>
+<td>0.824</td>
+<td>103000</td>
+<td>11:52:11</td>
+<td>1:22:11</td>
+<td>1:07:43</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>1202</td>
+<td>Thar Saile</td>
+<td>Caoimhin O'Laoi</td>
+<td>0.894</td>
+<td>103000</td>
+<td>11:45:48</td>
+<td>1:15:48</td>
+<td>1:07:46</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>9541</td>
+<td>K-Nine</td>
+<td>Mulvihill / Murphy</td>
+<td>0.906</td>
+<td>103000</td>
+<td>12:00:42</td>
+<td>1:30:42</td>
+<td>1:22:10</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>11311</td>
+<td>Phixius</td>
+<td>Ray, Costello, Quigley, McShera</td>
+<td>0.869</td>
+<td>103000</td>
+<td>12:10:13</td>
+<td>1:40:13</td>
+<td>1:27:05</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>3337</td>
+<td>Helm's Deep</td>
+<td>Paul Harrison</td>
+<td>0.859</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>6</td>
 <td>1520</td>
 <td>ETE</td>
 <td>Connell / Costello</td>
