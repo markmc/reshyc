@@ -1,4 +1,4 @@
-drwxr-xr-x   10 1004     0           69632 Nov 13 09:10 .
+drwxr-xr-x   11 1004     0           69632 Nov 28 10:02 .
 drwxr-xr-x   52 1004     0            4096 Sep 26 07:49 ..
 -rw-rw-r--    1 1004     1004          237 Jul 27  2018 .htaccess_off
 drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 2011
@@ -810,6 +810,7 @@ drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 2018
 -rw-r--r--    1 1004     1004        26324 Jul 27  2021 2021_open_nationals_pup_scr.htm
 -rw-r--r--    1 1004     1004        33954 Sep 06  2021 2021_open_squib_eastern_scr.htm
 -rw-r--r--    1 1004     1004        10942 Aug 22  2021 2021_open_x302_irc.htm
+drwxr-xr-x    2 1004     1004        12288 Nov 28 10:09 2022
 -rw-r--r--    1 1004     1004         4151 Jun 03 11:09 2022-club-series2-class1hph.htm
 -rw-r--r--    1 1004     1004         4150 Jun 03 11:10 2022-club-series2-class1irc.htm
 -rw-r--r--    1 1004     1004         3109 Jun 03 11:11 2022-club-series2-class2hph.htm

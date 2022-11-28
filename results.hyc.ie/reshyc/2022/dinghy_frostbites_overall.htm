@@ -1,0 +1,2032 @@
+
+
+
+<!doctype html>
+
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta name="description" content="sailwave results">
+<meta name="viewport" content="width=device-width">
+
+<title>Sailwave results for HYC Dinghy Frostbite 2022 / 2023 - pre Christmas at Howth YC 2022</title>
+
+<style type="text/css">
+body {font: 80% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0  15px 25px;}
+.hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #999 solid;}
+td, th {padding: 4px; border: 1px #999 solid; vertical-align: top;}
+.caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
+p {text-align: center;}
+.contents {text-align: left; margin-left: 20%;}
+.race {background-color: #eee;}
+.odd {background-color: #eef;}
+.natflag {border: 1px #999 solid;}
+.nattext {font-size: 0.8em;}
+.place1 {font-weight: bold; background-color: #ffffaa;}
+.place2 {font-weight: bold; background-color: #aaaaff;}
+.place3 {font-weight: bold; background-color: #ffaaaa;}
+.placen {}
+table.headertable {border: 0px;}
+table.headertable td{border: 0px;}
+</style>
+
+<script type="text/javascript">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+function swGetURLArgs() {
+
+  var url = location.href;
+  var qs  = url.substring(url.indexOf('?') + 1).split('&');
+
+  for(var i = 0, result = {}; i < qs.length; i++) {
+    qs[i]            = qs[i].split('=');
+    result[qs[i][0]] = decodeURIComponent(qs[i][1]);
+  }
+
+  return result;
+}
+
+//
+//  name=HighlightWins3v3
+//  dependencies=jQuery
+//  description=Highlight winning scores in summary tables.
+//  author=Jon Eskdale based on an idea by Colin Jenkins
+//  date=2016-07-04
+//  version=3.0  For use with Sailwave from V2.22.x
+//  Requires the following lines in the Results.htm file (Results.htm is in the Templates directory)
+//  string.set("summary.col.race.rank1.td",   "rank1")
+//  string.set("summary.col.race.rank2.td",   "rank2")
+//  string.set("summary.col.race.rank3.td",   "rank3")
+
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var selectorRank1 = '.rank1';
+var selectorRank2 = '.rank2';
+var selectorRank3 = '.rank3';
+
+// Results with these codes will not get highlighted add or remove codes to your choice
+var ignoreText   = /^(?!.*\b(DNC|DNF|DNS|OCS|BFD|UFD|RET|DSQ|DGM|DNE)\b).*/i
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var winsColour   = '#ffd700';
+var twoColour    = '#6a91c5';
+var threeColour  = '#da6841';
+
+
+// Change the background color for cells with class of rank1-3 and don't have a code specified
+$(function () {
+
+  $(selectorRank1).filter(function() {
+    return ignoreText.test($(this).text());
+  }).css("background", winsColour);
+  $(selectorRank2).filter(function() {
+        return ignoreText.test($(this).text());
+  }).css("background", twoColour);
+  $(selectorRank3).filter(function() {
+        return ignoreText.test($(this).text());
+  }).css("background", threeColour);
+
+});
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+</header>
+<table class="headertable" cellspacing="0" width="100%" cellpadding="0" border="0">
+<tbody>
+<div id="wrap">
+
+<tr>
+<td width="30%">
+<img style="display:block; height:100px;"  src="https://hyc.ie/assets/logo-5a615b18e52275b60e166edcca88c6c4.png" alt="venue burgee" />
+</td>
+
+<td width="40%" align="center">
+<h1>HYC Dinghy Frostbite 2022 / 2023 - pre Christmas</h1>
+<h2>Howth YC</h2>
+</td>
+
+<td width="30%">
+</td>
+</tr>
+</tbody>
+</table>
+
+<div style="clear:both;"></div>
+
+<style>
+div.applicant-break {page-break-after:always;}
+</style>
+<h3 class="seriestitle">Results are provisional as of 11:42 on November 28, 2022</h3>
+<h3 class="summarytitle" id="summaryilca_4">ILCA 4 Fleet</h3>
+<div class="caption summarycaption">Sailed: 6, Discards: 1, To count: 5, Entries: 11, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="13">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>Rating</th>
+<th>R1</th>
+<th>R2</th>
+<th>R3</th>
+<th>R4</th>
+<th><a class="racelink" href="#r5ilca_4">R5</a></th>
+<th><a class="racelink" href="#r6ilca_4">R6</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>216597</td>
+<td>Riaghan Boardman</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>(5.0)</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank3">3.0</td>
+<td>4.0</td>
+<td>16.0</td>
+<td>11.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>201566</td>
+<td>Cillian Twomey</td>
+<td>Howth YC</td>
+<td>1</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank3">(12.0 DNC)</td>
+<td class="rank3">12.0 DNC</td>
+<td class="rank1">1.0</td>
+<td class="rank2">2.0</td>
+<td>29.0</td>
+<td>17.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>210354</td>
+<td>Aisling Kelly</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>6.0</td>
+<td>4.5</td>
+<td class="rank3">(12.0 DNC)</td>
+<td class="rank3">12.0 DNC</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td>37.5</td>
+<td>25.5</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>191325</td>
+<td>Glenda Gallagher</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>7.0</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>(12.0 DNC)</td>
+<td>12.0 DNC</td>
+<td>38.0</td>
+<td>26.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>8</td>
+<td>Oisin Kelly</td>
+<td>Howth YC</td>
+<td>1</td>
+<td class="rank2">2.0</td>
+<td>7.0</td>
+<td class="rank3">(12.0 DNC)</td>
+<td class="rank3">12.0 DNC</td>
+<td>4.0</td>
+<td class="rank3">3.0</td>
+<td>40.0</td>
+<td>28.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>204761</td>
+<td>Ciara McMahon</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>4.0</td>
+<td>4.5</td>
+<td class="rank3">(12.0 DNC)</td>
+<td class="rank3">12.0 DNC</td>
+<td>7.0 DNF</td>
+<td>12.0 DNC</td>
+<td>51.5</td>
+<td>39.5</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>198783</td>
+<td>Des Turvey</td>
+<td>Howth YC</td>
+<td>1</td>
+<td class="rank3">3.0</td>
+<td>8.0</td>
+<td class="rank3">(12.0 DNC)</td>
+<td class="rank3">12.0 DNC</td>
+<td>12.0 DNC</td>
+<td>12.0 DNC</td>
+<td>59.0</td>
+<td>47.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>8th</td>
+<td>190760</td>
+<td>Charlie Power</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>(12.0 DNC)</td>
+<td>12.0 DNC</td>
+<td class="rank3">12.0 DNC</td>
+<td class="rank3">12.0 DNC</td>
+<td>7.0 DNF</td>
+<td>5.0</td>
+<td>60.0</td>
+<td>48.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>9th</td>
+<td>189517</td>
+<td>Maebh Butterly</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>8.0</td>
+<td>6.0</td>
+<td class="rank3">(12.0 DNC)</td>
+<td class="rank3">12.0 DNC</td>
+<td>12.0 DNC</td>
+<td>12.0 DNC</td>
+<td>62.0</td>
+<td>50.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>10th</td>
+<td>190755</td>
+<td>Viktor Samoilovs</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>(12.0 DNC)</td>
+<td>12.0 DNC</td>
+<td class="rank3">12.0 DNC</td>
+<td class="rank3">12.0 DNC</td>
+<td>12.0 DNC</td>
+<td>12.0 DNC</td>
+<td>72.0</td>
+<td>60.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>10th</td>
+<td>219146</td>
+<td>Charlie Keating</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>(12.0 DNC)</td>
+<td>12.0 DNC</td>
+<td class="rank3">12.0 DNC</td>
+<td class="rank3">12.0 DNC</td>
+<td>12.0 DNC</td>
+<td>12.0 DNC</td>
+<td>72.0</td>
+<td>60.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="summarytitle" id="summaryilca_6">ILCA 6 Fleet</h3>
+<div class="caption summarycaption">Sailed: 6, Discards: 1, To count: 5, Entries: 7, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="13">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>Rating</th>
+<th>R1</th>
+<th>R2</th>
+<th>R3</th>
+<th>R4</th>
+<th><a class="racelink" href="#r5ilca_6">R5</a></th>
+<th><a class="racelink" href="#r6ilca_6">R6</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>220769</td>
+<td>Marco Sorgassi</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank2">(2.0)</td>
+<td class="rank2">2.0</td>
+<td>8.0</td>
+<td>6.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>218913</td>
+<td>Hugh Delap</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>(4.0)</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
+<td class="rank3">3.0</td>
+<td>17.0</td>
+<td>13.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>189211</td>
+<td>Fiachra Farrelly</td>
+<td>Howth YC</td>
+<td>1</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td>(8.0 DNC)</td>
+<td>8.0 DNC</td>
+<td>28.0</td>
+<td>20.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>196981</td>
+<td>Una Connell</td>
+<td>Howth YC</td>
+<td>1</td>
+<td class="rank2">2.0</td>
+<td>4.0 UFD</td>
+<td>5.0</td>
+<td>(6.0 DNF)</td>
+<td>5.0</td>
+<td>5.0</td>
+<td>27.0</td>
+<td>21.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>173133</td>
+<td>Peter Hassett</td>
+<td>TBC</td>
+<td>1</td>
+<td>(8.0 DNC)</td>
+<td>8.0 DNC</td>
+<td>4.0</td>
+<td>6.0 DNF</td>
+<td class="rank3">3.0</td>
+<td>4.0</td>
+<td>33.0</td>
+<td>25.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>194650</td>
+<td>Luke Turvey</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>(8.0 DNC)</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>34.0</td>
+<td>26.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>215272</td>
+<td>Daniel O'Hare</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>(8.0 DNC)</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>48.0</td>
+<td>40.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="summarytitle" id="summaryilca_7">ILCA 7 Fleet</h3>
+<div class="caption summarycaption">Sailed: 6, Discards: 1, To count: 5, Entries: 19, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="13">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>Rating</th>
+<th>R1</th>
+<th>R2</th>
+<th>R3</th>
+<th>R4</th>
+<th><a class="racelink" href="#r5ilca_7">R5</a></th>
+<th><a class="racelink" href="#r6ilca_7">R6</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>166313</td>
+<td>Ronan Wallace</td>
+<td>WHBTC</td>
+<td>1</td>
+<td class="rank1">1.0</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td class="rank3">(3.0)</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>9.0</td>
+<td>6.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>213141</td>
+<td>Daragh Kelleher</td>
+<td>Skerries SC</td>
+<td>1</td>
+<td class="rank3">3.0</td>
+<td class="rank1">1.0</td>
+<td>(5.0)</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>15.0</td>
+<td>10.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>211115</td>
+<td>Rory Lynch</td>
+<td>Baltimore SC</td>
+<td>1</td>
+<td class="rank2">2.0</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
+<td>(13.0 DNS)</td>
+<td>4.0</td>
+<td>28.0</td>
+<td>15.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>90</td>
+<td>Stephen Quinn</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>5.4 RDGa</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>5.0</td>
+<td class="rank3">3.0</td>
+<td>(7.0)</td>
+<td>32.4</td>
+<td>25.4</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>43</td>
+<td>Conor Murphy</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td>4.0</td>
+<td class="rank3">3.0</td>
+<td>56.0</td>
+<td>36.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>194648</td>
+<td>Conor Costello</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>12.0</td>
+<td>(15.0 DNF)</td>
+<td>7.0</td>
+<td>8.0</td>
+<td>7.0</td>
+<td>8.0</td>
+<td>57.0</td>
+<td>42.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>97</td>
+<td>Dave Kirwan</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>6.0</td>
+<td>5.0</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>63.0</td>
+<td>43.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>8th</td>
+<td>182599</td>
+<td>Aidan Breen</td>
+<td>Lough Ree YC</td>
+<td>1</td>
+<td>14.0 UFD</td>
+<td>(15.0 DNF)</td>
+<td>8.0</td>
+<td>7.0</td>
+<td>8.0</td>
+<td>9.0</td>
+<td>61.0</td>
+<td>46.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>9th</td>
+<td>216711</td>
+<td>Oisin Hughes</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td>4.0</td>
+<td>14.0 DNF</td>
+<td>5.0</td>
+<td>5.0</td>
+<td>68.0</td>
+<td>48.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>10th</td>
+<td>201375</td>
+<td>Zander Mackay</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>7.0</td>
+<td>9.0</td>
+<td>(14.0 DNF)</td>
+<td>12.0</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>62.0</td>
+<td>48.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>11th</td>
+<td>193577</td>
+<td>Alex Hobbs</td>
+<td>Lough Ree YC</td>
+<td>1</td>
+<td>10.0</td>
+<td>(15.0 DNF)</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>9.0</td>
+<td>11.0</td>
+<td>65.0</td>
+<td>50.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>12th</td>
+<td>141672</td>
+<td>Darragh Peelo</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>4.0</td>
+<td>8.0</td>
+<td>9.0</td>
+<td>11.0</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td>72.0</td>
+<td>52.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>13th</td>
+<td>214628</td>
+<td>Richard Tate</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>8.0</td>
+<td>7.0</td>
+<td>12.0</td>
+<td>6.0</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td>73.0</td>
+<td>53.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>14th</td>
+<td>20418</td>
+<td>Dan O'Connell</td>
+<td>Cove SC</td>
+<td>1</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td class="rank3">3.0</td>
+<td class="rank1">1.0</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>84.0</td>
+<td>64.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>15th</td>
+<td>170934</td>
+<td>Ronan McDonnell</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>9.0</td>
+<td>15.0 DNF</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td>13.0 DNF</td>
+<td>12.0 DNS</td>
+<td>89.0</td>
+<td>69.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>16th</td>
+<td>203714</td>
+<td>Vincent Varley</td>
+<td>UCD SC</td>
+<td>1</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td>11.0</td>
+<td>9.0</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>100.0</td>
+<td>80.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>17th</td>
+<td>173078</td>
+<td>Colin Kavanagh</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>11.0</td>
+<td>15.0 DNF</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>106.0</td>
+<td>86.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>18th</td>
+<td>183109</td>
+<td>Tom Fox</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>13.0 DNF</td>
+<td>20.0 DNC</td>
+<td>113.0</td>
+<td>93.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>19th</td>
+<td>21</td>
+<td>Andrejs Samoilovs</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>(20.0 DNC)</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>20.0 DNC</td>
+<td>120.0</td>
+<td>100.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="summarytitle" id="summarypy_class">PY Class Fleet</h3>
+<div class="caption summarycaption">Sailed: 6, Discards: 1, To count: 5, Rating system: PY, Entries: 7, Scoring system: Appendix A</div>
+<table class="summarytable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="13">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="total" />
+<col class="nett" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>PY</th>
+<th>R1</th>
+<th>R2</th>
+<th>R3</th>
+<th>R4</th>
+<th><a class="racelink" href="#r5py_class">R5</a></th>
+<th><a class="racelink" href="#r6py_class">R6</a></th>
+<th>Total</th>
+<th>Nett</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd summaryrow">
+<td>1st</td>
+<td>14740</td>
+<td>Hugo Micka</td>
+<td>Howth YC</td>
+<td>953</td>
+<td class="rank3">3.0</td>
+<td class="rank3">4.0 DNF</td>
+<td class="rank3">(8.0 DNC)</td>
+<td class="rank2">8.0 DNC</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>27.0</td>
+<td>19.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>733</td>
+<td>Jeremy Beshoff</td>
+<td>Howth YC</td>
+<td>862</td>
+<td>(8.0 DNC)</td>
+<td>8.0 DNC</td>
+<td class="rank2">3.0 DNF</td>
+<td class="rank2">8.0 DNC</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0 DNS</td>
+<td>33.0</td>
+<td>25.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>3187</td>
+<td>Daragh Sheridan</td>
+<td>Howth YC</td>
+<td>1068</td>
+<td>(8.0 DNC)</td>
+<td>8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank2">8.0 DNC</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>34.0</td>
+<td>26.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>1321</td>
+<td>Abby Kinsella</td>
+<td>Howth YC</td>
+<td>1100</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td class="rank3">(8.0 DNC)</td>
+<td class="rank2">8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>34.0</td>
+<td>26.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>977</td>
+<td>Michael Evans</td>
+<td>Howth YC</td>
+<td>799</td>
+<td>(8.0 DNC)</td>
+<td>8.0 DNC</td>
+<td class="rank1">1.0</td>
+<td class="rank1">2.0 DNF</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>35.0</td>
+<td>27.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>2393</td>
+<td>Aobhin Farrelly</td>
+<td>Howth YC</td>
+<td>1240</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td class="rank3">(8.0 DNC)</td>
+<td class="rank2">8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>36.0</td>
+<td>28.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>3291</td>
+<td>John Phelan</td>
+<td>Howth YC</td>
+<td>1100</td>
+<td>(8.0 DNC)</td>
+<td>8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank2">8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>48.0</td>
+<td>40.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r5ilca_4">R5 - ILCA 4 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Place, Time: 104800
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="7">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>Rating</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>201566</td>
+<td>Cillian Twomey</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>210354</td>
+<td>Aisling Kelly</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>216597</td>
+<td>Riaghan Boardman</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>8</td>
+<td>Oisin Kelly</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>204761</td>
+<td>Ciara McMahon</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNF</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>5</td>
+<td>190760</td>
+<td>Charlie Power</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNF</td>
+<td>7.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>191325</td>
+<td>Glenda Gallagher</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+<tr class="even racerow">
+<td>7</td>
+<td>198783</td>
+<td>Des Turvey</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>189517</td>
+<td>Maebh Butterly</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+<tr class="even racerow">
+<td>7</td>
+<td>190755</td>
+<td>Viktor Samoilovs</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>219146</td>
+<td>Charlie Keating</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6ilca_4">R6 - ILCA 4 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="7">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>Rating</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>210354</td>
+<td>Aisling Kelly</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>1</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>201566</td>
+<td>Cillian Twomey</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>2</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>8</td>
+<td>Oisin Kelly</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>216597</td>
+<td>Riaghan Boardman</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>190760</td>
+<td>Charlie Power</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>191325</td>
+<td>Glenda Gallagher</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>6</td>
+<td>204761</td>
+<td>Ciara McMahon</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>198783</td>
+<td>Des Turvey</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>6</td>
+<td>189517</td>
+<td>Maebh Butterly</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>190755</td>
+<td>Viktor Samoilovs</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>6</td>
+<td>219146</td>
+<td>Charlie Keating</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>12.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r5ilca_6">R5 - ILCA 6 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Place, Time: 104800
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="7">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>Rating</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>194650</td>
+<td>Luke Turvey</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>12</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>220769</td>
+<td>Marco Sorgassi</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>13</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>173133</td>
+<td>Peter Hassett</td>
+<td>TBC</td>
+<td>1</td>
+<td>14</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>218913</td>
+<td>Hugh Delap</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>16</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>196981</td>
+<td>Una Connell</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>733</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>189211</td>
+<td>Fiachra Farrelly</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>6</td>
+<td>215272</td>
+<td>Daniel O'Hare</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>DNC</td>
+<td>8.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6ilca_6">R6 - ILCA 6 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="7">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>Rating</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>194650</td>
+<td>Luke Turvey</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>12</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>220769</td>
+<td>Marco Sorgassi</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>14</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>218913</td>
+<td>Hugh Delap</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>17</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>173133</td>
+<td>Peter Hassett</td>
+<td>TBC</td>
+<td>1</td>
+<td>18</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>196981</td>
+<td>Una Connell</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>20</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>189211</td>
+<td>Fiachra Farrelly</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>6</td>
+<td>215272</td>
+<td>Daniel O'Hare</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>DNC</td>
+<td>8.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r5ilca_7">R5 - ILCA 7 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Place, Time: 104800
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="7">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>Rating</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>166313</td>
+<td>Ronan Wallace</td>
+<td>WHBTC</td>
+<td>1</td>
+<td>5</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>213141</td>
+<td>Daragh Kelleher</td>
+<td>Skerries SC</td>
+<td>1</td>
+<td>6</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>90</td>
+<td>Stephen Quinn</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>7</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>43</td>
+<td>Conor Murphy</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>8</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>216711</td>
+<td>Oisin Hughes</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>9</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>97</td>
+<td>Dave Kirwan</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>10</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>194648</td>
+<td>Conor Costello</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>11</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>182599</td>
+<td>Aidan Breen</td>
+<td>Lough Ree YC</td>
+<td>1</td>
+<td>12</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>193577</td>
+<td>Alex Hobbs</td>
+<td>Lough Ree YC</td>
+<td>1</td>
+<td>15</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>201375</td>
+<td>Zander Mackay</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>17</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>211115</td>
+<td>Rory Lynch</td>
+<td>Baltimore SC</td>
+<td>1</td>
+<td>DNS</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>11</td>
+<td>170934</td>
+<td>Ronan McDonnell</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNF</td>
+<td>13.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>183109</td>
+<td>Tom Fox</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>DNF</td>
+<td>13.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>141672</td>
+<td>Darragh Peelo</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="odd racerow">
+<td>14</td>
+<td>214628</td>
+<td>Richard Tate</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>20418</td>
+<td>Dan O'Connell</td>
+<td>Cove SC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="odd racerow">
+<td>14</td>
+<td>203714</td>
+<td>Vincent Varley</td>
+<td>UCD SC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="even racerow">
+<td>14</td>
+<td>173078</td>
+<td>Colin Kavanagh</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="odd racerow">
+<td>14</td>
+<td>21</td>
+<td>Andrejs Samoilovs</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6ilca_7">R6 - ILCA 7 Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="7">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="place" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>Rating</th>
+<th>Place</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>166313</td>
+<td>Ronan Wallace</td>
+<td>WHBTC</td>
+<td>1</td>
+<td>6</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>213141</td>
+<td>Daragh Kelleher</td>
+<td>Skerries SC</td>
+<td>1</td>
+<td>7</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>43</td>
+<td>Conor Murphy</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>8</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>211115</td>
+<td>Rory Lynch</td>
+<td>Baltimore SC</td>
+<td>1</td>
+<td>9</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>216711</td>
+<td>Oisin Hughes</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>10</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>97</td>
+<td>Dave Kirwan</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>12</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>90</td>
+<td>Stephen Quinn</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>13</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>194648</td>
+<td>Conor Costello</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>15</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>182599</td>
+<td>Aidan Breen</td>
+<td>Lough Ree YC</td>
+<td>1</td>
+<td>16</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>201375</td>
+<td>Zander Mackay</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>19</td>
+<td>10.0</td>
+</tr>
+<tr class="odd racerow">
+<td>11</td>
+<td>193577</td>
+<td>Alex Hobbs</td>
+<td>Lough Ree YC</td>
+<td>1</td>
+<td>21</td>
+<td>11.0</td>
+</tr>
+<tr class="even racerow">
+<td>12</td>
+<td>170934</td>
+<td>Ronan McDonnell</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNS</td>
+<td>12.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>141672</td>
+<td>Darragh Peelo</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="even racerow">
+<td>13</td>
+<td>214628</td>
+<td>Richard Tate</td>
+<td>Royal St George YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>20418</td>
+<td>Dan O'Connell</td>
+<td>Cove SC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="even racerow">
+<td>13</td>
+<td>203714</td>
+<td>Vincent Varley</td>
+<td>UCD SC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>173078</td>
+<td>Colin Kavanagh</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="even racerow">
+<td>13</td>
+<td>183109</td>
+<td>Tom Fox</td>
+<td>Rush SC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+<tr class="odd racerow">
+<td>13</td>
+<td>21</td>
+<td>Andrejs Samoilovs</td>
+<td>Malahide YC</td>
+<td>1</td>
+<td>DNC</td>
+<td>20.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r5py_class">R5 - PY Class Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 105100
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>PY</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>3187</td>
+<td>Daragh Sheridan</td>
+<td>Howth YC</td>
+<td>1068</td>
+<td>105100</td>
+<td>11:26:29</td>
+<td>0:35:29</td>
+<td>0:33:13</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>14740</td>
+<td>Hugo Micka</td>
+<td>Howth YC</td>
+<td>953</td>
+<td>105100</td>
+<td>11:25:28</td>
+<td>0:34:28</td>
+<td>0:36:10</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>733</td>
+<td>Jeremy Beshoff</td>
+<td>Howth YC</td>
+<td>862</td>
+<td>105100</td>
+<td>11:30:00</td>
+<td>0:39:00</td>
+<td>0:45:15</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>1321</td>
+<td>Abby Kinsella</td>
+<td>Howth YC</td>
+<td>1100</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>4</td>
+<td>977</td>
+<td>Michael Evans</td>
+<td>Howth YC</td>
+<td>799</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>2393</td>
+<td>Aobhin Farrelly</td>
+<td>Howth YC</td>
+<td>1240</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>4</td>
+<td>3291</td>
+<td>John Phelan</td>
+<td>Howth YC</td>
+<td>1100</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6py_class">R6 - PY Class Fleet</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Finish time, Time: 113800
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>Club</th>
+<th>PY</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>3187</td>
+<td>Daragh Sheridan</td>
+<td>Howth YC</td>
+<td>1068</td>
+<td>113800</td>
+<td>12:17:15</td>
+<td>0:39:15</td>
+<td>0:36:45</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>14740</td>
+<td>Hugo Micka</td>
+<td>Howth YC</td>
+<td>953</td>
+<td>113800</td>
+<td>12:21:43</td>
+<td>0:43:43</td>
+<td>0:45:52</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>733</td>
+<td>Jeremy Beshoff</td>
+<td>Howth YC</td>
+<td>862</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNS</td>
+<td>&nbsp;</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>1321</td>
+<td>Abby Kinsella</td>
+<td>Howth YC</td>
+<td>1100</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>4</td>
+<td>977</td>
+<td>Michael Evans</td>
+<td>Howth YC</td>
+<td>799</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>2393</td>
+<td>Aobhin Farrelly</td>
+<td>Howth YC</td>
+<td>1240</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+</tr>
+<tr class="odd racerow">
+<td>4</td>
+<td>3291</td>
+<td>John Phelan</td>
+<td>Howth YC</td>
+<td>1100</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>8.0</td>
+</tr>
+</tbody>
+</table>
+
+<p class="hardleft"><a href="http://"></a><br /><a href="mailto:"></a></p>
+<p class="hardright"><a href="http://"></a><br /><a href="mailto:"></a></p>
+<p>Sailwave Scoring Software 2.29.0<br /><a href="http://www.sailwave.com">www.sailwave.com</a></p>
+
+</div>
+
+<footer>
+</footer>
+
+<div id="scrollbottom"></div>
+
+</body>
+</html>
+
+
