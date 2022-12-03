@@ -39,3 +39,14 @@ def get_result(session, edit_ref):
         "class_name": tree.xpath("//input[@name='result[class_name]']/@value")[0],
         "ftp_path": tree.xpath("//input[@name='result[ftp_path]']/@value")[0]
     }
+
+def update_ftp_path(session, edit_ref, ftp_path):
+    result = session.get(URL_BASE + edit_ref)
+    tree = html.fromstring(result.text)
+    data = {}
+    inputs = [ "utf8", "authenticity_token", "result[event_type]", "result[year]", "result[event_title]", "result[class_name]"]
+    for i in inputs:
+        data[i] = tree.xpath("//input[@name='{}']/@value".format(i))[0]
+    data["result[ftp_path]"] = ftp_path
+    edit_ref = edit_ref.replace("/edit", "")
+    return session.put(URL_BASE + edit_ref, data=data)
