@@ -1,4 +1,4 @@
-drwxr-xr-x   12 1004     0           69632 Dec 03 12:19 .
+drwxr-xr-x   13 1004     0           69632 Dec 03 12:36 .
 drwxr-xr-x   52 1004     0            4096 Sep 26 07:49 ..
 -rw-rw-r--    1 1004     1004          237 Jul 27  2018 .htaccess_off
 drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 2011
@@ -632,17 +632,8 @@ drwxrwxr-x    4 1004     1004         4096 Jul 27  2018 2018
 -rw-r--r--    1 1004     1004        23363 Aug 30  2020 2020_pup_champ_hph.htm
 -rw-r--r--    1 1004     1004        22157 Aug 30  2020 2020_pup_champ_scr.htm
 drwxr-xr-x    3 1004     1004        12288 Dec 03 12:17 2021
-drwxr-xr-x    2 1004     1004        12288 Nov 28 10:09 2022
--rw-r--r--    1 1004     1004         4151 Jun 03  2022 2022-club-series2-class1hph.htm
--rw-r--r--    1 1004     1004         4150 Jun 03  2022 2022-club-series2-class1irc.htm
--rw-r--r--    1 1004     1004         3109 Jun 03  2022 2022-club-series2-class2hph.htm
--rw-r--r--    1 1004     1004         3109 Jun 03  2022 2022-club-series2-class2irc.htm
--rw-r--r--    1 1004     1004         2932 Jun 03  2022 2022-club-series2-class3hph.htm
--rw-r--r--    1 1004     1004         2756 Jun 03  2022 2022-club-series2-class3irc.htm
--rw-r--r--    1 1004     1004         3670 Jun 03  2022 2022-club-series2-class4hph.htm
--rw-r--r--    1 1004     1004         3305 Jun 03  2022 2022-club-series2-class4irc.htm
--rw-r--r--    1 1004     1004           60 Nov 18  2021 2023_Club_Colu_be_any_race_.html
--rw-r--r--    1 1004     1004           60 Nov 18  2021 2023_Club_Colu_be_any_race_Colu_be_any_race.html
+drwxr-xr-x    3 1004     1004        12288 Dec 03 13:13 2022
+drwxr-xr-x    2 1004     1004         4096 Dec 03 12:36 2023
 -rw-rw-r--    1 1004     1004         8605 Jul 27  2018 fingal_cruiserchallenge_2018.htm
 -rw-rw-r--    1 1004     1004        30344 Jul 27  2018 hjfgdss.jpeg
 lrwxrwxrwx    1 1004     0              20 Jul 26  2018 images -> /home/hyc.ie_burgees
