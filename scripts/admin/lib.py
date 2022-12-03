@@ -33,11 +33,15 @@ def get_edit_refs(session, event_type, year, event_title):
 def get_result(session, edit_ref):
     result = session.get(URL_BASE + edit_ref)
     tree = html.fromstring(result.text)
+    try:
+        ftp_path = tree.xpath("//input[@name='result[ftp_path]']/@value")[0]
+    except IndexError:
+        ftp_path = ''
     return {
         "id": edit_ref.split("/")[3],
         "event": tree.xpath("//input[@name='result[event_title]']/@value")[0],
         "class_name": tree.xpath("//input[@name='result[class_name]']/@value")[0],
-        "ftp_path": tree.xpath("//input[@name='result[ftp_path]']/@value")[0]
+        "ftp_path": ftp_path
     }
 
 def update_ftp_path(session, edit_ref, ftp_path):
