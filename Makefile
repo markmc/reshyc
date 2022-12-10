@@ -52,6 +52,9 @@ admin-backup: require_admin_password $(ADMIN_FILES)
 admin-backup-clean:
 	rm -f $(ADMIN_FILES)
 
+summaries-backup: require_admin_password
+	./scripts/admin/download-results-summaries ./summaries/
+
 AL_OFFSHORE_FILES := 2022_AL_class1.htm 2022_AL_class2.htm 2022_AL_class4.htm 2022_AL_class5.htm
 AL_INSHORE_FILES := 2022_AL_class3.htm 2022_AL_h17.htm 2022_AL_pup.htm 2022_AL_squib.htm
 
