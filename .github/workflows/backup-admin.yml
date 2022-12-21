@@ -19,9 +19,7 @@ jobs:
           ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
         run: |
-          pip freeze
           pip install -r scripts/admin/requirements.txt
-          pip freeze
           rm -f backups/admin/202{2,3}_*.csv
           make admin-backup
       - uses: peter-evans/create-pull-request@v4
