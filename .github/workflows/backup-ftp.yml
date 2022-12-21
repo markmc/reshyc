@@ -1,0 +1,22 @@
+name: backup-ftp
+run-name: Make backup of HYC results FTP folder
+on:
+  workflow_dispatch:
+  schedule:
+      - cron: 38 7 * * 6
+jobs:
+  create-ftp-backup-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - env:
+          FTP_DIR: reshyc
+          FTP_SERVER: results.hyc.ie
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: make backup
+      - uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: FTP backup
+          title: FTP backup
+          add-paths: backups/results.hyc.ie/
