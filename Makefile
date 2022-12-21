@@ -29,6 +29,7 @@ endif
 
 backup: require_password
 	@wget -m ftp://$(FTP_USER):$(FTP_PASSWORD)@$(FTP_SERVER)/$(FTP_DIR)
+	find results.hyc.ie/ -name .listing -delete
 
 require_admin_password:
 ifndef ADMIN_USERNAME
