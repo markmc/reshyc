@@ -3,7 +3,7 @@ run-name: Make backup of HYC results admin DB
 on:
   workflow_dispatch:
   schedule:
-      - cron: 12 6 * * 6
+      - cron: 12 6 * * *
 jobs:
   create-admin-backup-pr:
     runs-on: ubuntu-latest

@@ -3,7 +3,7 @@ run-name: Make backup of HYC results FTP folder
 on:
   workflow_dispatch:
   schedule:
-      - cron: 38 7 * * 6
+      - cron: 38 7 * * *
 jobs:
   create-ftp-backup-pr:
     runs-on: ubuntu-latest
