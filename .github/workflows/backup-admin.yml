@@ -27,3 +27,4 @@ jobs:
           commit-message: Admin DB backup
           title: Admin DB backup
           add-paths: backups/admin/
+          branch: create-pull-request/admin-backup

@@ -20,3 +20,4 @@ jobs:
           commit-message: FTP backup
           title: FTP backup
           add-paths: backups/results.hyc.ie/
+          branch: create-pull-request/ftp-backup
