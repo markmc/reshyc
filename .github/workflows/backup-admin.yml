@@ -20,7 +20,7 @@ jobs:
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
         run: |
           pip install -r scripts/admin/requirements.txt
-          rm -f backups/admin/20*_*.csv
+          rm -f backups/admin/202{2,3}_*.csv
           make admin-backup
       - uses: peter-evans/create-pull-request@v4
         with:
