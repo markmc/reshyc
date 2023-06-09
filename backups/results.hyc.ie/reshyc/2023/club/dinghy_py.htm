@@ -116,16 +116,18 @@ $(function () {
 <style>
 div.applicant-break {page-break-after:always;}
 </style>
-<h3 class="seriestitle">Results are provisional as of 20:59 on June  1, 2023</h3>
+<h3 class="seriestitle">Results are provisional as of 21:32 on June  8, 2023</h3>
 <h3 class="summarytitle" id="summarypy_class">PY Class Fleet</h3>
-<div class="caption summarycaption">Sailed: 5, Discards: 1, To count: 4, Rating system: PY, Entries: 20, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 7, Discards: 1, To count: 6, Rating system: PY, Entries: 20, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="12">
+<colgroup span="14">
 <col class="rank" />
 <col class="class" />
 <col class="sailno" />
 <col class="helmname" />
 <col class="rating" />
+<col class="race" />
+<col class="race" />
 <col class="race" />
 <col class="race" />
 <col class="race" />
@@ -146,6 +148,8 @@ div.applicant-break {page-break-after:always;}
 <th><a class="racelink" href="#r3py_class">May 25-3</a></th>
 <th><a class="racelink" href="#r4py_class">Jun 1-4</a></th>
 <th><a class="racelink" href="#r5py_class">Jun 1-5</a></th>
+<th><a class="racelink" href="#r6py_class">Jun 8-6</a></th>
+<th><a class="racelink" href="#r7py_class">Jun 8-7</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
@@ -162,25 +166,13 @@ div.applicant-break {page-break-after:always;}
 <td class="rank2">2.0</td>
 <td class="rank1">1.0</td>
 <td class="rank2">2.0</td>
-<td>17.0</td>
-<td>8.0</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td>22.0</td>
+<td>13.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>2nd</td>
-<td>ILCA 7</td>
-<td>170946</td>
-<td>Cillian Macken</td>
-<td>1101</td>
-<td>(7.0)</td>
-<td>4.0</td>
-<td>5.0</td>
-<td>4.0</td>
-<td>4.0</td>
-<td>24.0</td>
-<td>17.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>3rd</td>
 <td>ILCA 4</td>
 <td>144273</td>
 <td>Dylan Cassidy</td>
@@ -190,8 +182,26 @@ div.applicant-break {page-break-after:always;}
 <td>(8.0)</td>
 <td class="rank3">3.0</td>
 <td>5.0</td>
-<td>27.0</td>
-<td>19.0</td>
+<td>5.0</td>
+<td>5.0</td>
+<td>37.0</td>
+<td>29.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>RS Aero 6</td>
+<td>3291</td>
+<td>John Phelan</td>
+<td>1105</td>
+<td>4.0</td>
+<td class="rank2">2.0</td>
+<td class="rank3">3.0</td>
+<td>(21.0 DNC)</td>
+<td>21.0 DNC</td>
+<td>4.0</td>
+<td class="rank3">3.0</td>
+<td>58.0</td>
+<td>37.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>4th</td>
@@ -204,39 +214,13 @@ div.applicant-break {page-break-after:always;}
 <td>6.0</td>
 <td>5.0</td>
 <td>6.0</td>
-<td>32.0</td>
-<td>24.0</td>
+<td>6.0</td>
+<td>7.0</td>
+<td>45.0</td>
+<td>37.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>5th</td>
-<td>RS Aero 6</td>
-<td>3291</td>
-<td>John Phelan</td>
-<td>1105</td>
-<td>4.0</td>
-<td class="rank2">2.0</td>
-<td class="rank3">3.0</td>
-<td>(21.0 DNC)</td>
-<td>21.0 DNC</td>
-<td>51.0</td>
-<td>30.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>6th</td>
-<td>RS Aero 6</td>
-<td>1321</td>
-<td>Abby Kinsella</td>
-<td>1105</td>
-<td>5.0</td>
-<td class="rank3">3.0</td>
-<td>4.0</td>
-<td>(21.0 DNC)</td>
-<td>21.0 DNC</td>
-<td>54.0</td>
-<td>33.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>7th</td>
 <td>ILCA 4</td>
 <td>190760</td>
 <td>Charlie Power</td>
@@ -246,11 +230,29 @@ div.applicant-break {page-break-after:always;}
 <td>7.0</td>
 <td>6.0 OCS</td>
 <td class="rank1">1.0</td>
-<td>56.0</td>
-<td>35.0</td>
+<td class="rank1">1.0</td>
+<td>6.0</td>
+<td>63.0</td>
+<td>42.0</td>
 </tr>
 <tr class="even summaryrow">
-<td>8th</td>
+<td>6th</td>
+<td>ILCA 7</td>
+<td>170946</td>
+<td>Cillian Macken</td>
+<td>1101</td>
+<td>7.0</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>(21.0 DNC)</td>
+<td>21.0 DNC</td>
+<td>66.0</td>
+<td>45.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
 <td>RS Aero 6</td>
 <td>4179</td>
 <td>Daragh Sheridan</td>
@@ -260,39 +262,13 @@ div.applicant-break {page-break-after:always;}
 <td>(21.0 DNC)</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>65.0</td>
-<td>44.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>9th</td>
-<td>ILCA 4</td>
-<td>186299</td>
-<td>Ciara McMahon</td>
-<td>1210</td>
-<td>(21.0 DNC)</td>
-<td>21.0 DNC</td>
-<td>21.0 DNC</td>
 <td class="rank2">2.0</td>
-<td class="rank3">3.0</td>
-<td>68.0</td>
-<td>47.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>10th</td>
-<td>ILCA 6</td>
-<td>3006</td>
-<td>Carla Fagan</td>
-<td>1150</td>
-<td class="rank2">2.0</td>
-<td>6.0</td>
-<td>(21.0 DNC)</td>
-<td>21.0 DNC</td>
-<td>21.0 DNC</td>
+<td>4.0</td>
 <td>71.0</td>
 <td>50.0</td>
 </tr>
-<tr class="odd summaryrow">
-<td>11th</td>
+<tr class="even summaryrow">
+<td>8th</td>
 <td>ILCA 4</td>
 <td>219146</td>
 <td>Charlie Keating</td>
@@ -302,8 +278,58 @@ div.applicant-break {page-break-after:always;}
 <td>(21.0 DNC)</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>83.0</td>
-<td>62.0</td>
+<td>7.0 OCS</td>
+<td class="rank1">1.0</td>
+<td>91.0</td>
+<td>70.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>9th</td>
+<td>RS Aero 6</td>
+<td>1321</td>
+<td>Abby Kinsella</td>
+<td>1105</td>
+<td>5.0</td>
+<td class="rank3">3.0</td>
+<td>4.0</td>
+<td>(21.0 DNC)</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>96.0</td>
+<td>75.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>10th</td>
+<td>ILCA 4</td>
+<td>186299</td>
+<td>Ciara McMahon</td>
+<td>1210</td>
+<td>(21.0 DNC)</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td class="rank2">2.0</td>
+<td class="rank3">3.0</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>110.0</td>
+<td>89.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>11th</td>
+<td>ILCA 6</td>
+<td>3006</td>
+<td>Carla Fagan</td>
+<td>1150</td>
+<td class="rank2">2.0</td>
+<td>6.0</td>
+<td>(21.0 DNC)</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>113.0</td>
+<td>92.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>12th</td>
@@ -316,8 +342,10 @@ div.applicant-break {page-break-after:always;}
 <td class="rank1">1.0</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>85.0</td>
-<td>64.0</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>127.0</td>
+<td>106.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>13th</td>
@@ -330,8 +358,10 @@ div.applicant-break {page-break-after:always;}
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>93.0</td>
-<td>72.0</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>135.0</td>
+<td>114.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>14th</td>
@@ -344,8 +374,10 @@ div.applicant-break {page-break-after:always;}
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>105.0</td>
-<td>84.0</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>147.0</td>
+<td>126.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>14th</td>
@@ -358,8 +390,10 @@ div.applicant-break {page-break-after:always;}
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>105.0</td>
-<td>84.0</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>147.0</td>
+<td>126.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>14th</td>
@@ -372,8 +406,10 @@ div.applicant-break {page-break-after:always;}
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>105.0</td>
-<td>84.0</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>147.0</td>
+<td>126.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>14th</td>
@@ -386,8 +422,10 @@ div.applicant-break {page-break-after:always;}
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>105.0</td>
-<td>84.0</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>147.0</td>
+<td>126.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>14th</td>
@@ -400,8 +438,10 @@ div.applicant-break {page-break-after:always;}
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>105.0</td>
-<td>84.0</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>147.0</td>
+<td>126.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>14th</td>
@@ -414,8 +454,10 @@ div.applicant-break {page-break-after:always;}
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>105.0</td>
-<td>84.0</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>147.0</td>
+<td>126.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>14th</td>
@@ -428,8 +470,10 @@ div.applicant-break {page-break-after:always;}
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
 <td>21.0 DNC</td>
-<td>105.0</td>
-<td>84.0</td>
+<td>21.0 DNC</td>
+<td>21.0 DNC</td>
+<td>147.0</td>
+<td>126.0</td>
 </tr>
 </tbody>
 </table>
@@ -1124,8 +1168,8 @@ Start: Start 1, Finishes: Finish time, Time: 190300
 <tr class="even racerow">
 <td>9</td>
 <td>ILCA 4</td>
-<td>186299</td>
-<td>Ciara McMahon</td>
+<td>219146</td>
+<td>Charlie Keating</td>
 <td>1210</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -1135,10 +1179,10 @@ Start: Start 1, Finishes: Finish time, Time: 190300
 </tr>
 <tr class="odd racerow">
 <td>9</td>
-<td>ILCA 6</td>
-<td>3006</td>
-<td>Carla Fagan</td>
-<td>1150</td>
+<td>ILCA 4</td>
+<td>186299</td>
+<td>Ciara McMahon</td>
+<td>1210</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>DNC</td>
@@ -1147,10 +1191,10 @@ Start: Start 1, Finishes: Finish time, Time: 190300
 </tr>
 <tr class="even racerow">
 <td>9</td>
-<td>ILCA 4</td>
-<td>219146</td>
-<td>Charlie Keating</td>
-<td>1210</td>
+<td>ILCA 6</td>
+<td>3006</td>
+<td>Carla Fagan</td>
+<td>1150</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>DNC</td>
@@ -1374,33 +1418,9 @@ Start: Start 1, Finishes: Place
 <tr class="even racerow">
 <td>7</td>
 <td>RS Aero 6</td>
-<td>1321</td>
-<td>Abby Kinsella</td>
-<td>1105</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNC</td>
-<td>&nbsp;</td>
-<td>21.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>RS Aero 6</td>
 <td>4179</td>
 <td>Daragh Sheridan</td>
 <td>1105</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNC</td>
-<td>&nbsp;</td>
-<td>21.0</td>
-</tr>
-<tr class="even racerow">
-<td>7</td>
-<td>ILCA 6</td>
-<td>3006</td>
-<td>Carla Fagan</td>
-<td>1150</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>DNC</td>
@@ -1413,6 +1433,30 @@ Start: Start 1, Finishes: Place
 <td>219146</td>
 <td>Charlie Keating</td>
 <td>1210</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>7</td>
+<td>RS Aero 6</td>
+<td>1321</td>
+<td>Abby Kinsella</td>
+<td>1105</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>ILCA 6</td>
+<td>3006</td>
+<td>Carla Fagan</td>
+<td>1150</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>DNC</td>
@@ -1648,33 +1692,9 @@ Start: Start 1, Finishes: Place
 <tr class="even racerow">
 <td>7</td>
 <td>RS Aero 6</td>
-<td>1321</td>
-<td>Abby Kinsella</td>
-<td>1105</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNC</td>
-<td>&nbsp;</td>
-<td>21.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>RS Aero 6</td>
 <td>4179</td>
 <td>Daragh Sheridan</td>
 <td>1105</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNC</td>
-<td>&nbsp;</td>
-<td>21.0</td>
-</tr>
-<tr class="even racerow">
-<td>7</td>
-<td>ILCA 6</td>
-<td>3006</td>
-<td>Carla Fagan</td>
-<td>1150</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>DNC</td>
@@ -1687,6 +1707,30 @@ Start: Start 1, Finishes: Place
 <td>219146</td>
 <td>Charlie Keating</td>
 <td>1210</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>7</td>
+<td>RS Aero 6</td>
+<td>1321</td>
+<td>Abby Kinsella</td>
+<td>1105</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>ILCA 6</td>
+<td>3006</td>
+<td>Carla Fagan</td>
+<td>1150</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td>DNC</td>
@@ -1791,6 +1835,554 @@ Start: Start 1, Finishes: Place
 </tr>
 <tr class="even racerow">
 <td>7</td>
+<td>RS Feva</td>
+<td>5028</td>
+<td>Emmet Sheridan</td>
+<td>1248</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r6py_class">Jun 8-6 - PY Class Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>PY</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>ILCA 4</td>
+<td>190760</td>
+<td>Charlie Power</td>
+<td>1210</td>
+<td>19.03.00</td>
+<td>19.21.34</td>
+<td>0.18.34</td>
+<td>0.15.21</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>RS Aero 6</td>
+<td>4179</td>
+<td>Daragh Sheridan</td>
+<td>1105</td>
+<td>19.03.00</td>
+<td>19.24.20</td>
+<td>0.21.20</td>
+<td>0.19.18</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>ILCA 7</td>
+<td>170934</td>
+<td>Matthew Cotter</td>
+<td>1101</td>
+<td>19.03.00</td>
+<td>19.24.41</td>
+<td>0.21.41</td>
+<td>0.19.42</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS Aero 6</td>
+<td>3291</td>
+<td>John Phelan</td>
+<td>1105</td>
+<td>19.03.00</td>
+<td>19.26.04</td>
+<td>0.23.04</td>
+<td>0.20.52</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>ILCA 4</td>
+<td>144273</td>
+<td>Dylan Cassidy</td>
+<td>1210</td>
+<td>19.03.00</td>
+<td>19.30.38</td>
+<td>0.27.38</td>
+<td>0.22.50</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>B14</td>
+<td>79</td>
+<td>Jeremy Beshoff</td>
+<td>858</td>
+<td>19.03.00</td>
+<td>19.29.00</td>
+<td>0.26.00</td>
+<td>0.30.18</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>ILCA 4</td>
+<td>219146</td>
+<td>Charlie Keating</td>
+<td>1210</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>OCS</td>
+<td>&nbsp;</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>ILCA 7</td>
+<td>170946</td>
+<td>Cillian Macken</td>
+<td>1101</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>RS Aero 6</td>
+<td>1321</td>
+<td>Abby Kinsella</td>
+<td>1105</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>ILCA 4</td>
+<td>186299</td>
+<td>Ciara McMahon</td>
+<td>1210</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>ILCA 6</td>
+<td>3006</td>
+<td>Carla Fagan</td>
+<td>1150</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS 600</td>
+<td>798</td>
+<td>Tristan Nelson</td>
+<td>920</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>RS 800</td>
+<td>977</td>
+<td>Michael Evans</td>
+<td>799</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS 600</td>
+<td>812</td>
+<td>Peter Freyne</td>
+<td>920</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>ILCA 7</td>
+<td>201375</td>
+<td>Zander Mackay</td>
+<td>1101</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>5221</td>
+<td>Emmet Sheridan 2</td>
+<td>1248</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>RS 600</td>
+<td>690</td>
+<td>Peter Freyne</td>
+<td>920</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Aero 7</td>
+<td>2352</td>
+<td>Darragh O'Connor</td>
+<td>1063</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>1749</td>
+<td>Charlie Robertson</td>
+<td>1248</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>5028</td>
+<td>Emmet Sheridan</td>
+<td>1248</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r7py_class">Jun 8-7 - PY Class Fleet</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Place
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>PY</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>ILCA 4</td>
+<td>219146</td>
+<td>Charlie Keating</td>
+<td>1210</td>
+<td>19.54.00</td>
+<td>20.29.09</td>
+<td>0.35.09</td>
+<td>0.29.03</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>ILCA 7</td>
+<td>170934</td>
+<td>Matthew Cotter</td>
+<td>1101</td>
+<td>19.54.00</td>
+<td>20.27.33</td>
+<td>0.33.33</td>
+<td>0.30.28</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS Aero 6</td>
+<td>3291</td>
+<td>John Phelan</td>
+<td>1105</td>
+<td>19.54.00</td>
+<td>20.29.11</td>
+<td>0.35.11</td>
+<td>0.31.50</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>RS Aero 6</td>
+<td>4179</td>
+<td>Daragh Sheridan</td>
+<td>1105</td>
+<td>19.54.00</td>
+<td>20.29.23</td>
+<td>0.35.23</td>
+<td>0.32.01</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>ILCA 4</td>
+<td>144273</td>
+<td>Dylan Cassidy</td>
+<td>1210</td>
+<td>19.54.00</td>
+<td>20.39.45</td>
+<td>0.45.45</td>
+<td>0.37.49</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>ILCA 4</td>
+<td>190760</td>
+<td>Charlie Power</td>
+<td>1210</td>
+<td>19.54.00</td>
+<td>20.43.15</td>
+<td>0.49.15</td>
+<td>0.40.42</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>B14</td>
+<td>79</td>
+<td>Jeremy Beshoff</td>
+<td>858</td>
+<td>19.54.00</td>
+<td>20.32.01</td>
+<td>0.38.01</td>
+<td>0.44.19</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>ILCA 7</td>
+<td>170946</td>
+<td>Cillian Macken</td>
+<td>1101</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>RS Aero 6</td>
+<td>1321</td>
+<td>Abby Kinsella</td>
+<td>1105</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>ILCA 4</td>
+<td>186299</td>
+<td>Ciara McMahon</td>
+<td>1210</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>ILCA 6</td>
+<td>3006</td>
+<td>Carla Fagan</td>
+<td>1150</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS 600</td>
+<td>798</td>
+<td>Tristan Nelson</td>
+<td>920</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>RS 800</td>
+<td>977</td>
+<td>Michael Evans</td>
+<td>799</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS 600</td>
+<td>812</td>
+<td>Peter Freyne</td>
+<td>920</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>ILCA 7</td>
+<td>201375</td>
+<td>Zander Mackay</td>
+<td>1101</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>5221</td>
+<td>Emmet Sheridan 2</td>
+<td>1248</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>RS 600</td>
+<td>690</td>
+<td>Peter Freyne</td>
+<td>920</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>RS Aero 7</td>
+<td>2352</td>
+<td>Darragh O'Connor</td>
+<td>1063</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="odd racerow">
+<td>8</td>
+<td>RS Feva</td>
+<td>1749</td>
+<td>Charlie Robertson</td>
+<td>1248</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNC</td>
+<td>&nbsp;</td>
+<td>21.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
 <td>RS Feva</td>
 <td>5028</td>
 <td>Emmet Sheridan</td>
