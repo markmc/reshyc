@@ -112,66 +112,6 @@ $(function () {
 
 });
 });
-//
-//  name=TableSorter
-//  dependencies=jQuery (autoloads if not specified)
-//  description=Click on heading to sort table
-//  author=Jon Eskdale
-//  date=2015-08-13 / 2018-04-16
-//  version=1.2
-//  url=https://sailwave.com
-//  email=jon@sailwave.com
-//  twitter=@eskdale
-//
-
-</script>
-<link rel="stylesheet" href="https://www.sailwave.com/download/css/sorter.css">
-<script src="https://mottie.github.io/tablesorter/js/jquery.tablesorter.combined.js"></script>
-<script>
-
-$(document).ready(function()
-    {
-        // create array of race column numbers for first table (summarytable)
-        var ths = document.getElementsByTagName('col');
-        var column =[];
-        for (var i=0; i<ths.length; i++) {
-                if (ths[i].classList[0] === "race") {
-                        column.push(i);
-                } else {
-                        if (column.length !=0) {
-                                break;
-                        }
-                }
-        }
-        var patt = /\d+\.\d+/;
-        $.tablesorter.addParser({
-                id: 'race',
-                is: function(s, table, cell, $cell) {
-                        return false;
-                },
-                format: function(s, table, cell, cellIndex) {
-                        return patt.exec(s);
-                },
-                // set type, either numeric or text
-                type: 'numeric'
-        });
-
-        //  Set a class of race for all headers with race results in column for summarytable
-        //  "{sorter: 'numeric'}"
-        for (var i=0; i<column.length; i++) {
-                $(".summarytable thead tr th:nth-child(" + (column[i]+1) +")").addClass("sorter-race");
-        }
-
-
-        $(".summarytable").tablesorter({
-         theme : 'blue',
-         sortMultiSortKey: 'ctrlKey',
-         sortResetKey: 'altKey',
-         });
-}
-);
-
-
 </script>
 
 </head>
@@ -204,7 +144,7 @@ $(document).ready(function()
 <style>
 div.applicant-break {page-break-after:always;}
 </style>
-<h3 class="seriestitle">Results are provisional as of  8:42 on August 31, 2023</h3>
+<h3 class="seriestitle">Results are provisional as of  8:50 on August 31, 2023</h3>
 <h3 class="summarytitle" id="summary_17_footer_hph">17 Footer HPH Fleet</h3>
 <div class="caption summarycaption">Sailed: 5, Discards: 1, To count: 4, Rating system: TCF, Entries: 19, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
