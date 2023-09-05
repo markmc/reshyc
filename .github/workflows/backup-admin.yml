@@ -22,9 +22,21 @@ jobs:
           pip install -r scripts/admin/requirements.txt
           rm -f backups/admin/202{2,3}_*.csv
           make admin-backup
-      - uses: peter-evans/create-pull-request@v4
+      - name: Create pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
         with:
           commit-message: Admin DB backup
           title: Admin DB backup
           add-paths: backups/admin/
           branch: create-pull-request/admin-backup
+      - name: Merge pull request
+        if: ${{ steps.cpr.outputs.pull-request-number }}
+        run: gh pr merge --rebase "${{ steps.cpr.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Delete pull request branch
+        if: ${{ steps.cpr.outputs.pull-request-number }}
+        run: git push origin :create-pull-request/admin-backup
+        env:
+          GH_TOKEN: ${{ github.token }}
