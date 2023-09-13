@@ -4,14 +4,14 @@ all: sailwave
 sailwave:
 	wine '/home/markmc/.wine/drive_c/Program Files (x86)/Sailwave/sailwave.exe'
 
-sw2_29_0.exe:
-	curl -O https://www.sailwave.com/download/sailwave/sw2_29_0.exe
+sw2_30_2.exe:
+	curl -O https://www.sailwave.com/download/sailwave/sw2_30_2.exe
 
-install: sw2_29_0.exe
-	wine ./sw2_29_0.exe
+install: sw2_30_2.exe
+	wine ./sw2_30_2.exe
 
 clean:
-	rm -f sw2_29_0.exe
+	rm -f sw2_30_2.exe
 
 wineclean:
 	rm -rf ~/.wine
