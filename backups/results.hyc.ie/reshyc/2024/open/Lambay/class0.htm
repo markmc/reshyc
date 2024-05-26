@@ -376,11 +376,11 @@ $(document).ready(function()
 <style>
 div.applicant-break {page-break-after:always;}
 </style>
-<h3 class="seriestitle">Results are provisional as of  7:12 on May 25, 2024</h3>
+<h3 class="seriestitle">Results are provisional as of 14:30 on May 25, 2024</h3>
 <h3 class="summarytitle" id="summaryclass_0_echo">Class 0 Echo Start Class</h3>
-<div class="caption summarycaption">Sailed: 0, Discards: 0, To count: 0, Rating system: NHC4, Entries: 6, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 1, Discards: 0, To count: 1, Rating system: ECHO, Entries: 6, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="11">
+<colgroup span="13">
 <col class="rank" />
 <col class="fleet" />
 <col class="boat" />
@@ -390,6 +390,8 @@ div.applicant-break {page-break-after:always;}
 <col class="club" />
 <col class="helmname" />
 <col class="rating" />
+<col class="newrating" />
+<col class="race" />
 <col class="total" />
 <col class="nett" />
 </colgroup>
@@ -404,6 +406,8 @@ div.applicant-break {page-break-after:always;}
 <th>Club</th>
 <th>Owner Name(s)</th>
 <th>IRC/ECHO</th>
+<th>New Rating</th>
+<th><a class="racelink" href="#r1class_0_echo">Lambay Race</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
@@ -412,70 +416,20 @@ div.applicant-break {page-break-after:always;}
 <tr class="odd summaryrow">
 <td>1st</td>
 <td>Class 0 Echo</td>
-<td>Checkmate XX</td>
-<td>&nbsp;</td>
-<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
-<td>IRL66</td>
-<td>HYC</td>
-<td>Biggs/Cullen</td>
-<td>1.132</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>1st</td>
-<td>Class 0 Echo</td>
-<td>Ghost Raider</td>
-<td>&nbsp;</td>
-<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
-<td>IRL 985</td>
-<td>HYC</td>
-<td>Norbert Reillly</td>
-<td>1.140</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>1st</td>
-<td>Class 0 Echo</td>
 <td>Impetuous</td>
 <td>&nbsp;</td>
-<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td><img class="natflag" title="GBR" src="https://www.sailwave.com/flags/small/GBR.jpg"><br><span class="nattext">GBR</span></td>
 <td>GBR7737R</td>
 <td>SCYC</td>
 <td>Miller, Crompton & Hodges</td>
 <td>0.970</td>
-<td>0.0</td>
-<td>0.0</td>
+<td>1.069</td>
+<td class="rank1">1.5</td>
+<td>1.5</td>
+<td>1.5</td>
 </tr>
 <tr class="even summaryrow">
-<td>1st</td>
-<td>Class 0 Echo</td>
-<td>Jellybaby</td>
-<td>&nbsp;</td>
-<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
-<td>IRL9753</td>
-<td>RCYC</td>
-<td>Jones Family</td>
-<td>1.140</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>1st</td>
-<td>Class 0 Echo</td>
-<td>Prima Forte</td>
-<td>First 40</td>
-<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
-<td>IRL 4240</td>
-<td>RIYC</td>
-<td>Burke/Lemass/Rigney</td>
-<td>1.180</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>1st</td>
+<td>5th</td>
 <td>Class 0 Echo</td>
 <td>Valentina</td>
 <td>&nbsp;</td>
@@ -484,15 +438,77 @@ div.applicant-break {page-break-after:always;}
 <td>NYC</td>
 <td>Johnny Treanor</td>
 <td>1.152</td>
-<td>0.0</td>
-<td>0.0</td>
+<td>1.115</td>
+<td>7.5</td>
+<td>7.5</td>
+<td>7.5</td>
+</tr>
+<tr class="odd summaryrow">
+<td>6th</td>
+<td>Class 0 Echo</td>
+<td>Prima Forte</td>
+<td>First 40</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL 4240</td>
+<td>RIYC</td>
+<td>Burke/Lemass/Rigney</td>
+<td>1.180</td>
+<td>1.079</td>
+<td>9.0</td>
+<td>9.0</td>
+<td>9.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>3rd</td>
+<td>Class 0 Echo</td>
+<td>Ghost Raider</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL 985</td>
+<td>HYC</td>
+<td>Norbert Reillly</td>
+<td>1.140</td>
+<td>1.132</td>
+<td class="rank3">4.5</td>
+<td>4.5</td>
+<td>4.5</td>
+</tr>
+<tr class="odd summaryrow">
+<td>2nd</td>
+<td>Class 0 Echo</td>
+<td>Checkmate XX</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL66</td>
+<td>HYC</td>
+<td>Biggs/Cullen</td>
+<td>1.132</td>
+<td>1.191</td>
+<td class="rank2">3.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>Class 0 Echo</td>
+<td>Jellybaby</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL9753</td>
+<td>RCYC</td>
+<td>Jones Family</td>
+<td>1.140</td>
+<td>1.128</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>6.0</td>
 </tr>
 </tbody>
 </table>
 <h3 class="summarytitle" id="summaryclass_0_irc">Class 0 IRC Start Class</h3>
-<div class="caption summarycaption">Sailed: 0, Discards: 0, To count: 0, Rating system: IRC, Entries: 6, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 1, Discards: 0, To count: 1, Rating system: IRC, Entries: 6, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="11">
+<colgroup span="13">
 <col class="rank" />
 <col class="fleet" />
 <col class="boat" />
@@ -502,6 +518,8 @@ div.applicant-break {page-break-after:always;}
 <col class="club" />
 <col class="helmname" />
 <col class="rating" />
+<col class="newrating" />
+<col class="race" />
 <col class="total" />
 <col class="nett" />
 </colgroup>
@@ -516,11 +534,73 @@ div.applicant-break {page-break-after:always;}
 <th>Club</th>
 <th>Owner Name(s)</th>
 <th>IRC/ECHO</th>
+<th>New Rating</th>
+<th><a class="racelink" href="#r1class_0_irc">Lambay Race</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
 </thead>
 <tbody>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>Class 0 IRC</td>
+<td>Impetuous</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>GBR7737R</td>
+<td>SCYC</td>
+<td>Miller, Crompton & Hodges</td>
+<td>1.089</td>
+<td>&nbsp;</td>
+<td>7.5</td>
+<td>7.5</td>
+<td>7.5</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>Class 0 IRC</td>
+<td>Valentina</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL 3721</td>
+<td>NYC</td>
+<td>Johnny Treanor</td>
+<td>1.048</td>
+<td>&nbsp;</td>
+<td class="rank2">3.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>6th</td>
+<td>Class 0 IRC</td>
+<td>Prima Forte</td>
+<td>First 40</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL 4240</td>
+<td>RIYC</td>
+<td>Burke/Lemass/Rigney</td>
+<td>1.076</td>
+<td>&nbsp;</td>
+<td>9.0</td>
+<td>9.0</td>
+<td>9.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>3rd</td>
+<td>Class 0 IRC</td>
+<td>Ghost Raider</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL 985</td>
+<td>HYC</td>
+<td>Norbert Reillly</td>
+<td>1.090</td>
+<td>&nbsp;</td>
+<td class="rank3">4.5</td>
+<td>4.5</td>
+<td>4.5</td>
+</tr>
 <tr class="odd summaryrow">
 <td>1st</td>
 <td>Class 0 IRC</td>
@@ -531,37 +611,13 @@ div.applicant-break {page-break-after:always;}
 <td>HYC</td>
 <td>Biggs/Cullen</td>
 <td>1.115</td>
-<td>0.0</td>
-<td>0.0</td>
+<td>&nbsp;</td>
+<td class="rank1">1.5</td>
+<td>1.5</td>
+<td>1.5</td>
 </tr>
 <tr class="even summaryrow">
-<td>1st</td>
-<td>Class 0 IRC</td>
-<td>Ghost Raider</td>
-<td>&nbsp;</td>
-<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
-<td>IRL 985</td>
-<td>HYC</td>
-<td>Norbert Reillly</td>
-<td>1.090</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>1st</td>
-<td>Class 0 IRC</td>
-<td>Impetuous</td>
-<td>&nbsp;</td>
-<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
-<td>GBR7737R</td>
-<td>SCYC</td>
-<td>Miller, Crompton & Hodges</td>
-<td>1.089</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>1st</td>
+<td>4th</td>
 <td>Class 0 IRC</td>
 <td>Jellybaby</td>
 <td>&nbsp;</td>
@@ -570,24 +626,220 @@ div.applicant-break {page-break-after:always;}
 <td>RCYC</td>
 <td>Jones Family</td>
 <td>1.088</td>
-<td>0.0</td>
-<td>0.0</td>
+<td>&nbsp;</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>6.0</td>
 </tr>
-<tr class="odd summaryrow">
-<td>1st</td>
-<td>Class 0 IRC</td>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1class_0_echo">Lambay Race - Class 0 Echo Start Class</h3>
+<div class="caption racecaption">
+Start: Start 1 Class 0, Finishes: Finish time, Time: 104000, Weight: 1.5
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="rank" />
+<col class="fleet" />
+<col class="boat" />
+<col class="class" />
+<col class="nat" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Start Class</th>
+<th>Boat Name</th>
+<th>Boat Type</th>
+<th>Nat</th>
+<th>Sail No</th>
+<th>Club</th>
+<th>Owner Name(s)</th>
+<th>IRC/ECHO</th>
+<th>New Rating</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Class 0 Echo</td>
+<td>Impetuous</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="GBR" src="https://www.sailwave.com/flags/small/GBR.jpg"><br><span class="nattext">GBR</span></td>
+<td>GBR7737R</td>
+<td>SCYC</td>
+<td>Miller, Crompton & Hodges</td>
+<td>0.970</td>
+<td>1.069</td>
+<td>104000</td>
+<td>13:22:37</td>
+<td>2:42:37</td>
+<td>2:37:44</td>
+<td>1.5</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>Class 0 Echo</td>
+<td>Checkmate XX</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL66</td>
+<td>HYC</td>
+<td>Biggs/Cullen</td>
+<td>1.132</td>
+<td>1.191</td>
+<td>104000</td>
+<td>13:08:06</td>
+<td>2:28:06</td>
+<td>2:47:39</td>
+<td>3.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Class 0 Echo</td>
+<td>Ghost Raider</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL 985</td>
+<td>HYC</td>
+<td>Norbert Reillly</td>
+<td>1.140</td>
+<td>1.132</td>
+<td>104000</td>
+<td>13:18:50</td>
+<td>2:38:50</td>
+<td>3:01:04</td>
+<td>4.5</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>Class 0 Echo</td>
+<td>Jellybaby</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL9753</td>
+<td>RCYC</td>
+<td>Jones Family</td>
+<td>1.140</td>
+<td>1.128</td>
+<td>104000</td>
+<td>13:19:29</td>
+<td>2:39:29</td>
+<td>3:01:49</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Class 0 Echo</td>
+<td>Valentina</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL 3721</td>
+<td>NYC</td>
+<td>Johnny Treanor</td>
+<td>1.152</td>
+<td>1.115</td>
+<td>104000</td>
+<td>13:22:37</td>
+<td>2:42:37</td>
+<td>3:07:20</td>
+<td>7.5</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Class 0 Echo</td>
 <td>Prima Forte</td>
 <td>First 40</td>
 <td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
 <td>IRL 4240</td>
 <td>RIYC</td>
 <td>Burke/Lemass/Rigney</td>
-<td>1.076</td>
-<td>0.0</td>
-<td>0.0</td>
+<td>1.180</td>
+<td>1.079</td>
+<td>104000</td>
+<td>13:31:29</td>
+<td>2:51:29</td>
+<td>3:22:21</td>
+<td>9.0</td>
 </tr>
-<tr class="even summaryrow">
-<td>1st</td>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1class_0_irc">Lambay Race - Class 0 IRC Start Class</h3>
+<div class="caption racecaption">
+Start: Start 1 Class 0, Finishes: Finish time, Time: 104000, Weight: 1.5
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="15">
+<col class="rank" />
+<col class="fleet" />
+<col class="boat" />
+<col class="class" />
+<col class="nat" />
+<col class="sailno" />
+<col class="club" />
+<col class="helmname" />
+<col class="rating" />
+<col class="newrating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Start Class</th>
+<th>Boat Name</th>
+<th>Boat Type</th>
+<th>Nat</th>
+<th>Sail No</th>
+<th>Club</th>
+<th>Owner Name(s)</th>
+<th>IRC/ECHO</th>
+<th>New Rating</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>Class 0 IRC</td>
+<td>Checkmate XX</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL66</td>
+<td>HYC</td>
+<td>Biggs/Cullen</td>
+<td>1.115</td>
+<td>&nbsp;</td>
+<td>104000</td>
+<td>13:08:06</td>
+<td>2:28:06</td>
+<td>2:45:08</td>
+<td>1.5</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
 <td>Class 0 IRC</td>
 <td>Valentina</td>
 <td>&nbsp;</td>
@@ -596,8 +848,80 @@ div.applicant-break {page-break-after:always;}
 <td>NYC</td>
 <td>Johnny Treanor</td>
 <td>1.048</td>
-<td>0.0</td>
-<td>0.0</td>
+<td>&nbsp;</td>
+<td>104000</td>
+<td>13:22:37</td>
+<td>2:42:37</td>
+<td>2:50:25</td>
+<td>3.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>Class 0 IRC</td>
+<td>Ghost Raider</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL 985</td>
+<td>HYC</td>
+<td>Norbert Reillly</td>
+<td>1.090</td>
+<td>&nbsp;</td>
+<td>104000</td>
+<td>13:18:50</td>
+<td>2:38:50</td>
+<td>2:53:08</td>
+<td>4.5</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>Class 0 IRC</td>
+<td>Jellybaby</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL9753</td>
+<td>RCYC</td>
+<td>Jones Family</td>
+<td>1.088</td>
+<td>&nbsp;</td>
+<td>104000</td>
+<td>13:19:29</td>
+<td>2:39:29</td>
+<td>2:53:31</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>Class 0 IRC</td>
+<td>Impetuous</td>
+<td>&nbsp;</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>GBR7737R</td>
+<td>SCYC</td>
+<td>Miller, Crompton & Hodges</td>
+<td>1.089</td>
+<td>&nbsp;</td>
+<td>104000</td>
+<td>13:19:52</td>
+<td>2:39:52</td>
+<td>2:54:06</td>
+<td>7.5</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Class 0 IRC</td>
+<td>Prima Forte</td>
+<td>First 40</td>
+<td><img class="natflag" title="IRL" src="https://www.sailwave.com/flags/small/IRL.jpg"><br><span class="nattext">IRL</span></td>
+<td>IRL 4240</td>
+<td>RIYC</td>
+<td>Burke/Lemass/Rigney</td>
+<td>1.076</td>
+<td>&nbsp;</td>
+<td>104000</td>
+<td>13:31:29</td>
+<td>2:51:29</td>
+<td>3:04:31</td>
+<td>9.0</td>
 </tr>
 </tbody>
 </table>
