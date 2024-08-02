@@ -116,16 +116,18 @@ $(function () {
 <style>
 div.applicant-break {page-break-after:always;}
 </style>
-<h3 class="seriestitle">Results are provisional as of 15:58 on July 26, 2024</h3>
+<h3 class="seriestitle">Results are provisional as of  0:30 on August  2, 2024</h3>
 <h3 class="summarytitle" id="summarypy_class">PY Class Fleet</h3>
-<div class="caption summarycaption">Sailed: 15, Discards: 3, To count: 12, Rating system: PY, Entries: 28, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 17, Discards: 4, To count: 13, Rating system: PY, Entries: 28, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="22">
+<colgroup span="24">
 <col class="rank" />
 <col class="class" />
 <col class="sailno" />
 <col class="helmname" />
 <col class="rating" />
+<col class="race" />
+<col class="race" />
 <col class="race" />
 <col class="race" />
 <col class="race" />
@@ -151,21 +153,23 @@ div.applicant-break {page-break-after:always;}
 <th>SailNo</th>
 <th>HelmName</th>
 <th>PY</th>
-<th><a class="racelink" href="#r1py_class">April 23rd</a></th>
-<th><a class="racelink" href="#r2py_class">May 2nd</a></th>
-<th><a class="racelink" href="#r3py_class">R3 May 9th</a></th>
-<th><a class="racelink" href="#r4py_class">R4</a></th>
-<th><a class="racelink" href="#r5py_class">R5</a></th>
-<th><a class="racelink" href="#r6py_class">R6 Jun 14</a></th>
-<th><a class="racelink" href="#r7py_class">R7 Jun 14</a></th>
-<th><a class="racelink" href="#r8py_class">R8</a></th>
-<th><a class="racelink" href="#r9py_class">R9</a></th>
-<th><a class="racelink" href="#r10py_class">R10 Jun 28</a></th>
-<th><a class="racelink" href="#r11py_class">R11 Jun 28</a></th>
-<th><a class="racelink" href="#r12py_class">R12 Jul 18</a></th>
-<th><a class="racelink" href="#r13py_class">R13 Jul 18</a></th>
-<th><a class="racelink" href="#r14py_class">R14 Jul 25</a></th>
-<th><a class="racelink" href="#r15py_class">R15 Jul 25</a></th>
+<th>April 23rd</th>
+<th>May 2nd</th>
+<th>R3 May 9th</th>
+<th>R4</th>
+<th>R5</th>
+<th>R6 Jun 14</th>
+<th>R7 Jun 14</th>
+<th>R8</th>
+<th>R9</th>
+<th>R10 Jun 28</th>
+<th>R11 Jun 28</th>
+<th>R12 Jul 18</th>
+<th>R13 Jul 18</th>
+<th>R14 Jul 25</th>
+<th>R15 Jul 25</th>
+<th><a class="racelink" href="#r16py_class">R16 Aug 1</a></th>
+<th><a class="racelink" href="#r17py_class">R17 Aug 1</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
@@ -192,8 +196,10 @@ div.applicant-break {page-break-after:always;}
 <td class="rank2">2.0</td>
 <td class="rank2">2.0</td>
 <td class="rank1">1.0</td>
-<td>115.0</td>
-<td>28.0</td>
+<td>(29.0 DNC)</td>
+<td>29.0 DNC</td>
+<td>173.0</td>
+<td>57.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>2nd</td>
@@ -216,8 +222,10 @@ div.applicant-break {page-break-after:always;}
 <td>6.0</td>
 <td class="rank3">3.0</td>
 <td class="rank2">2.0</td>
-<td>120.0</td>
-<td>55.0</td>
+<td>(29.0 DNC)</td>
+<td>6.0</td>
+<td>155.0</td>
+<td>61.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>3rd</td>
@@ -231,7 +239,7 @@ div.applicant-break {page-break-after:always;}
 <td class="rank1">1.0</td>
 <td class="rank1">1.0</td>
 <td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td class="rank2">2.0</td>
@@ -240,8 +248,10 @@ div.applicant-break {page-break-after:always;}
 <td class="rank1">1.0</td>
 <td class="rank1">1.0</td>
 <td>29.0 DNC</td>
-<td>213.0</td>
-<td>126.0</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>215.0</td>
+<td>99.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>4th</td>
@@ -256,7 +266,7 @@ div.applicant-break {page-break-after:always;}
 <td class="rank2">2.0</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td class="rank3">3.0</td>
 <td class="rank3">3.0</td>
@@ -264,11 +274,117 @@ div.applicant-break {page-break-after:always;}
 <td class="rank3">3.0</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>228.0</td>
-<td>141.0</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>232.0</td>
+<td>116.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>5th</td>
+<td>RS Aero 6</td>
+<td>3187</td>
+<td>Emmet Dalton</td>
+<td>1102</td>
+<td>(29.0 DNC)</td>
+<td>4.0</td>
+<td class="rank1">7.0 DNF</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>29.0 DNC</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td>4.0</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>16.0 DNF</td>
+<td>29.0 DNC</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td>274.0</td>
+<td>158.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>ILCA 6</td>
+<td>144273</td>
+<td>Dylan Cassidy</td>
+<td>1154</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>29.0 DNC</td>
+<td class="rank1">1.0</td>
+<td class="rank2">2.0</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>4.0</td>
+<td class="rank1">1.0</td>
+<td>5.0</td>
+<td>5.0</td>
+<td>16.0 DNF</td>
+<td>29.0 DNC</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>275.0</td>
+<td>159.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>Melges 15</td>
+<td>807</td>
+<td>Darren Wright</td>
+<td>973</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>29.0 DNC</td>
+<td>7.0</td>
+<td>4.0</td>
+<td>7.0</td>
+<td>11.0 DNF</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>12.0 RET</td>
+<td>11.0 RET</td>
+<td>9.0</td>
+<td>5.0</td>
+<td>7.0</td>
+<td>8.0</td>
+<td>284.0</td>
+<td>168.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>8th</td>
+<td>Melges 15</td>
+<td>802</td>
+<td>Tom McMahon</td>
+<td>973</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>(29.0 DNC)</td>
+<td>29.0 DNC</td>
+<td class="rank3">3.0</td>
+<td class="rank3">3.0</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>4.0</td>
+<td>4.0</td>
+<td>6.0</td>
+<td>7.0</td>
+<td>300.0</td>
+<td>184.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>9th</td>
 <td>Melges 15</td>
 <td>803</td>
 <td>Stephen Quinn</td>
@@ -282,17 +398,19 @@ div.applicant-break {page-break-after:always;}
 <td>7.0</td>
 <td>4.0</td>
 <td>5.0</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>7.0</td>
 <td>4.0</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>248.0</td>
-<td>161.0</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>306.0</td>
+<td>190.0</td>
 </tr>
 <tr class="even summaryrow">
-<td>6th</td>
+<td>10th</td>
 <td>Melges 15</td>
 <td>800</td>
 <td>Mark McLoughlin</td>
@@ -306,113 +424,45 @@ div.applicant-break {page-break-after:always;}
 <td>6.0</td>
 <td>11.0 DNF</td>
 <td>11.0 DNF</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>9.0</td>
 <td>9.0</td>
 <td>16.0 DNF</td>
 <td>29.0 DNC</td>
-<td>255.0</td>
-<td>168.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>7th</td>
-<td>ILCA 6</td>
-<td>144273</td>
-<td>Dylan Cassidy</td>
-<td>1154</td>
-<td>(29.0 DNC)</td>
-<td>(29.0 DNC)</td>
-<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td class="rank1">1.0</td>
-<td class="rank2">2.0</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>4.0</td>
-<td class="rank1">1.0</td>
-<td>5.0</td>
-<td>5.0</td>
-<td>16.0 DNF</td>
-<td>29.0 DNC</td>
-<td>266.0</td>
-<td>179.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>8th</td>
-<td>RS Aero 6</td>
-<td>3187</td>
-<td>Emmet Dalton</td>
-<td>1102</td>
-<td>(29.0 DNC)</td>
-<td>4.0</td>
-<td class="rank1">7.0 DNF</td>
-<td>(29.0 DNC)</td>
-<td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td class="rank2">2.0</td>
-<td class="rank2">2.0</td>
-<td class="rank1">1.0</td>
-<td>4.0</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>16.0 DNF</td>
-<td>29.0 DNC</td>
-<td>268.0</td>
-<td>181.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>9th</td>
-<td>Melges 15</td>
-<td>807</td>
-<td>Darren Wright</td>
-<td>973</td>
-<td>(29.0 DNC)</td>
-<td>(29.0 DNC)</td>
-<td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>7.0</td>
-<td>4.0</td>
-<td>7.0</td>
-<td>11.0 DNF</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>12.0 RET</td>
-<td>11.0 RET</td>
-<td>9.0</td>
-<td>5.0</td>
-<td>269.0</td>
-<td>182.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>10th</td>
-<td>Melges 15</td>
-<td>802</td>
-<td>Tom McMahon</td>
-<td>973</td>
-<td>(29.0 DNC)</td>
-<td>(29.0 DNC)</td>
-<td>(29.0 DNC)</td>
-<td>6.0</td>
-<td>6.0</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td class="rank3">3.0</td>
-<td class="rank3">3.0</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>4.0</td>
-<td>4.0</td>
-<td>287.0</td>
-<td>200.0</td>
+<td>313.0</td>
+<td>197.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>11th</td>
+<td>Melges 15</td>
+<td>806</td>
+<td>Sarah Robertson</td>
+<td>973</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>8.0</td>
+<td>7.0</td>
+<td>(29.0 DNC)</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>8.0</td>
+<td>8.0</td>
+<td>8.0</td>
+<td>6.0</td>
+<td>8.0</td>
+<td>9.0</td>
+<td>323.0</td>
+<td>207.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>12th</td>
 <td>Melges 15</td>
 <td>797</td>
 <td>John Brereton</td>
@@ -420,7 +470,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>8.0</td>
 <td>5.0</td>
@@ -432,11 +482,13 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>5.0</td>
 <td class="rank3">3.0</td>
-<td>292.0</td>
-<td>205.0</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>350.0</td>
+<td>234.0</td>
 </tr>
-<tr class="even summaryrow">
-<td>12th</td>
+<tr class="odd summaryrow">
+<td>13th</td>
 <td>B14</td>
 <td>79</td>
 <td>Jeremy Beshoff</td>
@@ -447,7 +499,7 @@ div.applicant-break {page-break-after:always;}
 <td>10.0</td>
 <td>13.0 RET</td>
 <td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>9.0</td>
 <td>6.0</td>
 <td>8.0</td>
@@ -456,32 +508,10 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>293.0</td>
-<td>206.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>13th</td>
-<td>Melges 15</td>
-<td>806</td>
-<td>Sarah Robertson</td>
-<td>973</td>
-<td>(29.0 DNC)</td>
-<td>(29.0 DNC)</td>
-<td>(29.0 DNC)</td>
-<td>8.0</td>
-<td>7.0</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>8.0</td>
-<td>8.0</td>
-<td>8.0</td>
-<td>6.0</td>
-<td>306.0</td>
-<td>219.0</td>
+<td>351.0</td>
+<td>235.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>14th</td>
@@ -494,7 +524,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>5.0</td>
 <td>13.0 RET</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>5.0</td>
 <td>29.0 DNC</td>
@@ -504,8 +534,10 @@ div.applicant-break {page-break-after:always;}
 <td>7.0</td>
 <td>16.0 DNF</td>
 <td>29.0 DNC</td>
-<td>313.0</td>
-<td>226.0</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>371.0</td>
+<td>255.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>15th</td>
@@ -516,7 +548,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td class="rank3">3.0</td>
 <td>8.0</td>
@@ -528,8 +560,10 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>16.0 DNF</td>
 <td>29.0 DNC</td>
-<td>329.0</td>
-<td>242.0</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>387.0</td>
+<td>271.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>16th</td>
@@ -541,7 +575,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -552,44 +586,22 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>374.0</td>
-<td>287.0</td>
+<td>9.0</td>
+<td>10.0</td>
+<td>393.0</td>
+<td>277.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>17th</td>
-<td>GP14</td>
-<td>14279</td>
-<td>Katie Dwyer</td>
-<td>1138</td>
-<td>(29.0 DNC)</td>
-<td class="rank1">1.0</td>
-<td>(29.0 DNC)</td>
-<td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>29.0 DNC</td>
-<td>6.0</td>
-<td>29.0 DNC</td>
-<td>384.0</td>
-<td>297.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>18th</td>
 <td>RS 600</td>
-<td>789</td>
+<td>798</td>
 <td>Tristan Nelson</td>
 <td>917</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td class="rank1">7.0 DNF</td>
 <td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -600,8 +612,36 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>7.0</td>
 <td>29.0 DNC</td>
-<td>391.0</td>
-<td>304.0</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>400.0</td>
+<td>284.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>18th</td>
+<td>GP14</td>
+<td>14279</td>
+<td>Katie Dwyer</td>
+<td>1138</td>
+<td>(29.0 DNC)</td>
+<td class="rank1">1.0</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>6.0</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>442.0</td>
+<td>326.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>19th</td>
@@ -614,6 +654,7 @@ div.applicant-break {page-break-after:always;}
 <td class="rank1">7.0 DNF</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -624,8 +665,9 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>392.0</td>
-<td>305.0</td>
+<td>29.0 DNC</td>
+<td>450.0</td>
+<td>334.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>20th</td>
@@ -638,6 +680,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td>13.0 RET</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -648,8 +691,9 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>393.0</td>
-<td>306.0</td>
+<td>29.0 DNC</td>
+<td>451.0</td>
+<td>335.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>21st</td>
@@ -660,7 +704,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -672,8 +716,10 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>10.0</td>
 <td>8.0 DNF</td>
-<td>395.0</td>
-<td>308.0</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>453.0</td>
+<td>337.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>22nd</td>
@@ -684,7 +730,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
-<td>29.0 DNC</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -696,8 +742,10 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>396.0</td>
-<td>309.0</td>
+<td>29.0 DNC</td>
+<td>29.0 DNC</td>
+<td>454.0</td>
+<td>338.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>23rd</td>
@@ -710,6 +758,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>12.0 RET</td>
 <td>8.0</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -720,8 +769,9 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>397.0</td>
-<td>310.0</td>
+<td>29.0 DNC</td>
+<td>455.0</td>
+<td>339.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>24th</td>
@@ -733,6 +783,7 @@ div.applicant-break {page-break-after:always;}
 <td>6.0</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -744,8 +795,9 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>412.0</td>
-<td>325.0</td>
+<td>29.0 DNC</td>
+<td>470.0</td>
+<td>354.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>25th</td>
@@ -756,6 +808,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -768,8 +821,9 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>435.0</td>
-<td>348.0</td>
+<td>29.0 DNC</td>
+<td>493.0</td>
+<td>377.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>25th</td>
@@ -780,6 +834,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -792,8 +847,9 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>435.0</td>
-<td>348.0</td>
+<td>29.0 DNC</td>
+<td>493.0</td>
+<td>377.0</td>
 </tr>
 <tr class="odd summaryrow">
 <td>25th</td>
@@ -804,6 +860,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -816,8 +873,9 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>435.0</td>
-<td>348.0</td>
+<td>29.0 DNC</td>
+<td>493.0</td>
+<td>377.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>25th</td>
@@ -828,6 +886,7 @@ div.applicant-break {page-break-after:always;}
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
 <td>(29.0 DNC)</td>
+<td>(29.0 DNC)</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
@@ -840,20 +899,23 @@ div.applicant-break {page-break-after:always;}
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
 <td>29.0 DNC</td>
-<td>435.0</td>
-<td>348.0</td>
+<td>29.0 DNC</td>
+<td>493.0</td>
+<td>377.0</td>
 </tr>
 </tbody>
 </table>
 <h3 class="summarytitle" id="summaryoptimist">Optimist Fleet</h3>
-<div class="caption summarycaption">Sailed: 5, Discards: 1, To count: 4, Entries: 2, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 7, Discards: 1, To count: 6, Entries: 7, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="12">
+<colgroup span="14">
 <col class="rank" />
 <col class="class" />
 <col class="sailno" />
 <col class="helmname" />
 <col class="rating" />
+<col class="race" />
+<col class="race" />
 <col class="race" />
 <col class="race" />
 <col class="race" />
@@ -869,11 +931,13 @@ div.applicant-break {page-break-after:always;}
 <th>SailNo</th>
 <th>HelmName</th>
 <th>Rating</th>
-<th><a class="racelink" href="#r1optimist">April 23rd</a></th>
-<th><a class="racelink" href="#r2optimist">May 2nd</a></th>
-<th><a class="racelink" href="#r6optimist">R6 Jun 14</a></th>
-<th><a class="racelink" href="#r7optimist">R7 Jun 14</a></th>
-<th><a class="racelink" href="#r14optimist">R14 Jul 25</a></th>
+<th>April 23rd</th>
+<th>May 2nd</th>
+<th>R6 Jun 14</th>
+<th>R7 Jun 14</th>
+<th>R14 Jul 25</th>
+<th><a class="racelink" href="#r16optimist">R16 Aug 1</a></th>
+<th><a class="racelink" href="#r17optimist">R17 Aug 1</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
@@ -885,13 +949,15 @@ div.applicant-break {page-break-after:always;}
 <td>1620</td>
 <td>Will Cullen</td>
 <td>1628</td>
-<td class="rank1">(3.0 DNC)</td>
+<td class="rank1">(8.0 DNC)</td>
 <td class="rank1">1.0</td>
 <td class="rank1">1.0</td>
 <td class="rank1">1.0</td>
 <td class="rank1">2.0 DNF</td>
-<td>8.0</td>
-<td>5.0</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>29.0</td>
+<td>21.0</td>
 </tr>
 <tr class="even summaryrow">
 <td>2nd</td>
@@ -899,19 +965,101 @@ div.applicant-break {page-break-after:always;}
 <td>1579</td>
 <td>Dan Cullen</td>
 <td>1628</td>
-<td class="rank1">(3.0 DNC)</td>
+<td class="rank1">(8.0 DNC)</td>
 <td class="rank2">2.0</td>
 <td class="rank2">2.0</td>
 <td class="rank2">2.0</td>
-<td class="rank2">3.0 DNC</td>
-<td>12.0</td>
-<td>9.0</td>
+<td class="rank2">8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>38.0</td>
+<td>30.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
+<td>OPTIMIST</td>
+<td>1074</td>
+<td>&nbsp;</td>
+<td>1628</td>
+<td class="rank1">(8.0 DNC)</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank2">8.0 DNC</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>42.0</td>
+<td>34.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>OPTIMIST</td>
+<td>xxxx</td>
+<td>Harry Cahill</td>
+<td>1628</td>
+<td class="rank1">(8.0 DNC)</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank2">8.0 DNC</td>
+<td class="rank2">2.0</td>
+<td class="rank3">3.0</td>
+<td>45.0</td>
+<td>37.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>5th</td>
+<td>OPTIMIST</td>
+<td>5773</td>
+<td>&nbsp;</td>
+<td>1628</td>
+<td class="rank1">(8.0 DNC)</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank2">8.0 DNC</td>
+<td>4.0</td>
+<td class="rank2">2.0</td>
+<td>46.0</td>
+<td>38.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>6th</td>
+<td>OPTIMIST</td>
+<td>yyyy</td>
+<td>Kier Mullin</td>
+<td>1628</td>
+<td class="rank1">(8.0 DNC)</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank2">8.0 DNC</td>
+<td class="rank3">3.0</td>
+<td>5.0</td>
+<td>48.0</td>
+<td>40.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>7th</td>
+<td>OPTIMIST</td>
+<td>1362</td>
+<td>&nbsp;</td>
+<td>1628</td>
+<td class="rank1">(8.0 DNC)</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank3">8.0 DNC</td>
+<td class="rank2">8.0 DNC</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>49.0</td>
+<td>41.0</td>
 </tr>
 </tbody>
 </table>
-<h3 class="racetitle" id="r1py_class">April 23rd - PY Class Fleet&nbsp;-&nbsp;23/04/2024</h3>
+<h3 class="racetitle" id="r16py_class">R16 Aug 1 - PY Class Fleet&nbsp;-&nbsp;Aug 2</h3>
 <div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 193000
+Start: Start 1, Finishes: Finish time, Time: 190500
 </div>
 <table class="racetable" cellspacing="0" cellpadding="0" border="0">
 <colgroup span="10">
@@ -947,80 +1095,10 @@ Start: Start 1, Finishes: Finish time, Time: 193000
 <td>4179</td>
 <td>Daragh Sheridan</td>
 <td>1102</td>
-<td>193000</td>
-<td>19:49:35</td>
-<td>0:19:35</td>
-<td>0:17:46</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>193000</td>
-<td>19:49:33</td>
-<td>0:19:33</td>
-<td>0:20:06</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>B14</td>
-<td>733</td>
-<td>Sam Osborne</td>
-<td>853</td>
-<td>193000</td>
-<td>19:56:33</td>
-<td>0:26:33</td>
-<td>0:31:08</td>
-<td>3.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r2py_class">May 2nd - PY Class Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 192300
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>GP14</td>
-<td>14279</td>
-<td>Katie Dwyer</td>
-<td>1138</td>
-<td>192300</td>
-<td>20:04:06</td>
-<td>0:41:06</td>
-<td>0:36:07</td>
+<td>190500</td>
+<td>19:42:22</td>
+<td>0:37:22</td>
+<td>0:33:54</td>
 <td>1.0</td>
 </tr>
 <tr class="even racerow">
@@ -1029,1980 +1107,255 @@ Start: Start 1, Finishes: Finish time, Time: 192300
 <td>3291</td>
 <td>John Phelan</td>
 <td>1102</td>
-<td>192300</td>
-<td>20:09:05</td>
-<td>0:46:05</td>
+<td>190500</td>
+<td>19:43:00</td>
+<td>0:38:00</td>
+<td>0:34:29</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>RS Aero 6</td>
+<td>3187</td>
+<td>Emmet Dalton</td>
+<td>1102</td>
+<td>190500</td>
+<td>194425</td>
+<td>0:39:25</td>
+<td>0:35:46</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>ILCA 6</td>
+<td>144273</td>
+<td>Dylan Cassidy</td>
+<td>1154</td>
+<td>190500</td>
+<td>19:46:35</td>
+<td>0:41:35</td>
+<td>0:36:02</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>RS 600</td>
+<td>798</td>
+<td>Tristan Nelson</td>
+<td>917</td>
+<td>190500</td>
+<td>19:38:10</td>
+<td>0:33:10</td>
+<td>0:36:10</td>
+<td>5.0</td>
+</tr>
+<tr class="even racerow">
+<td>6</td>
+<td>Melges 15</td>
+<td>802</td>
+<td>Tom McMahon</td>
+<td>973</td>
+<td>190500</td>
+<td>19:45:38</td>
+<td>0:40:38</td>
+<td>0:41:46</td>
+<td>6.0</td>
+</tr>
+<tr class="odd racerow">
+<td>7</td>
+<td>Melges 15</td>
+<td>807</td>
+<td>Darren Wright</td>
+<td>973</td>
+<td>190500</td>
+<td>19:46:21</td>
+<td>0:41:21</td>
+<td>0:42:30</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>Melges 15</td>
+<td>806</td>
+<td>Sarah Robertson</td>
+<td>973</td>
+<td>190500</td>
+<td>19:46:49</td>
 <td>0:41:49</td>
-<td>2.0</td>
+<td>0:42:59</td>
+<td>8.0</td>
 </tr>
 <tr class="odd racerow">
-<td>3</td>
-<td>Enterprise</td>
-<td>23118</td>
-<td>Kay Cornally</td>
-<td>1122</td>
-<td>192300</td>
-<td>20:11:05</td>
-<td>0:48:05</td>
-<td>0:42:51</td>
-<td>3.0</td>
+<td>9</td>
+<td>B14</td>
+<td>733</td>
+<td>Sam Osborne</td>
+<td>853</td>
+<td>190500</td>
+<td>19:57:00</td>
+<td>0:52:00</td>
+<td>1:00:58</td>
+<td>9.0</td>
 </tr>
-<tr class="even racerow">
-<td>4</td>
+</tbody>
+</table>
+<h3 class="racetitle" id="r17py_class">R17 Aug 1 - PY Class Fleet&nbsp;-&nbsp;Aug 2</h3>
+<div class="caption racecaption">
+Start: Start 1, Finishes: Finish time, Time: 195500
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="10">
+<col class="rank" />
+<col class="class" />
+<col class="sailno" />
+<col class="helmname" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Class</th>
+<th>SailNo</th>
+<th>HelmName</th>
+<th>PY</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
 <td>RS Aero 6</td>
-<td>3187</td>
-<td>Emmet Dalton</td>
+<td>4179</td>
+<td>Daragh Sheridan</td>
 <td>1102</td>
-<td>192300</td>
+<td>195500</td>
 <td>20:12:31</td>
-<td>0:49:31</td>
-<td>0:44:56</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>192300</td>
-<td>20:12:13</td>
-<td>0:49:13</td>
-<td>0:50:35</td>
-<td>5.0</td>
+<td>0:17:31</td>
+<td>0:15:54</td>
+<td>1.0</td>
 </tr>
 <tr class="even racerow">
-<td>6</td>
-<td>ILCA 7</td>
-<td>170946</td>
-<td>Cillian Macken</td>
-<td>1102</td>
-<td>192300</td>
-<td>20:18:57</td>
-<td>0:55:57</td>
-<td>0:50:46</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>ILCA 4</td>
-<td>144273</td>
-<td>Dylan Cassidy</td>
-<td>1213</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>NSC</td>
-<td>&nbsp;</td>
-<td>8.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r3py_class">R3 May 9th - PY Class Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 19.17.00
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="7">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="place" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Place</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>DNF</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>1</td>
+<td>2</td>
 <td>RS Aero 6</td>
 <td>3291</td>
 <td>John Phelan</td>
 <td>1102</td>
-<td>DNF</td>
-<td>7.0</td>
+<td>195500</td>
+<td>20:13:11</td>
+<td>0:18:11</td>
+<td>0:16:30</td>
+<td>2.0</td>
 </tr>
 <tr class="odd racerow">
-<td>1</td>
+<td>3</td>
 <td>RS Aero 6</td>
 <td>3187</td>
 <td>Emmet Dalton</td>
 <td>1102</td>
-<td>DNF</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>1</td>
-<td>B14</td>
-<td>79</td>
-<td>Jeremy Beshoff</td>
-<td>853</td>
-<td>DNF</td>
-<td>7.0</td>
-</tr>
-<tr class="odd racerow">
-<td>1</td>
-<td>RS 600</td>
-<td>789</td>
-<td>Tristan Nelson</td>
-<td>917</td>
-<td>DNF</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>1</td>
-<td>ILCA 4</td>
-<td>144273</td>
-<td>Dylan Cassidy</td>
-<td>1213</td>
-<td>DNF</td>
-<td>7.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r4py_class">R4 - PY Class Fleet&nbsp;-&nbsp;Jun 6th</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 19.08.00
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>RS Aero 6</td>
-<td>4179</td>
-<td>Daragh Sheridan</td>
-<td>1102</td>
-<td>19.08.00</td>
-<td>19.45.24</td>
-<td>0.37.24</td>
-<td>0.33.56</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>RS Aero 6</td>
-<td>3291</td>
-<td>John Phelan</td>
-<td>1102</td>
-<td>19.08.00</td>
-<td>19.47.31</td>
-<td>0.39.31</td>
-<td>0.35.52</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.43.13</td>
-<td>0.35.13</td>
-<td>0.36.12</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>Melges 15</td>
-<td>803</td>
-<td>Stephen Quinn</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.43.22</td>
-<td>0.35.22</td>
-<td>0.36.21</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>ILCA 7</td>
-<td>173090</td>
-<td>Brian Tyrrell</td>
-<td>1102</td>
-<td>19.08.00</td>
-<td>19.50.43</td>
-<td>0.42.43</td>
-<td>0.38.46</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>Melges 15</td>
-<td>802</td>
-<td>Tom McMahon</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.45.48</td>
-<td>0.37.48</td>
-<td>0.38.51</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.46.58</td>
-<td>0.38.58</td>
-<td>0.40.03</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>8</td>
-<td>Melges 15</td>
-<td>806</td>
-<td>Sarah Robertson</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.47.05</td>
-<td>0.39.05</td>
-<td>0.40.10</td>
-<td>8.0</td>
-</tr>
-<tr class="odd racerow">
-<td>9</td>
-<td>Melges 15</td>
-<td>800</td>
-<td>Mark McLoughlin</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.51.10</td>
-<td>0.43.10</td>
-<td>0.44.22</td>
-<td>9.0</td>
-</tr>
-<tr class="even racerow">
-<td>10</td>
-<td>B14</td>
-<td>79</td>
-<td>Jeremy Beshoff</td>
-<td>853</td>
-<td>19.08.00</td>
-<td>19.46.44</td>
-<td>0.38.44</td>
-<td>0.45.25</td>
-<td>10.0</td>
-</tr>
-<tr class="odd racerow">
-<td>11</td>
-<td>Melges 15</td>
-<td>796</td>
-<td>Karina Knaggs</td>
-<td>973</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>RET</td>
-<td>&nbsp;</td>
-<td>12.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r5py_class">R5 - PY Class Fleet&nbsp;-&nbsp;Jun 6th</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 20.03.00
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>RS Aero 6</td>
-<td>4179</td>
-<td>Daragh Sheridan</td>
-<td>1102</td>
-<td>20.03.00</td>
-<td>20.27.24</td>
-<td>0.24.24</td>
-<td>0.22.08</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>RS Aero 6</td>
-<td>3291</td>
-<td>John Phelan</td>
-<td>1102</td>
-<td>20.03.00</td>
-<td>20.28.41</td>
-<td>0.25.41</td>
-<td>0.23.18</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>20.03.00</td>
-<td>20.26.17</td>
-<td>0.23.17</td>
-<td>0.23.56</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>Melges 15</td>
-<td>800</td>
-<td>Mark McLoughlin</td>
-<td>973</td>
-<td>20.03.00</td>
-<td>20.26.45</td>
-<td>0.23.45</td>
-<td>0.24.25</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>20.03.00</td>
-<td>20.27.03</td>
-<td>0.24.03</td>
-<td>0.24.43</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>Melges 15</td>
-<td>802</td>
-<td>Tom McMahon</td>
-<td>973</td>
-<td>20.03.00</td>
-<td>20.27.38</td>
-<td>0.24.38</td>
-<td>0.25.19</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>806</td>
-<td>Sarah Robertson</td>
-<td>973</td>
-<td>20.03.00</td>
-<td>20.27.58</td>
-<td>0.24.58</td>
-<td>0.25.40</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>8</td>
-<td>Melges 15</td>
-<td>796</td>
-<td>Karina Knaggs</td>
-<td>973</td>
-<td>20.03.00</td>
-<td>20.28.20</td>
-<td>0.25.20</td>
-<td>0.26.02</td>
-<td>8.0</td>
-</tr>
-<tr class="odd racerow">
-<td>9</td>
-<td>Melges 15</td>
-<td>803</td>
-<td>Stephen Quinn</td>
-<td>973</td>
-<td>20.03.00</td>
-<td>20.28.51</td>
-<td>0.25.51</td>
-<td>0.26.34</td>
-<td>9.0</td>
-</tr>
-<tr class="even racerow">
-<td>10</td>
-<td>B14</td>
-<td>79</td>
-<td>Jeremy Beshoff</td>
-<td>853</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>RET</td>
-<td>&nbsp;</td>
-<td>13.0</td>
-</tr>
-<tr class="odd racerow">
-<td>10</td>
-<td>ILCA 7</td>
-<td>173090</td>
-<td>Brian Tyrrell</td>
-<td>1102</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>RET</td>
-<td>&nbsp;</td>
-<td>13.0</td>
-</tr>
-<tr class="even racerow">
-<td>10</td>
-<td>Enterprise</td>
-<td>23118</td>
-<td>Kay Cornally</td>
-<td>1122</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>RET</td>
-<td>&nbsp;</td>
-<td>13.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r6py_class">R6 Jun 14 - PY Class Fleet</h3>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>ILCA 6</td>
-<td>144273</td>
-<td>Dylan Cassidy</td>
-<td>1154</td>
-<td>191300</td>
-<td>19:44:54</td>
-<td>0:31:54</td>
-<td>0:27:39</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>191300</td>
-<td>19:42:38</td>
-<td>0:29:38</td>
-<td>0:30:27</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>Melges 15</td>
-<td>805</td>
-<td>Gary Cullen</td>
-<td>973</td>
-<td>191300</td>
-<td>19:42:41</td>
-<td>0:29:41</td>
-<td>0:30:30</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>191300</td>
-<td>19:44:23</td>
-<td>0:31:23</td>
-<td>0:32:15</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>Melges 15</td>
-<td>803</td>
-<td>Stephen Quinn</td>
-<td>973</td>
-<td>191300</td>
-<td>19:44:47</td>
-<td>0:31:47</td>
-<td>0:32:40</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>Melges 15</td>
-<td>800</td>
-<td>Mark McLoughlin</td>
-<td>973</td>
-<td>191300</td>
-<td>19:45:00</td>
-<td>0:32:00</td>
-<td>0:32:53</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>807</td>
-<td>Darren Wright</td>
-<td>973</td>
-<td>191300</td>
-<td>19:45:25</td>
-<td>0:32:25</td>
-<td>0:33:19</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>8</td>
-<td>Melges 15</td>
-<td>797</td>
-<td>John Brereton</td>
-<td>973</td>
-<td>191300</td>
-<td>19:46:13</td>
-<td>0:33:13</td>
-<td>0:34:08</td>
-<td>8.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r7py_class">R7 Jun 14 - PY Class Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 195100
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>195100</td>
-<td>20:13:14</td>
-<td>0:22:14</td>
-<td>0:22:51</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>ILCA 6</td>
-<td>144273</td>
-<td>Dylan Cassidy</td>
-<td>1154</td>
-<td>195100</td>
-<td>20:18:18</td>
-<td>0:27:18</td>
-<td>0:23:39</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>195100</td>
-<td>20:15:10</td>
-<td>0:24:10</td>
-<td>0:24:50</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>Melges 15</td>
-<td>807</td>
-<td>Darren Wright</td>
-<td>973</td>
-<td>195100</td>
-<td>20:16:21</td>
-<td>0:25:21</td>
-<td>0:26:03</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>Melges 15</td>
-<td>797</td>
-<td>John Brereton</td>
-<td>973</td>
-<td>195100</td>
-<td>20:16:57</td>
-<td>0:25:57</td>
-<td>0:26:40</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>Melges 15</td>
-<td>800</td>
-<td>Mark McLoughlin</td>
-<td>973</td>
-<td>195100</td>
-<td>20:18:03</td>
-<td>0:27:03</td>
-<td>0:27:48</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>803</td>
-<td>Stephen Quinn</td>
-<td>973</td>
-<td>195100</td>
-<td>20:18:19</td>
-<td>0:27:19</td>
-<td>0:28:04</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>8</td>
-<td>Melges 15</td>
-<td>805</td>
-<td>Gary Cullen</td>
-<td>973</td>
-<td>195100</td>
-<td>20:18:55</td>
-<td>0:27:55</td>
-<td>0:28:41</td>
-<td>8.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r8py_class">R8 - PY Class Fleet&nbsp;-&nbsp;Jun 20th</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 19.08.00
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.43.05</td>
-<td>0.35.05</td>
-<td>0.36.03</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>RS Aero 6</td>
-<td>3187</td>
-<td>Emmet Dalton</td>
-<td>1102</td>
-<td>19.08.00</td>
-<td>19.48.05</td>
-<td>0.40.05</td>
-<td>0.36.22</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>Melges 15</td>
-<td>802</td>
-<td>Tom McMahon</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.44.08</td>
-<td>0.36.08</td>
-<td>0.37.08</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>Melges 15</td>
-<td>803</td>
-<td>Stephen Quinn</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.44.30</td>
-<td>0.36.30</td>
-<td>0.37.31</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>ILCA 7</td>
-<td>173090</td>
-<td>Brian Tyrrell</td>
-<td>1102</td>
-<td>19.08.00</td>
-<td>19.49.27</td>
-<td>0.41.27</td>
-<td>0.37.37</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>Melges 15</td>
-<td>797</td>
-<td>John Brereton</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.44.57</td>
-<td>0.36.57</td>
-<td>0.37.59</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>807</td>
-<td>Darren Wright</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.46.50</td>
-<td>0.38.50</td>
-<td>0.39.55</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>8</td>
-<td>Melges 15</td>
-<td>804</td>
-<td>HYC1</td>
-<td>973</td>
-<td>19.08.00</td>
-<td>19.47.27</td>
-<td>0.39.27</td>
-<td>0.40.33</td>
-<td>8.0</td>
-</tr>
-<tr class="odd racerow">
-<td>9</td>
-<td>B14</td>
-<td>79</td>
-<td>Jeremy Beshoff</td>
-<td>853</td>
-<td>19.08.00</td>
-<td>19.42.45</td>
-<td>0.34.45</td>
-<td>0.40.44</td>
-<td>9.0</td>
-</tr>
-<tr class="even racerow">
-<td>10</td>
-<td>Melges 15</td>
-<td>800</td>
-<td>Mark McLoughlin</td>
-<td>973</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
-<td>11.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r9py_class">R9 - PY Class Fleet&nbsp;-&nbsp;Jun 20th</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 19.57.00
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>19.57.00</td>
-<td>20.14.36</td>
-<td>0.17.36</td>
-<td>0.18.05</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>RS Aero 6</td>
-<td>3187</td>
-<td>Emmet Dalton</td>
-<td>1102</td>
-<td>19.57.00</td>
-<td>20.18.01</td>
-<td>0.21.01</td>
-<td>0.19.04</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>Melges 15</td>
-<td>802</td>
-<td>Tom McMahon</td>
-<td>973</td>
-<td>19.57.00</td>
-<td>20.15.36</td>
-<td>0.18.36</td>
-<td>0.19.07</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>Melges 15</td>
-<td>797</td>
-<td>John Brereton</td>
-<td>973</td>
-<td>19.57.00</td>
-<td>20.16.01</td>
-<td>0.19.01</td>
-<td>0.19.33</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>Melges 15</td>
-<td>803</td>
-<td>Stephen Quinn</td>
-<td>973</td>
-<td>19.57.00</td>
-<td>20.16.08</td>
-<td>0.19.08</td>
-<td>0.19.40</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>B14</td>
-<td>79</td>
-<td>Jeremy Beshoff</td>
-<td>853</td>
-<td>19.57.00</td>
-<td>20.15.17</td>
-<td>0.18.17</td>
-<td>0.21.26</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>800</td>
-<td>Mark McLoughlin</td>
-<td>973</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
-<td>11.0</td>
-</tr>
-<tr class="even racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>807</td>
-<td>Darren Wright</td>
-<td>973</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
-<td>11.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>B14</td>
-<td>733</td>
-<td>Sam Osborne</td>
-<td>853</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
-<td>11.0</td>
-</tr>
-<tr class="even racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>804</td>
-<td>HYC1</td>
-<td>973</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
-<td>11.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r10py_class">R10 Jun 28 - PY Class Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 190800
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>RS Aero 6</td>
-<td>3187</td>
-<td>Emmet Dalton</td>
-<td>1102</td>
-<td>190800</td>
-<td>19:33:13</td>
-<td>0:25:13</td>
-<td>0:22:53</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>RS Aero 6</td>
-<td>4179</td>
-<td>Daragh Sheridan</td>
-<td>1102</td>
-<td>190800</td>
-<td>19:33:21</td>
-<td>0:25:21</td>
-<td>0:23:00</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>RS Aero 6</td>
-<td>3291</td>
-<td>John Phelan</td>
-<td>1102</td>
-<td>190800</td>
-<td>19:33:34</td>
-<td>0:25:34</td>
-<td>0:23:12</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>ILCA 6</td>
-<td>144273</td>
-<td>Dylan Cassidy</td>
-<td>1154</td>
-<td>190800</td>
-<td>19:34:57</td>
-<td>0:26:57</td>
-<td>0:23:21</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>190800</td>
-<td>19:32:47</td>
-<td>0:24:47</td>
-<td>0:25:28</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>Melges 15</td>
-<td>805</td>
-<td>Gary Cullen</td>
-<td>973</td>
-<td>190800</td>
-<td>19:34:25</td>
-<td>0:26:25</td>
-<td>0:27:09</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>190800</td>
-<td>19:35:19</td>
-<td>0:27:19</td>
-<td>0:28:04</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>8</td>
-<td>B14</td>
-<td>79</td>
-<td>Jeremy Beshoff</td>
-<td>853</td>
-<td>190800</td>
-<td>19:33:42</td>
-<td>0:25:42</td>
-<td>0:30:08</td>
-<td>8.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r11py_class">R11 Jun 28 - PY Class Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 191100
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>ILCA 6</td>
-<td>144273</td>
-<td>Dylan Cassidy</td>
-<td>1154</td>
-<td>191100</td>
-<td>20:08:58</td>
-<td>0:57:58</td>
-<td>0:50:14</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>RS Aero 6</td>
-<td>4179</td>
-<td>Daragh Sheridan</td>
-<td>1102</td>
-<td>191100</td>
-<td>20:06:33</td>
-<td>0:55:33</td>
-<td>0:50:25</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>RS Aero 6</td>
-<td>3291</td>
-<td>John Phelan</td>
-<td>1102</td>
-<td>191100</td>
-<td>20:07:14</td>
-<td>0:56:14</td>
-<td>0:51:02</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>RS Aero 6</td>
-<td>3187</td>
-<td>Emmet Dalton</td>
-<td>1102</td>
-<td>191100</td>
-<td>20:08:02</td>
-<td>0:57:02</td>
-<td>0:51:45</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>191100</td>
-<td>20:07:14</td>
-<td>0:56:14</td>
-<td>0:57:48</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>Melges 15</td>
-<td>805</td>
-<td>Gary Cullen</td>
-<td>973</td>
-<td>191100</td>
-<td>20:08:10</td>
-<td>0:57:10</td>
-<td>0:58:45</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>191100</td>
-<td>20:09:02</td>
-<td>0:58:02</td>
-<td>0:59:39</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>8</td>
-<td>B14</td>
-<td>79</td>
-<td>Jeremy Beshoff</td>
-<td>853</td>
-<td>191100</td>
-<td>20:09:33</td>
-<td>0:58:33</td>
-<td>1:08:38</td>
-<td>8.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r12py_class">R12 Jul 18 - PY Class Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 191100
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>RS Aero 6</td>
-<td>4179</td>
-<td>Daragh Sheridan</td>
-<td>1102</td>
-<td>191100</td>
-<td>19:47:43</td>
-<td>0:36:43</td>
-<td>0:33:19</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>191100</td>
-<td>19:44:06</td>
-<td>0:33:06</td>
-<td>0:34:01</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>RS Aero 6</td>
-<td>3291</td>
-<td>John Phelan</td>
-<td>1102</td>
-<td>191100</td>
-<td>19:49:01</td>
-<td>0:38:01</td>
-<td>0:34:30</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>191100</td>
-<td>19:44:38</td>
-<td>0:33:38</td>
-<td>0:34:34</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>ILCA 6</td>
-<td>144273</td>
-<td>Dylan Cassidy</td>
-<td>1154</td>
-<td>191100</td>
-<td>19:51:52</td>
-<td>0:40:52</td>
-<td>0:35:25</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>ILCA 7</td>
-<td>173090</td>
-<td>Brian Tyrrell</td>
-<td>1102</td>
-<td>191100</td>
-<td>19:50:09</td>
-<td>0:39:09</td>
-<td>0:35:32</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>Melges 15</td>
-<td>803</td>
-<td>Stephen Quinn</td>
-<td>973</td>
-<td>191100</td>
-<td>19:46:01</td>
-<td>0:35:01</td>
-<td>0:35:59</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>8</td>
-<td>Melges 15</td>
-<td>806</td>
-<td>Sarah Robertson</td>
-<td>973</td>
-<td>191100</td>
-<td>19:47:48</td>
-<td>0:36:48</td>
-<td>0:37:49</td>
-<td>8.0</td>
-</tr>
-<tr class="odd racerow">
-<td>9</td>
-<td>Melges 15</td>
-<td>800</td>
-<td>Mark McLoughlin</td>
-<td>973</td>
-<td>191100</td>
-<td>19:49:41</td>
-<td>0:38:41</td>
-<td>0:39:45</td>
-<td>9.0</td>
-</tr>
-<tr class="even racerow">
-<td>10</td>
-<td>Melges 15</td>
-<td>807</td>
-<td>Darren Wright</td>
-<td>973</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>RET</td>
-<td>&nbsp;</td>
-<td>12.0</td>
-</tr>
-<tr class="odd racerow">
-<td>10</td>
-<td>B14</td>
-<td>733</td>
-<td>Sam Osborne</td>
-<td>853</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>RET</td>
-<td>&nbsp;</td>
-<td>12.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r13py_class">R13 Jul 18 - PY Class Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 195700
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>RS Aero 6</td>
-<td>4179</td>
-<td>Daragh Sheridan</td>
-<td>1102</td>
-<td>195700</td>
-<td>20:14:12</td>
-<td>0:17:12</td>
-<td>0:15:36</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>195700</td>
-<td>20:12:13</td>
-<td>0:15:13</td>
-<td>0:15:38</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>RS Aero 6</td>
-<td>3291</td>
-<td>John Phelan</td>
-<td>1102</td>
-<td>195700</td>
-<td>20:15:13</td>
-<td>0:18:13</td>
-<td>0:16:32</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>Melges 15</td>
-<td>803</td>
-<td>Stephen Quinn</td>
-<td>973</td>
-<td>195700</td>
-<td>20:13:36</td>
+<td>195500</td>
+<td>20:13:18</td>
+<td>0:18:18</td>
 <td>0:16:36</td>
-<td>0:17:04</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>ILCA 6</td>
-<td>144273</td>
-<td>Dylan Cassidy</td>
-<td>1154</td>
-<td>195700</td>
-<td>20:16:43</td>
-<td>0:19:43</td>
-<td>0:17:05</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>195700</td>
-<td>20:13:40</td>
-<td>0:16:40</td>
-<td>0:17:08</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
-<td>ILCA 7</td>
-<td>173090</td>
-<td>Brian Tyrrell</td>
-<td>1102</td>
-<td>195700</td>
-<td>20:16:51</td>
-<td>0:19:51</td>
-<td>0:18:01</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>8</td>
-<td>Melges 15</td>
-<td>806</td>
-<td>Sarah Robertson</td>
-<td>973</td>
-<td>195700</td>
-<td>20:14:59</td>
-<td>0:17:59</td>
-<td>0:18:29</td>
-<td>8.0</td>
-</tr>
-<tr class="odd racerow">
-<td>9</td>
-<td>Melges 15</td>
-<td>800</td>
-<td>Mark McLoughlin</td>
-<td>973</td>
-<td>195700</td>
-<td>20:17:24</td>
-<td>0:20:24</td>
-<td>0:20:58</td>
-<td>9.0</td>
-</tr>
-<tr class="even racerow">
-<td>10</td>
-<td>Melges 15</td>
-<td>807</td>
-<td>Darren Wright</td>
-<td>973</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>RET</td>
-<td>&nbsp;</td>
-<td>11.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r14py_class">R14 Jul 25 - PY Class Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 193000
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>RS Aero 6</td>
-<td>4179</td>
-<td>Daragh Sheridan</td>
-<td>1102</td>
-<td>193000</td>
-<td>19:59:42</td>
-<td>0:29:42</td>
-<td>0:26:57</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>193000</td>
-<td>19:57:30</td>
-<td>0:27:30</td>
-<td>0:28:16</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>193000</td>
-<td>19:58:40</td>
-<td>0:28:40</td>
-<td>0:29:28</td>
 <td>3.0</td>
 </tr>
 <tr class="even racerow">
 <td>4</td>
-<td>Melges 15</td>
-<td>802</td>
-<td>Tom McMahon</td>
-<td>973</td>
-<td>193000</td>
-<td>19:58:57</td>
-<td>0:28:57</td>
-<td>0:29:45</td>
-<td>4.0</td>
-</tr>
-<tr class="odd racerow">
-<td>5</td>
-<td>Melges 15</td>
-<td>797</td>
-<td>John Brereton</td>
-<td>973</td>
-<td>193000</td>
-<td>19:59:31</td>
-<td>0:29:31</td>
-<td>0:30:20</td>
-<td>5.0</td>
-</tr>
-<tr class="even racerow">
-<td>6</td>
-<td>GP14</td>
-<td>14279</td>
-<td>Katie Dwyer</td>
-<td>1138</td>
-<td>193000</td>
-<td>20:05:07</td>
-<td>0:35:07</td>
-<td>0:30:51</td>
-<td>6.0</td>
-</tr>
-<tr class="odd racerow">
-<td>7</td>
 <td>RS 600</td>
-<td>789</td>
+<td>798</td>
 <td>Tristan Nelson</td>
 <td>917</td>
-<td>193000</td>
-<td>195903</td>
-<td>0:29:03</td>
-<td>0:31:41</td>
-<td>7.0</td>
-</tr>
-<tr class="even racerow">
-<td>8</td>
-<td>Melges 15</td>
-<td>806</td>
-<td>Sarah Robertson</td>
-<td>973</td>
-<td>193000</td>
-<td>20:01:36</td>
-<td>0:31:36</td>
-<td>0:32:29</td>
-<td>8.0</td>
-</tr>
-<tr class="odd racerow">
-<td>9</td>
-<td>Melges 15</td>
-<td>807</td>
-<td>Darren Wright</td>
-<td>973</td>
-<td>193000</td>
-<td>20:02:03</td>
-<td>0:32:03</td>
-<td>0:32:56</td>
-<td>9.0</td>
-</tr>
-<tr class="even racerow">
-<td>10</td>
-<td>RS Feva</td>
-<td>1749</td>
-<td>Charlie Robertson</td>
-<td>1248</td>
-<td>193000</td>
-<td>201455</td>
-<td>0:44:55</td>
-<td>0:35:59</td>
-<td>10.0</td>
-</tr>
-<tr class="odd racerow">
-<td>11</td>
-<td>Melges 15</td>
-<td>800</td>
-<td>Mark McLoughlin</td>
-<td>973</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
-<td>16.0</td>
-</tr>
-<tr class="even racerow">
-<td>11</td>
-<td>ILCA 6</td>
-<td>144273</td>
-<td>Dylan Cassidy</td>
-<td>1154</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
-<td>16.0</td>
-</tr>
-<tr class="odd racerow">
-<td>11</td>
-<td>RS Aero 6</td>
-<td>3187</td>
-<td>Emmet Dalton</td>
-<td>1102</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
-<td>16.0</td>
-</tr>
-<tr class="even racerow">
-<td>11</td>
-<td>ILCA 7</td>
-<td>173090</td>
-<td>Brian Tyrrell</td>
-<td>1102</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
-<td>16.0</td>
-</tr>
-<tr class="odd racerow">
-<td>11</td>
-<td>Melges 15</td>
-<td>805</td>
-<td>Gary Cullen</td>
-<td>973</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
-<td>16.0</td>
-</tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r15py_class">R15 Jul 25 - PY Class Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 202800
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="10">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="start" />
-<col class="finish" />
-<col class="elapsed" />
-<col class="corrected" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>PY</th>
-<th>Start</th>
-<th>Finish</th>
-<th>Elapsed</th>
-<th>Corrected</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd racerow">
-<td>1</td>
-<td>Melges 15</td>
-<td>799</td>
-<td>Michael Evans</td>
-<td>973</td>
-<td>202800</td>
-<td>20:52:14</td>
-<td>0:24:14</td>
-<td>0:24:54</td>
-<td>1.0</td>
-</tr>
-<tr class="even racerow">
-<td>2</td>
-<td>Melges 15</td>
-<td>635</td>
-<td>Cormac Farrelly</td>
-<td>973</td>
-<td>202800</td>
-<td>20:53:16</td>
-<td>0:25:16</td>
-<td>0:25:58</td>
-<td>2.0</td>
-</tr>
-<tr class="odd racerow">
-<td>3</td>
-<td>Melges 15</td>
-<td>797</td>
-<td>John Brereton</td>
-<td>973</td>
-<td>202800</td>
-<td>20:53:19</td>
-<td>0:25:19</td>
-<td>0:26:01</td>
-<td>3.0</td>
-</tr>
-<tr class="even racerow">
-<td>4</td>
-<td>Melges 15</td>
-<td>802</td>
-<td>Tom McMahon</td>
-<td>973</td>
-<td>202800</td>
-<td>20:53:34</td>
-<td>0:25:34</td>
-<td>0:26:17</td>
+<td>195500</td>
+<td>20:10:30</td>
+<td>0:15:30</td>
+<td>0:16:54</td>
 <td>4.0</td>
 </tr>
 <tr class="odd racerow">
 <td>5</td>
-<td>Melges 15</td>
-<td>807</td>
-<td>Darren Wright</td>
-<td>973</td>
-<td>202800</td>
-<td>20:55:26</td>
-<td>0:27:26</td>
-<td>0:28:12</td>
+<td>ILCA 6</td>
+<td>144273</td>
+<td>Dylan Cassidy</td>
+<td>1154</td>
+<td>195500</td>
+<td>20:14:51</td>
+<td>0:19:51</td>
+<td>0:17:12</td>
 <td>5.0</td>
 </tr>
 <tr class="even racerow">
 <td>6</td>
 <td>Melges 15</td>
-<td>806</td>
-<td>Sarah Robertson</td>
+<td>635</td>
+<td>Cormac Farrelly</td>
 <td>973</td>
-<td>202800</td>
-<td>20:55:44</td>
-<td>0:27:44</td>
-<td>0:28:30</td>
+<td>195500</td>
+<td>20:13:15</td>
+<td>0:18:15</td>
+<td>0:18:45</td>
 <td>6.0</td>
 </tr>
 <tr class="odd racerow">
 <td>7</td>
-<td>RS Feva</td>
-<td>1749</td>
-<td>Charlie Robertson</td>
-<td>1248</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>DNF</td>
-<td>&nbsp;</td>
+<td>Melges 15</td>
+<td>802</td>
+<td>Tom McMahon</td>
+<td>973</td>
+<td>195500</td>
+<td>20:15:11</td>
+<td>0:20:11</td>
+<td>0:20:45</td>
+<td>7.0</td>
+</tr>
+<tr class="even racerow">
+<td>8</td>
+<td>Melges 15</td>
+<td>807</td>
+<td>Darren Wright</td>
+<td>973</td>
+<td>195500</td>
+<td>20:15:44</td>
+<td>0:20:44</td>
+<td>0:21:19</td>
 <td>8.0</td>
 </tr>
+<tr class="odd racerow">
+<td>9</td>
+<td>Melges 15</td>
+<td>806</td>
+<td>Sarah Robertson</td>
+<td>973</td>
+<td>195500</td>
+<td>20:16:14</td>
+<td>0:21:14</td>
+<td>0:21:49</td>
+<td>9.0</td>
+</tr>
+<tr class="even racerow">
+<td>10</td>
+<td>B14</td>
+<td>733</td>
+<td>Sam Osborne</td>
+<td>853</td>
+<td>195500</td>
+<td>20:27:40</td>
+<td>0:32:40</td>
+<td>0:38:18</td>
+<td>10.0</td>
+</tr>
 </tbody>
 </table>
-<h3 class="racetitle" id="r2optimist">May 2nd - Optimist Fleet</h3>
+<h3 class="racetitle" id="r16optimist">R16 Aug 1 - Optimist Fleet&nbsp;-&nbsp;Aug 2</h3>
 <div class="caption racecaption">
-Start: Start 2, Finishes: Place
+Start: Start 1, Finishes: Finish time, Time: 190500
 </div>
 <table class="racetable" cellspacing="0" cellpadding="0" border="0">
 <colgroup span="7">
@@ -3029,8 +1382,8 @@ Start: Start 2, Finishes: Place
 <tr class="odd racerow">
 <td>1</td>
 <td>OPTIMIST</td>
-<td>1620</td>
-<td>Will Cullen</td>
+<td>1074</td>
+<td>&nbsp;</td>
 <td>1628</td>
 <td>1</td>
 <td>1.0</td>
@@ -3038,17 +1391,44 @@ Start: Start 2, Finishes: Place
 <tr class="even racerow">
 <td>2</td>
 <td>OPTIMIST</td>
-<td>1579</td>
-<td>Dan Cullen</td>
+<td>xxxx</td>
+<td>Harry Cahill</td>
 <td>1628</td>
 <td>2</td>
 <td>2.0</td>
 </tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>OPTIMIST</td>
+<td>yyyy</td>
+<td>Kier Mullin</td>
+<td>1628</td>
+<td>3</td>
+<td>3.0</td>
+</tr>
+<tr class="even racerow">
+<td>4</td>
+<td>OPTIMIST</td>
+<td>5773</td>
+<td>&nbsp;</td>
+<td>1628</td>
+<td>4</td>
+<td>4.0</td>
+</tr>
+<tr class="odd racerow">
+<td>5</td>
+<td>OPTIMIST</td>
+<td>1362</td>
+<td>&nbsp;</td>
+<td>1628</td>
+<td>5</td>
+<td>5.0</td>
+</tr>
 </tbody>
 </table>
-<h3 class="racetitle" id="r6optimist">R6 Jun 14 - Optimist Fleet</h3>
+<h3 class="racetitle" id="r17optimist">R17 Aug 1 - Optimist Fleet&nbsp;-&nbsp;Aug 2</h3>
 <div class="caption racecaption">
-Start: Start 2, Finishes: Finish time, Time: 191600
+Start: Start 1, Finishes: Finish time, Time: 195500
 </div>
 <table class="racetable" cellspacing="0" cellpadding="0" border="0">
 <colgroup span="7">
@@ -3075,8 +1455,8 @@ Start: Start 2, Finishes: Finish time, Time: 191600
 <tr class="odd racerow">
 <td>1</td>
 <td>OPTIMIST</td>
-<td>1620</td>
-<td>Will Cullen</td>
+<td>1074</td>
+<td>&nbsp;</td>
 <td>1628</td>
 <td>1</td>
 <td>1.0</td>
@@ -3084,97 +1464,38 @@ Start: Start 2, Finishes: Finish time, Time: 191600
 <tr class="even racerow">
 <td>2</td>
 <td>OPTIMIST</td>
-<td>1579</td>
-<td>Dan Cullen</td>
+<td>5773</td>
+<td>&nbsp;</td>
 <td>1628</td>
 <td>2</td>
 <td>2.0</td>
 </tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r7optimist">R7 Jun 14 - Optimist Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 195100
-</div>
-<div class="caption racecaption">
-Start: Start 2, Finishes: Place
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="7">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="place" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>Rating</th>
-<th>Place</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd racerow">
-<td>1</td>
+<td>3</td>
 <td>OPTIMIST</td>
-<td>1620</td>
-<td>Will Cullen</td>
+<td>xxxx</td>
+<td>Harry Cahill</td>
 <td>1628</td>
-<td>1</td>
-<td>1.0</td>
+<td>3</td>
+<td>3.0</td>
 </tr>
 <tr class="even racerow">
-<td>2</td>
+<td>4</td>
 <td>OPTIMIST</td>
-<td>1579</td>
-<td>Dan Cullen</td>
+<td>1362</td>
+<td>&nbsp;</td>
 <td>1628</td>
-<td>2</td>
-<td>2.0</td>
+<td>4</td>
+<td>4.0</td>
 </tr>
-</tbody>
-</table>
-<h3 class="racetitle" id="r14optimist">R14 Jul 25 - Optimist Fleet</h3>
-<div class="caption racecaption">
-Start: Start 1, Finishes: Finish time, Time: 193000
-</div>
-<table class="racetable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="7">
-<col class="rank" />
-<col class="class" />
-<col class="sailno" />
-<col class="helmname" />
-<col class="rating" />
-<col class="place" />
-<col class="points" />
-</colgroup>
-<thead>
-<tr class="titlerow">
-<th>Rank</th>
-<th>Class</th>
-<th>SailNo</th>
-<th>HelmName</th>
-<th>Rating</th>
-<th>Place</th>
-<th>Points</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd racerow">
-<td>1</td>
+<td>5</td>
 <td>OPTIMIST</td>
-<td>1620</td>
-<td>Will Cullen</td>
+<td>yyyy</td>
+<td>Kier Mullin</td>
 <td>1628</td>
-<td>DNF</td>
-<td>2.0</td>
+<td>5</td>
+<td>5.0</td>
 </tr>
 </tbody>
 </table>
