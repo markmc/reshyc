@@ -4,14 +4,15 @@ all: sailwave
 sailwave:
 	wine '/home/markmc/.wine/drive_c/Program Files (x86)/Sailwave/sailwave.exe'
 
-sw2_30_2.exe:
-	curl -O https://www.sailwave.com/download/sailwave/sw2_30_2.exe
+sw2_38_1.exe:
+	curl -O https://www.sailwave.com/download/sailwave/sw2_38_1.exe
 
-install: sw2_30_2.exe
-	wine ./sw2_30_2.exe
+install: sw2_38_1.exe wineclean
+	wine winecfg   # might need to change screen DPI
+	wine ./sw2_38_1.exe
 
 clean:
-	rm -f sw2_30_2.exe
+	rm -f sw2_38_1.exe
 
 wineclean:
 	rm -rf ~/.wine
