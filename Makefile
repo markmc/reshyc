@@ -40,7 +40,7 @@ ifndef ADMIN_PASSWORD
 	$(error ADMIN_PASSWORD is not defined)
 endif
 
-ADMIN_YEARS := 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013
+ADMIN_YEARS := 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013
 ADMIN_FILES := $(foreach year,$(ADMIN_YEARS),backups/admin/$(year)_open.csv backups/admin/$(year)_club.csv)
 
 backups/admin/%.csv:
