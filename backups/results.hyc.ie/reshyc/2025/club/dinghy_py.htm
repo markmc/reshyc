@@ -134,17 +134,25 @@ $(function () {
 <style>
 div.applicant-break {page-break-after:always;}
 </style>
-<h3 class="seriestitle">Results are final as of 21:44 on July  3, 2025</h3>
+<h3 class="seriestitle">Results are provisional as of 17:06 on July  4, 2025</h3>
 <h3 class="summarytitle" id="summarypy_class">PY Class Fleet</h3>
 <div class="caption summarycaption">Sailed: 19, Discards: 4, To count: 15, Rating system: PY, Entries: 29, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="19">
+<colgroup span="27">
 <col class="rank" />
 <col class="class" />
 <col class="sailno" />
 <col class="helmname" />
 <col class="crewname" />
 <col class="rating" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
+<col class="race" />
 <col class="race" />
 <col class="race" />
 <col class="race" />
@@ -167,6 +175,14 @@ div.applicant-break {page-break-after:always;}
 <th>Helm</th>
 <th>Crew</th>
 <th>PY</th>
+<th>R1 May 1</th>
+<th>R2 May 1</th>
+<th>R3 May 8</th>
+<th>R4 May 8</th>
+<th>R5 May 15</th>
+<th>R6 May 15</th>
+<th>R7 May 22</th>
+<th>R8 May 22</th>
 <th>R9 May 29</th>
 <th>R10 May 29</th>
 <th>R11 Jun 5</th>
@@ -190,6 +206,14 @@ div.applicant-break {page-break-after:always;}
 <td>Ryan Cairns</td>
 <td>&nbsp;</td>
 <td>1125</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank2">2.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank2">2.0</td>
+<td  class="rank2">2.0</td>
 <td  class="rank3">3.0</td>
 <td  class="rank2">2.0</td>
 <td  class="rank2">2.0</td>
@@ -211,6 +235,14 @@ div.applicant-break {page-break-after:always;}
 <td>Alan Carr</td>
 <td>&nbsp;</td>
 <td>1125</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td  class="rank2">2.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank2">2.0</td>
+<td  class="rank3">3.0</td>
+<td  class="rank1">1.0</td>
+<td  class="rank1">1.0</td>
 <td>4.0</td>
 <td>4.0</td>
 <td  class="rank3">3.0</td>
@@ -232,6 +264,14 @@ div.applicant-break {page-break-after:always;}
 <td>Dylan Cassidy</td>
 <td>&nbsp;</td>
 <td>1154</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>9.0</td>
+<td>8.0</td>
+<td>6.0</td>
+<td>5.0</td>
 <td>7.0</td>
 <td>9.0</td>
 <td>6.0</td>
@@ -253,6 +293,14 @@ div.applicant-break {page-break-after:always;}
 <td>Brian Tyrrell</td>
 <td>&nbsp;</td>
 <td>1102</td>
+<td>5.0</td>
+<td>10.0</td>
+<td>4.0</td>
+<td>7.0</td>
+<td>6.0</td>
+<td>9.0</td>
+<td>5.0</td>
+<td>6.0</td>
 <td>6.0</td>
 <td>10.0</td>
 <td>5.0</td>
@@ -274,6 +322,14 @@ div.applicant-break {page-break-after:always;}
 <td>Cormac Farrelly</td>
 <td>&nbsp;</td>
 <td>973</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>7.0</td>
+<td>8.0</td>
+<td>14.0</td>
+<td>14.0</td>
+<td>9.0</td>
+<td>7.0</td>
 <td>10.0</td>
 <td>7.0</td>
 <td>11.0 DNF</td>
@@ -296,6 +352,14 @@ div.applicant-break {page-break-after:always;}
 <td>&nbsp;</td>
 <td>1099</td>
 <td  class="rank2">2.0</td>
+<td  class="rank2">2.0</td>
+<td>8.0</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>5.0</td>
+<td>4.0</td>
+<td  class="rank3">3.0</td>
+<td  class="rank2">2.0</td>
 <td>5.0</td>
 <td>(30.0 DNC)</td>
 <td>5.0</td>
@@ -316,6 +380,14 @@ div.applicant-break {page-break-after:always;}
 <td>Daragh Sheridan</td>
 <td>&nbsp;</td>
 <td>1099</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td  class="rank1">1.0</td>
 <td  class="rank1">1.0</td>
 <td  class="rank1">1.0</td>
@@ -337,6 +409,14 @@ div.applicant-break {page-break-after:always;}
 <td>Michael Evans</td>
 <td>&nbsp;</td>
 <td>973</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>9.0</td>
+<td  class="rank3">3.0</td>
+<td>7.0</td>
+<td>11.0</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
 <td>5.0</td>
 <td>8.0</td>
 <td>4.0</td>
@@ -358,6 +438,14 @@ div.applicant-break {page-break-after:always;}
 <td>Katie Dwyer</td>
 <td>&nbsp;</td>
 <td>1141</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td  class="rank3">3.0</td>
+<td  class="rank2">2.0</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -379,6 +467,14 @@ div.applicant-break {page-break-after:always;}
 <td>Eoin Clarke</td>
 <td>&nbsp;</td>
 <td>1216</td>
+<td>8.0</td>
+<td>8.0</td>
+<td>11.5</td>
+<td>10.5</td>
+<td>8.0</td>
+<td>7.0</td>
+<td>10.0</td>
+<td>9.0</td>
 <td>9.0</td>
 <td>11.0</td>
 <td>(30.0 DNC)</td>
@@ -402,6 +498,14 @@ div.applicant-break {page-break-after:always;}
 <td>1099</td>
 <td>(30.0 DNC)</td>
 <td>(30.0 DNC)</td>
+<td  class="rank3">3.0</td>
+<td>5.0</td>
+<td>4.0</td>
+<td>4.0</td>
+<td  class="rank3">3.0</td>
+<td>4.0</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -421,6 +525,14 @@ div.applicant-break {page-break-after:always;}
 <td>Matthew Cotter</td>
 <td>&nbsp;</td>
 <td>959</td>
+<td>9.0</td>
+<td>4.0</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>11.0</td>
+<td>6.0</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
 <td>8.0</td>
 <td  class="rank3">3.0</td>
 <td>30.0 DNC</td>
@@ -442,6 +554,14 @@ div.applicant-break {page-break-after:always;}
 <td>Rick deNeve</td>
 <td>&nbsp;</td>
 <td>973</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>13.0</td>
+<td>12.0</td>
+<td>12.0</td>
+<td>11.0</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>7.0</td>
@@ -463,6 +583,14 @@ div.applicant-break {page-break-after:always;}
 <td>Richard Watson</td>
 <td>&nbsp;</td>
 <td>1099</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>10.0</td>
+<td>10.0</td>
+<td>7.0</td>
+<td>8.0</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>11.0 DNF</td>
@@ -484,6 +612,14 @@ div.applicant-break {page-break-after:always;}
 <td>Sarah Robertson</td>
 <td>&nbsp;</td>
 <td>973</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>11.0</td>
 <td>6.0</td>
 <td>8.0</td>
@@ -505,6 +641,14 @@ div.applicant-break {page-break-after:always;}
 <td>Stephen Quinn</td>
 <td>&nbsp;</td>
 <td>973</td>
+<td>6.0</td>
+<td>6.0</td>
+<td>10.0</td>
+<td>9.0</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -526,6 +670,14 @@ div.applicant-break {page-break-after:always;}
 <td>Nicole Quinn</td>
 <td>&nbsp;</td>
 <td>1216</td>
+<td>10.0</td>
+<td>7.0</td>
+<td>11.5</td>
+<td>10.5</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -547,6 +699,14 @@ div.applicant-break {page-break-after:always;}
 <td>Tristan Nelson</td>
 <td>&nbsp;</td>
 <td>921</td>
+<td>4.0</td>
+<td>5.0</td>
+<td>6.0</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>8.0</td>
+<td>13.0 DNF</td>
 <td>(30.0 DNC)</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -568,6 +728,14 @@ div.applicant-break {page-break-after:always;}
 <td>Orla Doogue</td>
 <td>&nbsp;</td>
 <td>1125</td>
+<td>7.0</td>
+<td>9.0</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -589,6 +757,14 @@ div.applicant-break {page-break-after:always;}
 <td>Carla Fagan</td>
 <td>&nbsp;</td>
 <td>1154</td>
+<td  class="rank3">3.0</td>
+<td  class="rank3">3.0</td>
+<td>5.0</td>
+<td>6.0</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -610,6 +786,14 @@ div.applicant-break {page-break-after:always;}
 <td>Tom McMahon</td>
 <td>&nbsp;</td>
 <td>973</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -631,6 +815,14 @@ div.applicant-break {page-break-after:always;}
 <td>John Brereton</td>
 <td>&nbsp;</td>
 <td>973</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -652,6 +844,14 @@ div.applicant-break {page-break-after:always;}
 <td>Karena Knaggs</td>
 <td>&nbsp;</td>
 <td>973</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>12.0</td>
+<td>13.0</td>
+<td>11.0</td>
+<td>10.0</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -673,6 +873,14 @@ div.applicant-break {page-break-after:always;}
 <td>Charlie Power</td>
 <td>&nbsp;</td>
 <td>1210</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -694,6 +902,14 @@ div.applicant-break {page-break-after:always;}
 <td>Cillian Macken</td>
 <td>&nbsp;</td>
 <td>1102</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -715,6 +931,14 @@ div.applicant-break {page-break-after:always;}
 <td>Rocco Wright</td>
 <td>Jett Wright</td>
 <td>973</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -736,6 +960,14 @@ div.applicant-break {page-break-after:always;}
 <td>James Sexton</td>
 <td>&nbsp;</td>
 <td>973</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -757,6 +989,14 @@ div.applicant-break {page-break-after:always;}
 <td>Gary Cullen</td>
 <td>&nbsp;</td>
 <td>973</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
@@ -778,6 +1018,14 @@ div.applicant-break {page-break-after:always;}
 <td>Kay Cornally</td>
 <td>&nbsp;</td>
 <td>1137</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>(30.0 DNC)</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
+<td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
 <td>30.0 DNC</td>
