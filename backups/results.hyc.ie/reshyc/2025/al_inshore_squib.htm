@@ -13,20 +13,16 @@
 <title>Sailwave results for Howth YC Autumn League 2025 - Inshore at Howth YC 2025</title>
 
 <style type="text/css">
-body {font: 72% arial, helvetica, sans-serif; text-align: center;}
-.hardleft  {text-align: left; float: left;  margin: 15px 0 15px 25px;}
+body {font: 80% arial, helvetica, sans-serif; text-align: center;}
+.hardleft  {text-align: left; float: left;  margin: 15px 0  15px 25px;}
 .hardright {text-align: right; float: right; margin: 15px 25px 15px 0;}
-table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #fff solid;}
-td, th {padding: 4px; border: 2px #fff solid; vertical-align: top;}
+table {text-align: left; margin: 0px auto 30px auto; font-size: 1em; border-collapse: collapse; border: 1px #999 solid;}
+td, th {padding: 4px; border: 1px #999 solid; vertical-align: top;}
 .caption {padding: 5px; text-align: center; border: 0; font-weight: bold;}
-h1 {font-size: 1.6em;}
-h2 {font-size: 1.4em;}
-h3 {font-size: 1.2em;}
 p {text-align: center;}
-th {background-color: #aaf;}
 .contents {text-align: left; margin-left: 20%;}
-.even {background-color: #bbf;}
-.odd {background-color: #ddf;}
+.race {background-color: #eee;}
+.odd {background-color: #eef;}
 .natflag {border: 1px #999 solid;}
 .nattext {font-size: 0.8em;}
 .place1 {font-weight: bold; background-color: #ffffaa;}
@@ -102,6 +98,55 @@ $(function () {
 
 });
 });
+//
+//  name=HighlightDiscards
+//  dependencies=jQuery
+//  description=Highlight discard scores in summary tables where discards are in ().
+//  author=Jon Eskdale
+//  date=2018-11-11
+//  version=1.1
+//  url=http://sailwave.com
+//  email=jon@sailwave.com
+//  twitter=eskdale
+//  comments=Edit colours to colours of your choice
+//
+
+$(document).ready(function() {
+var discardSelector = '.summaryrace';
+var discardText     = /\b\)/;
+
+// Edit these colours to change the highlight colours for 1st, 2nd and 3rd
+var discardColour   = '#f2f2f2';
+
+// create array of race column numbers for first table (summarytable)
+var ths = document.getElementsByTagName('col');
+var column =[];
+for (var i=0; i<ths.length; i++) {
+        if (ths[i].classList[0] === "race") {
+                column.push(i);
+        } else {
+                if (column.length !=0) {
+                        break;
+                }
+        }
+}
+//console.log(column);
+
+//  Set a class of summaryrace for all race cells in summary table body
+//
+for (var i=0; i<column.length; i++) {
+        $(".summarytable tbody tr td:nth-child(" + (column[i]+1) +")").addClass("summaryrace");
+}
+
+// Change the background color for cells with class of summaryrace and that match regular expression text
+$(function () {
+
+  $(discardSelector).filter(function() {
+    return discardText.test($(this).text());
+  }).css("background", discardColour);
+
+});
+});
 </script>
 
 </head>
@@ -116,7 +161,7 @@ $(function () {
 
 <tr>
 <td width="30%">
-<img style="display:block; height:100px;"  src="https://www.sailwave.com/results/swlogo30.jpg" alt="venue burgee" />
+<img style="display:block; height:100px;"  src="https://hyc.ie/assets/logo-5a615b18e52275b60e166edcca88c6c4.png" alt="venue burgee" />
 </td>
 
 <td width="40%" align="center">
@@ -125,7 +170,7 @@ $(function () {
 </td>
 
 <td width="30%">
-<img style="display:block; height:100px;" src="https://www.sailwave.com/results/swlogo30.jpg" alt="event burgee" align="right" />
+<img style="display:block; height:100px;" src="https://hyc.ie/assets/logo-5a615b18e52275b60e166edcca88c6c4.png" alt="event burgee" align="right" />
 </td>
 </tr>
 </tbody>
@@ -136,17 +181,19 @@ $(function () {
 <style>
 div.applicant-break {page-break-after:always;}
 </style>
-<h3 class="seriestitle">Results are provisional as of 14:44 on September 12, 2025</h3>
+<h3 class="seriestitle">Results are provisional as of 17:08 on September 13, 2025</h3>
 <h3 class="summarytitle" id="summarysquib_scr">Squib Scr Fleet</h3>
-<div class="caption summarycaption">Sailed: 0, Discards: 0, To count: 0, Entries: 7, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Entries: 7, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="8">
+<colgroup span="10">
 <col class="rank" />
 <col class="sailno" />
 <col class="boat" />
 <col class="helmname" />
 <col class="club" />
 <col class="rating" />
+<col class="race" />
+<col class="race" />
 <col class="total" />
 <col class="nett" />
 </colgroup>
@@ -158,93 +205,111 @@ div.applicant-break {page-break-after:always;}
 <th>Entrant</th>
 <th>Club</th>
 <th>H'cap</th>
+<th><a class="racelink" href="#r1squib_scr">R1</a></th>
+<th><a class="racelink" href="#r2squib_scr">R2</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd summaryrow">
-<td>1st</td>
-<td>56</td>
-<td>Crackertoo</td>
-<td>Stephen Kay</td>
-<td>Howth YC</td>
-<td>1</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>1st</td>
-<td>148</td>
-<td>Halloween</td>
-<td>Gerard Loughran & Ross Hattaway</td>
-<td>Howth YC</td>
-<td>1</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>1st</td>
-<td>671</td>
-<td>Auroa</td>
-<td>Killian O'Kelly</td>
-<td>Howth YC</td>
-<td>1</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>1st</td>
-<td>724</td>
-<td>Tais</td>
-<td>Carol Cribbin</td>
-<td>Howth YC</td>
-<td>1</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>1st</td>
-<td>801</td>
-<td>Tears for Fears</td>
-<td>Niall Monks</td>
-<td>Howth YC</td>
-<td>1</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="even summaryrow">
 <td>1st</td>
 <td>869</td>
 <td>Tears in Heaven</td>
 <td>Tom McMahon</td>
 <td>Howth YC</td>
 <td>1</td>
-<td>0.0</td>
-<td>0.0</td>
+<td class="rank1">1.0</td>
+<td class="rank1">1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>2nd</td>
+<td>801</td>
+<td>Tears for Fears</td>
+<td>Niall Monks</td>
+<td>Howth YC</td>
+<td>1</td>
+<td class="rank2">2.0</td>
+<td class="rank2">2.0</td>
+<td>4.0</td>
+<td>4.0</td>
 </tr>
 <tr class="odd summaryrow">
-<td>1st</td>
+<td>3rd</td>
+<td>148</td>
+<td>Halloween</td>
+<td>Gerard Loughran & Ross Hattaway</td>
+<td>Howth YC</td>
+<td>1</td>
+<td class="rank3">3.0</td>
+<td class="rank3">4.0 DNS</td>
+<td>7.0</td>
+<td>7.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
 <td>881</td>
 <td>Kaizen</td>
 <td>Ronan MacDonnell</td>
 <td>Howth YC</td>
 <td>1</td>
-<td>0.0</td>
-<td>0.0</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>16.0</td>
+<td>16.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>4th</td>
+<td>671</td>
+<td>Auroa</td>
+<td>Killian O'Kelly</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>16.0</td>
+<td>16.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>724</td>
+<td>Tais</td>
+<td>Carol Cribbin</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>16.0</td>
+<td>16.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>4th</td>
+<td>56</td>
+<td>Crackertoo</td>
+<td>Stephen Kay</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>16.0</td>
+<td>16.0</td>
 </tr>
 </tbody>
 </table>
 <h3 class="summarytitle" id="summarysquib_hph">Squib HPH Fleet</h3>
-<div class="caption summarycaption">Sailed: 0, Discards: 0, To count: 0, Rating system: NHC1, Entries: 7, Scoring system: Appendix A</div>
+<div class="caption summarycaption">Sailed: 2, Discards: 0, To count: 2, Rating system: NHC1, Entries: 7, Scoring system: Appendix A</div>
 <table class="summarytable" cellspacing="0" cellpadding="0" border="0">
-<colgroup span="8">
+<colgroup span="10">
 <col class="rank" />
 <col class="sailno" />
 <col class="boat" />
 <col class="helmname" />
 <col class="club" />
 <col class="rating" />
+<col class="race" />
+<col class="race" />
 <col class="total" />
 <col class="nett" />
 </colgroup>
@@ -256,51 +321,13 @@ div.applicant-break {page-break-after:always;}
 <th>Entrant</th>
 <th>Club</th>
 <th>H'cap</th>
+<th><a class="racelink" href="#r1squib_hph">R1</a></th>
+<th><a class="racelink" href="#r2squib_hph">R2</a></th>
 <th>Total</th>
 <th>Nett</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd summaryrow">
-<td>1st</td>
-<td>56</td>
-<td>Crackertoo</td>
-<td>Stephen Kay</td>
-<td>Howth YC</td>
-<td>1.036</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>1st</td>
-<td>148</td>
-<td>Halloween</td>
-<td>Gerard Loughran & Ross Hattaway</td>
-<td>Howth YC</td>
-<td>0.905</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="odd summaryrow">
-<td>1st</td>
-<td>671</td>
-<td>Auroa</td>
-<td>Killian O'Kelly</td>
-<td>Howth YC</td>
-<td>0.945</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
-<tr class="even summaryrow">
-<td>1st</td>
-<td>724</td>
-<td>Tais</td>
-<td>Carol Cribbin</td>
-<td>Howth YC</td>
-<td>0.983</td>
-<td>0.0</td>
-<td>0.0</td>
-</tr>
 <tr class="odd summaryrow">
 <td>1st</td>
 <td>801</td>
@@ -308,28 +335,382 @@ div.applicant-break {page-break-after:always;}
 <td>Niall Monks</td>
 <td>Howth YC</td>
 <td>1.015</td>
-<td>0.0</td>
-<td>0.0</td>
+<td class="rank2">2.0</td>
+<td class="rank1">1.0</td>
+<td>3.0</td>
+<td>3.0</td>
 </tr>
 <tr class="even summaryrow">
-<td>1st</td>
+<td>2nd</td>
+<td>148</td>
+<td>Halloween</td>
+<td>Gerard Loughran & Ross Hattaway</td>
+<td>Howth YC</td>
+<td>0.905</td>
+<td class="rank1">1.0</td>
+<td class="rank3">4.0 DNS</td>
+<td>5.0</td>
+<td>5.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>3rd</td>
 <td>869</td>
 <td>Tears in Heaven</td>
 <td>Tom McMahon</td>
 <td>Howth YC</td>
 <td>1.062</td>
-<td>0.0</td>
-<td>0.0</td>
+<td class="rank3">3.0</td>
+<td class="rank2">2.0</td>
+<td>5.0</td>
+<td>5.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>56</td>
+<td>Crackertoo</td>
+<td>Stephen Kay</td>
+<td>Howth YC</td>
+<td>1.036</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>16.0</td>
+<td>16.0</td>
 </tr>
 <tr class="odd summaryrow">
-<td>1st</td>
+<td>4th</td>
+<td>671</td>
+<td>Auroa</td>
+<td>Killian O'Kelly</td>
+<td>Howth YC</td>
+<td>0.945</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>16.0</td>
+<td>16.0</td>
+</tr>
+<tr class="even summaryrow">
+<td>4th</td>
+<td>724</td>
+<td>Tais</td>
+<td>Carol Cribbin</td>
+<td>Howth YC</td>
+<td>0.983</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>16.0</td>
+<td>16.0</td>
+</tr>
+<tr class="odd summaryrow">
+<td>4th</td>
 <td>881</td>
 <td>Kaizen</td>
 <td>Ronan MacDonnell</td>
 <td>Howth YC</td>
 <td>1.057</td>
-<td>0.0</td>
-<td>0.0</td>
+<td>8.0 DNC</td>
+<td>8.0 DNC</td>
+<td>16.0</td>
+<td>16.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1squib_scr">R1 - Squib Scr Fleet&nbsp;-&nbsp;Sep 13</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Finish time, Time: 14.10.00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="11">
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Sail Nr</th>
+<th>Boat</th>
+<th>Entrant</th>
+<th>Club</th>
+<th>H'cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>869</td>
+<td>Tears in Heaven</td>
+<td>Tom McMahon</td>
+<td>Howth YC</td>
+<td>1.000</td>
+<td>14.10.00</td>
+<td>14.49.35</td>
+<td>0.39.35</td>
+<td>0.39.35</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>801</td>
+<td>Tears for Fears</td>
+<td>Niall Monks</td>
+<td>Howth YC</td>
+<td>1.000</td>
+<td>14.10.00</td>
+<td>14.50.40</td>
+<td>0.40.40</td>
+<td>0.40.40</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>148</td>
+<td>Halloween</td>
+<td>Gerard Loughran & Ross Hattaway</td>
+<td>Howth YC</td>
+<td>1.000</td>
+<td>14.10.00</td>
+<td>14.51.53</td>
+<td>0.41.53</td>
+<td>0.41.53</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r2squib_scr">R2 - Squib Scr Fleet&nbsp;-&nbsp;Sep 13</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Finish time, Time: 15.10.00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="11">
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Sail Nr</th>
+<th>Boat</th>
+<th>Entrant</th>
+<th>Club</th>
+<th>H'cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>869</td>
+<td>Tears in Heaven</td>
+<td>Tom McMahon</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>15.10.00</td>
+<td>15.48.30</td>
+<td>0.38.30</td>
+<td>0.38.30</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>801</td>
+<td>Tears for Fears</td>
+<td>Niall Monks</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>15.10.00</td>
+<td>15.49.52</td>
+<td>0.39.52</td>
+<td>0.39.52</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>148</td>
+<td>Halloween</td>
+<td>Gerard Loughran & Ross Hattaway</td>
+<td>Howth YC</td>
+<td>1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNS</td>
+<td>&nbsp;</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r1squib_hph">R1 - Squib HPH Fleet&nbsp;-&nbsp;Sep 13</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Finish time, Time: 14.10.00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="11">
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Sail Nr</th>
+<th>Boat</th>
+<th>Entrant</th>
+<th>Club</th>
+<th>H'cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>148</td>
+<td>Halloween</td>
+<td>Gerard Loughran & Ross Hattaway</td>
+<td>Howth YC</td>
+<td>0.905</td>
+<td>14.10.00</td>
+<td>14.51.53</td>
+<td>0.41.53</td>
+<td>0.37.54</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>801</td>
+<td>Tears for Fears</td>
+<td>Niall Monks</td>
+<td>Howth YC</td>
+<td>1.015</td>
+<td>14.10.00</td>
+<td>14.50.40</td>
+<td>0.40.40</td>
+<td>0.41.17</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>869</td>
+<td>Tears in Heaven</td>
+<td>Tom McMahon</td>
+<td>Howth YC</td>
+<td>1.062</td>
+<td>14.10.00</td>
+<td>14.49.35</td>
+<td>0.39.35</td>
+<td>0.42.02</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
+<h3 class="racetitle" id="r2squib_hph">R2 - Squib HPH Fleet&nbsp;-&nbsp;Sep 13</h3>
+<div class="caption racecaption">
+Start: Start 2, Finishes: Finish time, Time: 15.10.00
+</div>
+<table class="racetable" cellspacing="0" cellpadding="0" border="0">
+<colgroup span="11">
+<col class="rank" />
+<col class="sailno" />
+<col class="boat" />
+<col class="helmname" />
+<col class="club" />
+<col class="rating" />
+<col class="start" />
+<col class="finish" />
+<col class="elapsed" />
+<col class="corrected" />
+<col class="points" />
+</colgroup>
+<thead>
+<tr class="titlerow">
+<th>Rank</th>
+<th>Sail Nr</th>
+<th>Boat</th>
+<th>Entrant</th>
+<th>Club</th>
+<th>H'cap</th>
+<th>Start</th>
+<th>Finish</th>
+<th>Elapsed</th>
+<th>Corrected</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd racerow">
+<td>1</td>
+<td>801</td>
+<td>Tears for Fears</td>
+<td>Niall Monks</td>
+<td>Howth YC</td>
+<td>1.009</td>
+<td>15.10.00</td>
+<td>15.49.52</td>
+<td>0.39.52</td>
+<td>0.40.14</td>
+<td>1.0</td>
+</tr>
+<tr class="even racerow">
+<td>2</td>
+<td>869</td>
+<td>Tears in Heaven</td>
+<td>Tom McMahon</td>
+<td>Howth YC</td>
+<td>1.053</td>
+<td>15.10.00</td>
+<td>15.48.30</td>
+<td>0.38.30</td>
+<td>0.40.32</td>
+<td>2.0</td>
+</tr>
+<tr class="odd racerow">
+<td>3</td>
+<td>148</td>
+<td>Halloween</td>
+<td>Gerard Loughran & Ross Hattaway</td>
+<td>Howth YC</td>
+<td>0.920</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>DNS</td>
+<td>&nbsp;</td>
+<td>4.0</td>
 </tr>
 </tbody>
 </table>
