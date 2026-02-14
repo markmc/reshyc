@@ -20,7 +20,7 @@ jobs:
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
         run: |
           pip install -r scripts/admin/requirements.txt
-          rm -f backups/admin/202{3,4,5}_*.csv
+          rm -f backups/admin/202{5,6}_*.csv
           make admin-backup
       - name: Create pull request
         id: cpr
