@@ -107,3 +107,54 @@ df = pd.DataFrame(results)
 df.to_csv("course_lengths.csv")
 
 print("Calculated lengths saved to course_lengths.csv")
+
+
+
+
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import A4
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet
+
+def create_course_pdf(courses, filename):
+    doc = SimpleDocTemplate(filename, pagesize=A4)
+    styles = getSampleStyleSheet()
+    elements = []
+
+    title = Paragraph("Race Courses", styles['Title'])
+    elements.append(title)
+    elements.append(Spacer(1, 12))
+
+    # Create 18 rows and 4 columns for courses
+    rows = 18
+    cols = 4
+    course_idx = 0
+
+    # Header row
+    data = [["", "1", "2", "3", "4"]]
+
+    # Fill rows
+    for r in range(rows):
+        row_label = f"{r:02}"
+        row_data = [row_label]
+        for c in range(cols):
+            row_data.append(f"{courses[course_idx][1]} {courses[course_idx][2]}")
+            course_idx += 1
+        data.append(row_data)
+
+    # Create table
+    table = Table(data) #, colWidths=[70, 300, 80])
+    table.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+        ('GRID', (0, 0), (-1, -1), 0.5, colors.black),
+    ]))
+
+    elements.append(table)
+    doc.build(elements)
+    print(f"PDF '{filename}' created.")
+
+create_course_pdf(results, "courses.pdf")

@@ -78,3 +78,74 @@ for m1 in marks:
 
 df = pd.DataFrame(table, index=ids, columns=ids)
 df.to_csv("marks_bearings_distances.csv")
+
+
+
+
+
+
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import A4
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import Image
+from reportlab.lib.units import inch
+
+
+def create_marks_pdf(marks, distance_df, map_image, filename):
+    doc = SimpleDocTemplate(filename, pagesize=A4)
+    styles = getSampleStyleSheet()
+    elements = []
+
+    title = Paragraph("Mark Information", styles['Title'])
+    elements.append(title)
+    elements.append(Spacer(1, 12))
+
+    # Add map image
+    img = Image(map_image, width=5*inch, height=3*inch)
+    elements.append(img)
+    elements.append(Spacer(1, 12))
+
+    # Table 1: Coordinates
+    coord_data = [["ID", "Name", "Description", "Latitude", "Longitude"]]
+    for m in marks:
+        coord_data.append([m["ID"],
+                           m["Name"],
+                           f"{m['Colour']} {m['Shape']}",
+                           f"{m['Lat']['Deg']} {m['Lat']['Min']}",
+                           f"{m['Long']['Deg']} {m['Long']['Min']}"])
+
+    coord_table = Table(coord_data, colWidths=[40, 120, 100, 100])
+    coord_table.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
+        ('GRID', (0, 0), (-1, -1), 0.5, colors.black),
+    ]))
+    elements.append(Paragraph("Coordinates:", styles['Heading2']))
+    elements.append(coord_table)
+    elements.append(Spacer(1, 12))
+
+    # Table 2: Distance/Bearing Matrix
+    matrix_data = [ ["" ] + list(distance_df.columns) ]
+    for idx, row in zip(distance_df.index, distance_df.values):
+        matrix_data.append([idx] + list(row))
+
+    matrix_table = Table(matrix_data, colWidths=[40] + [50]*len(distance_df.columns))
+    matrix_table.setStyle(TableStyle([
+        ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('FONTSIZE', (0, 0), (-1, -1), 6),  # Small font for big table
+        ('GRID', (0, 0), (-1, -1), 0.25, colors.black),
+    ]))
+    elements.append(Paragraph("Bearing & Distance Matrix:", styles['Heading2']))
+    elements.append(matrix_table)
+
+    doc.build(elements)
+    print(f"PDF '{filename}' created.")
+
+create_marks_pdf(marks, df, "map.png", "marks_info.pdf")
