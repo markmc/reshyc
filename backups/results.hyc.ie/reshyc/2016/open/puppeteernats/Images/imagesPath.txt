@@ -1,3 +1,0 @@
-event burgee:  /reshyc/2013/open/puppeteerNats/images/eventRight.jpg
-
-venue burgee: /reshyc/2013/open/puppeteerNats/images/venueLeft.jpg
